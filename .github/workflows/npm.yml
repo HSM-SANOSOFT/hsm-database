@@ -4,10 +4,10 @@ name: Publish Package to npm
 
 on:
   push:
-    tags:
-      - 'v*.*.*'
-  workflow_dispatch:
-
+    branches:
+      - main
+    paths:
+      - 'src/**'
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
