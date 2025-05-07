@@ -1,5 +1,5 @@
 {
-  "name": "hsm-database-schema",
+  "name": "@hsm-sanosoft/hsm-database-schema",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -23,7 +23,8 @@
     "build": "tsc -p tsconfig.build.json"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   },
   "dependencies": {
     "globals": "^16.1.0",
