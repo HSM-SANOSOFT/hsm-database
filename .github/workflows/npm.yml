@@ -8,6 +8,7 @@ on:
       - main
     paths:
       - 'src/**'
+      - 'package.json'
 
 jobs:
   build-and-publish:
@@ -16,6 +17,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -38,11 +41,14 @@ jobs:
       - name: Build package
         run: pnpm build
 
-      - name: Bump patch version
+      - name: Bump version & tag
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          npm version patch --no-git-tag-version
+          VERSION=$(npm version patch -m "chore(release): %s")
+          git push origin main --follow-tags
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish to npm
         run: pnpm publish --access public --no-git-checks
