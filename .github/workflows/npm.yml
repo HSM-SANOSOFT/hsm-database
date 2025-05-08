@@ -6,10 +6,13 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'src/**'
-      - 'package.json'
+    #paths:
+      #- 'src/**'
+      #- 'package.json'
 
+permissions:
+  contents: write
+  
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
