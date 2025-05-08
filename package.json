@@ -14,7 +14,8 @@
     }
   },
   "scripts": {
-    "build": "tsc -p tsconfig.build.json"
+    "build": "tsc -p tsconfig.build.json",
+    "prepack": "cp -R dist/* . && rm -rf dist"
   },
   "publishConfig": {
     "access": "public",
