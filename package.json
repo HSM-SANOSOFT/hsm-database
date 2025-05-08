@@ -11,7 +11,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "files": [
-    "./dist/*"
+    "dist"
   ],
   "dependencies": {
     "globals": "^16.1.0",
