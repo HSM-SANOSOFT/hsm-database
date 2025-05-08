@@ -6,13 +6,10 @@ on:
   push:
     branches:
       - main
-    #paths:
-      #- 'src/**'
-      #- 'package.json'
 
 permissions:
   contents: write
-  
+
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
@@ -21,7 +18,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0 
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -33,28 +30,32 @@ jobs:
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: latest   # o la versión que prefieras
+          version: latest
 
       - name: Install dependencies
         run: pnpm install
-        # opcional: usa cache integrada si quieres acelerar
-        # env:
-        #   PNPM_HOME: ~/.local/share/pnpm
 
       - name: Build package
         run: pnpm build
+
+      - name: Clean workspace for version bump
+        run: |
+          # descarta cambios en tracked files
+          git reset --hard HEAD
+          # elimina archivos/carpetas no trackeados (dist/, node_modules/, etc.)
+          git clean -fd
 
       - name: Bump version & tag
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          VERSION=$(npm version patch -m "chore(release): %s")
+          # esto crea el commit y el tag
+          npm version patch -m "chore(release): %s"
           git push origin main --follow-tags
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish to npm
-        run: pnpm publish --access public --no-git-checks
+        run: pnpm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
