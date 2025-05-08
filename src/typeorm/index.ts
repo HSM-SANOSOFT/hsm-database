@@ -254,7 +254,7 @@ import { WrkCriterioConsulta } from './WrkCriterioConsulta.entity';
 import { WrkCriterioConsultaSobrePago } from './WrkCriterioConsultaSobrePago.entity';
 import { WrkCriterioMYSQL } from './WrkCriterioMYSQL.entity';
 import { WrkDetCtrlNovedad } from './WrkDetCtrlNovedad.entity';
-import { WrkDetNominaAreaBeneficio } from './WrkDetNominaAreaBeneficio.entity';
+import { WrkDetNominaAreaBeneficio } from './wrkDetNominaAreaBeneficio.entity';
 import { WrkNoDetContSolidaria } from './WrkNoDetContSolidaria.entity';
 import { WrkNoDetCtrlNovedad } from './WrkNoDetCtrlNovedad.entity';
 import { WrkNoDetImportaBatchIESS } from './WrkNoDetImportaBatchIESS.entity';

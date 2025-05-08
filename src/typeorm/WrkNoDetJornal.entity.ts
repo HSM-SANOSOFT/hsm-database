@@ -20,7 +20,7 @@ export class WrkNoDetJornal {
   @Column({ type: 'varchar', length: 5 })
   CCiTarea!: string;
 
-  @Column({ type: 'varchar', length: 6, nullable: True })
+  @Column({ type: 'varchar', length: 6, nullable: true })
   CCiUnidadMedida?: string;
 
   @Column('numeric', { precision: 18, scale: 4, nullable: true })
