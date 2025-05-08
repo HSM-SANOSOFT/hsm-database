@@ -3,14 +3,14 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetServicio')
 export class TblNoDetServicio {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoServicio?: any;
+  NIdNoServicio?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('int', { nullable: false })
-  NNuHoras?: any;
+  NNuHoras?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtValorPago?: any;
+  NVtValorPago?: number;
 
 }

@@ -3,23 +3,23 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCADetMovimiento')
 export class TblCADetMovimiento {
   @PrimaryColumn('int', { nullable: false })
-  NIdCAMovimiento?: any;
+  NIdCAMovimiento?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('datetime', { nullable: false })
-  DFxEntrada?: any;
+  DFxEntrada?: Date;
   @Column('datetime', { nullable: false })
-  DFxSalidaReceso?: any;
+  DFxSalidaReceso?: Date;
   @Column('datetime', { nullable: false })
-  DFxEntradaReceso?: any;
+  DFxEntradaReceso?: Date;
   @Column('datetime', { nullable: false })
-  DFxSalida?: any;
+  DFxSalida?: Date;
   @Column('datetime', { nullable: false })
-  DFxReceso?: any;
+  DFxReceso?: Date;
   @Column('datetime', { nullable: false })
-  DFxRecuperacion?: any;
+  DFxRecuperacion?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtRegistro?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -43,32 +43,32 @@ export class TblCADetMovimiento {
   @Column({ type: 'char', length: 1, nullable: false })
   CSnHorasExtra?: string;
   @Column('datetime', { nullable: false })
-  DFxEntrada2?: any;
+  DFxEntrada2?: Date;
   @Column('datetime', { nullable: false })
-  DFxSalida2?: any;
+  DFxSalida2?: Date;
   @Column('datetime', { nullable: false })
-  DFxEntrada1Audt?: any;
+  DFxEntrada1Audt?: Date;
   @Column('datetime', { nullable: false })
-  DFxSalidaReceso1Audt?: any;
+  DFxSalidaReceso1Audt?: Date;
   @Column('datetime', { nullable: false })
-  DFxEntradaReceso1Audt?: any;
+  DFxEntradaReceso1Audt?: Date;
   @Column('datetime', { nullable: false })
-  DFxSalida1Audt?: any;
+  DFxSalida1Audt?: Date;
   @Column('datetime', { nullable: false })
-  DFxEntrada2Audt?: any;
+  DFxEntrada2Audt?: Date;
   @Column('datetime', { nullable: false })
-  DFxSalida2Audt?: any;
+  DFxSalida2Audt?: Date;
   @Column('datetime', { nullable: false })
-  DFxMovimientoAudt?: any;
+  DFxMovimientoAudt?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsError?: string;
   @Column('datetime', { nullable: false })
-  DFxHorasPermiso?: any;
+  DFxHorasPermiso?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnGenerarAtraso?: string;
   @Column('datetime', { nullable: false })
-  DFxHorasAtraso?: any;
+  DFxHorasAtraso?: Date;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtValorAtraso?: any;
+  NVtValorAtraso?: number;
 
 }

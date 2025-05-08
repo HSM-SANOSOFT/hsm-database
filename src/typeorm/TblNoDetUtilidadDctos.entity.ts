@@ -3,18 +3,18 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetUtilidadDctos')
 export class TblNoDetUtilidadDctos {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoUtilidad?: any;
+  NIdNoUtilidad?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @PrimaryColumn('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @PrimaryColumn('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @PrimaryColumn('int', { nullable: false })
-  NIdNoPrestamo?: any;
+  NIdNoPrestamo?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuCuota?: any;
+  NNuCuota?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDescuento?: any;
+  NVtDescuento?: number;
 
 }

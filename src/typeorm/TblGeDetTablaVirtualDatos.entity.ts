@@ -3,13 +3,13 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeDetTablaVirtualDatos')
 export class TblGeDetTablaVirtualDatos {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiTablaVirtual?: any;
+  CCiTablaVirtual?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiCampoVirtual?: any;
+  CCiCampoVirtual?: string;
   @PrimaryColumn('int', { nullable: false })
-  NIdGeReferencia?: any;
+  NIdGeReferencia?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsValorDato?: string;
 }

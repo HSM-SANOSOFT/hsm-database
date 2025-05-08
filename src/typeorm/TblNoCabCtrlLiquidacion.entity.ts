@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabCtrlLiquidacion')
 export class TblNoCabCtrlLiquidacion {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoCtrlLiquidacion?: any;
+  NIdNoCtrlLiquidacion?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -13,9 +13,9 @@ export class TblNoCabCtrlLiquidacion {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoNomina?: string;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -25,11 +25,11 @@ export class TblNoCabCtrlLiquidacion {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

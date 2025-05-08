@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoResumenNomina')
 export class TblNoResumenNomina {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoNomina?: any;
+  NIdNoNomina?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -13,23 +13,23 @@ export class TblNoResumenNomina {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoNomina?: string;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCtProceso?: any;
+  CCtProceso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiIndividual?: string;
   @PrimaryColumn('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtIngresos?: any;
+  NVtIngresos?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtEgresos?: any;
+  NVtEgresos?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtNeto?: any;
+  NVtNeto?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtFormaPago?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -39,9 +39,9 @@ export class TblNoResumenNomina {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxCuenta?: string;
   @Column('int', { nullable: false })
-  NIdNoTransferencia?: any;
+  NIdNoTransferencia?: number;
   @Column('int', { nullable: false })
-  NIdNoOrdenPago?: any;
+  NIdNoOrdenPago?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -53,9 +53,9 @@ export class TblNoResumenNomina {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoMvtoBco?: string;
   @Column('int', { nullable: false })
-  NNuSecuenciaMvtoBco?: any;
+  NNuSecuenciaMvtoBco?: number;
   @Column('int', { nullable: false })
-  NNuAnioMvtoBco?: any;
+  NNuAnioMvtoBco?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiAreaCont?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

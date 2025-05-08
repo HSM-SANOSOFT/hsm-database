@@ -13,23 +13,23 @@ export class WRK_TblImpotDetObreroDias {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column('int', { nullable: false })
-  NIdNoJefeInmediato?: any;
+  NIdNoJefeInmediato?: number;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column('int', { nullable: false })
-  NnuSecuencia?: any;
+  NnuSecuencia?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   Identificacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   Nombres?: string;
   @Column('datetime', { nullable: false })
-  DFxRegistro?: any;
+  DFxRegistro?: Date;
   @Column('int', { nullable: false })
-  NnuHoras?: any;
+  NnuHoras?: number;
   @Column('int', { nullable: false })
-  NnuMinutos?: any;
+  NnuMinutos?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacion?: string;
 }

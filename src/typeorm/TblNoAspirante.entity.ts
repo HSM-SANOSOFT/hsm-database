@@ -3,9 +3,9 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoAspirante')
 export class TblNoAspirante {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoAspirante?: any;
+  NIdNoAspirante?: number;
   @Column('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsApellidos?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -19,17 +19,17 @@ export class TblNoAspirante {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxLibretaMilitar?: string;
   @Column('datetime', { nullable: false })
-  DFxSolicitud?: any;
+  DFxSolicitud?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiCargo?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldo?: any;
+  NVtSueldo?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiNacionalidad?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxLugarNacimiento?: string;
   @Column('datetime', { nullable: false })
-  DFxNacimiento?: any;
+  DFxNacimiento?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtEstadoCivil?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -55,9 +55,9 @@ export class TblNoAspirante {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxMailPersonal?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuEstatura?: any;
+  NNuEstatura?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNupeso?: any;
+  NNupeso?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtSexo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -71,7 +71,7 @@ export class TblNoAspirante {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CSnDiscapacitado?: string;
   @Column('int', { nullable: false })
-  NQnDiscapacidad?: any;
+  NQnDiscapacidad?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxConadis?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -83,13 +83,13 @@ export class TblNoAspirante {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column('datetime', { nullable: false })
-  DFxRegistro?: any;
+  DFxRegistro?: Date;
 }

@@ -3,19 +3,19 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetDistribuyeCCosto')
 export class TblNoDetDistribuyeCCosto {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoDistribuye?: any;
+  NIdNoDistribuye?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuenciaPresObra?: any;
+  NNuSecuenciaPresObra?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuenciaEmpl?: any;
+  NNuSecuenciaEmpl?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuenciaCCosto?: any;
+  NNuSecuenciaCCosto?: number;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCtDistribucion?: any;
+  CCtDistribucion?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtValorxConcepto?: any;
+  NVtValorxConcepto?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NQnPorcentaje?: any;
+  NQnPorcentaje?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtValorDistribuido?: any;
+  NVtValorDistribuido?: number;
 }

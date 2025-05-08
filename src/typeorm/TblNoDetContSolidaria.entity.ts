@@ -3,54 +3,54 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetContSolidaria')
 export class TblNoDetContSolidaria {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoContSolidaria?: any;
+  NIdNoContSolidaria?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column('datetime', { nullable: false })
-  DFxVigencia?: any;
+  DFxVigencia?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnPrimerRegistro?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBaseAbril?: any;
+  NVtBaseAbril?: number;
   @Column('int', { nullable: false })
-  NNuAcumAporteMes?: any;
+  NNuAcumAporteMes?: number;
   @Column('int', { nullable: false })
-  NNuAcumMesesPromedio?: any;
+  NNuAcumMesesPromedio?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtAcumContribRetenida?: any;
+  NVtAcumContribRetenida?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtAcumRemuneracion?: any;
+  NVtAcumRemuneracion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRemuneracionActual?: any;
+  NVtRemuneracionActual?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRemuneracionPromedio?: any;
+  NVtRemuneracionPromedio?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBaseCalculoEmpleado?: any;
+  NVtBaseCalculoEmpleado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBaseCalculoEmpleador?: any;
+  NVtBaseCalculoEmpleador?: number;
   @Column('int', { nullable: false })
-  NNuMesesAportBaseRemunProm?: any;
+  NNuMesesAportBaseRemunProm?: number;
   @Column('int', { nullable: false })
-  NNuAporteMesActual?: any;
+  NNuAporteMesActual?: number;
   @Column('int', { nullable: false })
-  NNuCuotasContribuir?: any;
+  NNuCuotasContribuir?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtConciliaMontoAporte?: any;
+  NVtConciliaMontoAporte?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtConciliaAjusteMontoAporte?: any;
+  NVtConciliaAjusteMontoAporte?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtConciliaMontoConstribucion?: any;
+  NVtConciliaMontoConstribucion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDonacionEfectuada?: any;
+  NVtDonacionEfectuada?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDonacionCredTributarioAcum?: any;
+  NVtDonacionCredTributarioAcum?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDonacionCredTribActual?: any;
+  NVtDonacionCredTribActual?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtContribRetenerEmpleado?: any;
+  NVtContribRetenerEmpleado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtContribRetenerEmpleador?: any;
+  NVtContribRetenerEmpleador?: number;
 
 }

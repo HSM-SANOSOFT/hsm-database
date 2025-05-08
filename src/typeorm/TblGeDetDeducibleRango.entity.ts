@@ -3,17 +3,17 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeDetDeducibleRango')
 export class TblGeDetDeducibleRango {
   @PrimaryColumn('int', { nullable: false })
-  NIdGeDeducible?: any;
+  NIdGeDeducible?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxRefrenecia?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBaseMinima?: any;
+  NVtBaseMinima?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBaseMaxima?: any;
+  NVtBaseMaxima?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtFraccion?: any;
+  NVtFraccion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NQnExcedente?: any;
+  NQnExcedente?: number;
 }

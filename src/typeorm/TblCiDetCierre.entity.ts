@@ -3,21 +3,21 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCiDetCierre')
 export class TblCiDetCierre {
   @PrimaryColumn('int', { nullable: false })
-  NIdCiCierre?: any;
+  NIdCiCierre?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuRegistro?: any;
+  NNuRegistro?: number;
   @Column('int', { nullable: false })
-  NNuAsiento?: any;
+  NNuAsiento?: number;
   @Column('int', { nullable: false })
-  NNuAnioCtbl?: any;
+  NNuAnioCtbl?: number;
   @Column('int', { nullable: false })
-  NNuPeriodoCtbl?: any;
+  NNuPeriodoCtbl?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoComprobante?: string;
   @Column('int', { nullable: false })
-  NNuComprobante?: any;
+  NNuComprobante?: number;
   @Column('int', { nullable: false })
-  NIdCiMovimiento?: any;
+  NIdCiMovimiento?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiPlanCta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -33,9 +33,9 @@ export class TblCiDetCierre {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiSubProyecto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDebito?: any;
+  NVtDebito?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtCredito?: any;
+  NVtCredito?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxDetalle?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -47,13 +47,13 @@ export class TblCiDetCierre {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiGrupoConcepto?: string;
   @Column('int', { nullable: false })
-  NIdNoLabor?: any;
+  NIdNoLabor?: number;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiTipoPres?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

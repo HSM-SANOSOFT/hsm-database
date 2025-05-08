@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCiCabPlantilla')
 export class TblCiCabPlantilla {
   @PrimaryColumn('int', { nullable: false })
-  NIdCiPlantilla?: any;
+  NIdCiPlantilla?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -15,7 +15,7 @@ export class TblCiCabPlantilla {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoComprobante?: string;
   @Column('int', { nullable: false })
-  NNuAsiento?: any;
+  NNuAsiento?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -31,13 +31,13 @@ export class TblCiCabPlantilla {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtAsiento?: string;
   @Column({ type: 'char', length: 1, nullable: false })

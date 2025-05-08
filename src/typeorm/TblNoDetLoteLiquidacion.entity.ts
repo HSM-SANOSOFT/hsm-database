@@ -3,13 +3,13 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetLoteLiquidacion')
 export class TblNoDetLoteLiquidacion {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoLoteLiquidacion?: any;
+  NIdNoLoteLiquidacion?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('datetime', { nullable: false })
-  DFxLiquidacion?: any;
+  DFxLiquidacion?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiMotivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -21,6 +21,6 @@ export class TblNoDetLoteLiquidacion {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxObservacion?: string;
   @Column('int', { nullable: false })
-  NIdNoLiquidacion?: any;
+  NIdNoLiquidacion?: number;
 
 }

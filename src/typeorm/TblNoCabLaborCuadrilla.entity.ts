@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabLaborCuadrilla')
 export class TblNoCabLaborCuadrilla {
   @Column('int', { nullable: false })
-  NIdNoLabor?: any;
+  NIdNoLabor?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -13,19 +13,19 @@ export class TblNoCabLaborCuadrilla {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoNomina?: string;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column('datetime', { nullable: false })
-  DFxLabor?: any;
+  DFxLabor?: Date;
   @Column('int', { nullable: false })
-  NNuLabor?: any;
+  NNuLabor?: number;
   @Column('int', { nullable: false })
-  NNuCuadrilla?: any;
+  NNuCuadrilla?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxObservacion?: string;
   @Column('int', { nullable: false })
-  NIdNoJornal?: any;
+  NIdNoJornal?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCeLabor?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -33,19 +33,19 @@ export class TblNoCabLaborCuadrilla {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioAprueba?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionAprueba?: string;
   @Column('datetime', { nullable: false })
-  DFxAprueba?: any;
+  DFxAprueba?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
 }

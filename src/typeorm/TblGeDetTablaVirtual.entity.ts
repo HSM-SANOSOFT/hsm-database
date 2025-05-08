@@ -3,15 +3,15 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeDetTablaVirtual')
 export class TblGeDetTablaVirtual {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiTablaVirtual?: any;
+  CCiTablaVirtual?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiCampoVirtual?: any;
+  CCiCampoVirtual?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsCampoVirtual?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtDato?: string;
   @Column('int', { nullable: false })
-  NNuLongitud?: any;
+  NNuLongitud?: number;
   @Column('int', { nullable: false })
-  NNuDecimales?: any;
+  NNuDecimales?: number;
 }

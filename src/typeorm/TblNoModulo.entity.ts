@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoModulo')
 export class TblNoModulo {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiModulo?: any;
+  CCiModulo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsModulo?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -13,11 +13,11 @@ export class TblNoModulo {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

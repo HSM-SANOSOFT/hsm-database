@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCiCabPlantillaEmpl')
 export class TblCiCabPlantillaEmpl {
   @PrimaryColumn('int', { nullable: false })
-  NIdCiPlantillaEmpl?: any;
+  NIdCiPlantillaEmpl?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -11,7 +11,7 @@ export class TblCiCabPlantillaEmpl {
   @Column({ type: 'char', length: 1, nullable: false })
   CCiSucursal?: string;
   @Column('int', { nullable: false })
-  NNuAsientoEmpl?: any;
+  NNuAsientoEmpl?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsObservacion?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -21,11 +21,11 @@ export class TblCiCabPlantillaEmpl {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

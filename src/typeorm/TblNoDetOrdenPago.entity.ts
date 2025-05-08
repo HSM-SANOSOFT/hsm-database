@@ -3,13 +3,13 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetOrdenPago')
 export class TblNoDetOrdenPago {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoOrdenPago?: any;
+  NIdNoOrdenPago?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtNeto?: any;
+  NVtNeto?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsBeneficiario?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -35,7 +35,7 @@ export class TblNoDetOrdenPago {
   @Column({ type: 'char', length: 1, nullable: false })
   CCiSucursalOrden?: string;
   @Column('int', { nullable: false })
-  NNuControlOrden?: any;
+  NNuControlOrden?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCiaPago?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -43,7 +43,7 @@ export class TblNoDetOrdenPago {
   @Column({ type: 'char', length: 1, nullable: false })
   CCiSucursalPago?: string;
   @Column('int', { nullable: false })
-  NNuControlPago?: any;
+  NNuControlPago?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiBanco?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

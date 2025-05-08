@@ -15,9 +15,9 @@ export class TblNoCuenta {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxAlias?: string;
   @Column('text', { nullable: false })
-  BSnAceptaAux?: any;
+  BSnAceptaAux?: string;
   @Column('text', { nullable: false })
-  BSnTercerImporte?: any;
+  BSnTercerImporte?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtTituloDetalle?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -25,25 +25,25 @@ export class TblNoCuenta {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioIngr?: string;
   @Column('datetime', { nullable: false })
-  DFiCreacion?: any;
+  DFiCreacion?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiUsuarioModi?: string;
   @Column('datetime', { nullable: false })
-  DFuModificacion?: any;
+  DFuModificacion?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioInac?: string;
   @Column('datetime', { nullable: false })
-  DFuInactiva?: any;
+  DFuInactiva?: Date;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuNivelCta?: any;
+  NNuNivelCta?: number;
   @Column('text', { nullable: false })
-  BsnAceptaDoc?: any;
+  BsnAceptaDoc?: string;
   @Column('text', { nullable: false })
-  BsnAceptaVenc?: any;
+  BsnAceptaVenc?: string;
   @Column('text', { nullable: false })
-  BsnAceptaDpto?: any;
+  BsnAceptaDpto?: string;
   @Column('text', { nullable: false })
-  BsnAceptaProyecto?: any;
+  BsnAceptaProyecto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiAlterno?: string;
   @Column({ type: 'char', length: 1, nullable: false })

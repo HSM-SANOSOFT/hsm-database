@@ -3,11 +3,11 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('WrkCriterioMYSQL')
 export class WrkCriterioMYSQL {
   @PrimaryColumn({ type: 'varchar' })
-  CCiEstacion?: any;
+  CCiEstacion?: string;
   @PrimaryColumn({ type: 'varchar' })
-  CCiTipoParam?: any;
+  CCiTipoParam?: string;
   @PrimaryColumn({ type: 'varchar' })
-  NNuRegistro?: any;
+  NNuRegistro?: string;
   @Column({ type: 'varchar' })
   CCiReferencia1?: string;
   @Column({ type: 'varchar' })
@@ -29,25 +29,25 @@ export class WrkCriterioMYSQL {
   @Column({ type: 'varchar' })
   CCiReferencia10?: string;
   @Column('int', { nullable: true })
-  NIdGeReferencia1?: any;
+  NIdGeReferencia1?: number;
   @Column('int', { nullable: true })
-  NIdGeReferencia2?: any;
+  NIdGeReferencia2?: number;
   @Column('int', { nullable: true })
-  NIdGeReferencia3?: any;
+  NIdGeReferencia3?: number;
   @Column('int', { nullable: true })
-  NIdGeReferencia4?: any;
+  NIdGeReferencia4?: number;
   @Column('int', { nullable: true })
-  NIdGeReferencia5?: any;
+  NIdGeReferencia5?: number;
   @Column('int', { nullable: true })
-  NIdGeReferencia6?: any;
+  NIdGeReferencia6?: number;
   @Column('int', { nullable: true })
-  NIdGeReferencia7?: any;
+  NIdGeReferencia7?: number;
   @Column('int', { nullable: true })
-  NIdGeReferencia8?: any;
+  NIdGeReferencia8?: number;
   @Column('int', { nullable: true })
-  NIdGeReferencia9?: any;
+  NIdGeReferencia9?: number;
   @Column('int', { nullable: true })
-  NIdGeReferencia10?: any;
+  NIdGeReferencia10?: number;
   @Column({ type: 'varchar' })
   CNoReferencia1?: string;
   @Column({ type: 'varchar' })

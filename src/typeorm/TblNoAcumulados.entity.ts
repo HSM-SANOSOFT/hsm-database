@@ -3,23 +3,23 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoAcumulados')
 export class TblNoAcumulados {
   @PrimaryColumn('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @PrimaryColumn('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @PrimaryColumn('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('datetime', { nullable: false })
-  DFxAcumuladoIni?: any;
+  DFxAcumuladoIni?: Date;
   @Column('datetime', { nullable: false })
-  DFxAcumuladoFin?: any;
+  DFxAcumuladoFin?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCeAcumulado?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtAcumulado?: any;
+  NVtAcumulado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtAbonado?: any;
+  NVtAbonado?: number;
   @Column('datetime', { nullable: false })
-  DFxPago?: any;
+  DFxPago?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCePago?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -27,11 +27,11 @@ export class TblNoAcumulados {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

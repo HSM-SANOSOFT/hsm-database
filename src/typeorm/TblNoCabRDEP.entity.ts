@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabRDEP')
 export class TblNoCabRDEP {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoRDEP?: any;
+  NIdNoRDEP?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -11,9 +11,9 @@ export class TblNoCabRDEP {
   @Column({ type: 'char', length: 1, nullable: false })
   CCiSucursal?: string;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('datetime', { nullable: false })
-  DFxRDEP?: any;
+  DFxRDEP?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxRUCContador?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -31,13 +31,13 @@ export class TblNoCabRDEP {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtTraerDatos?: string;
   @Column({ type: 'char', length: 1, nullable: false })

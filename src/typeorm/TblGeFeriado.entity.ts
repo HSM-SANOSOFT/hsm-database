@@ -3,13 +3,13 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeFeriado')
 export class TblGeFeriado {
   @PrimaryColumn('int', { nullable: false })
-  NIdGeFeriado?: any;
+  NIdGeFeriado?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsFeriado?: string;
   @Column('datetime', { nullable: false })
-  DFxIniFeriado?: any;
+  DFxIniFeriado?: Date;
   @Column('datetime', { nullable: false })
-  DFxFinFeriado?: any;
+  DFxFinFeriado?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CCeFeriado?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -17,15 +17,15 @@ export class TblGeFeriado {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
 }

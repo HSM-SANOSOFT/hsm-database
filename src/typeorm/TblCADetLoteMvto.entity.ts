@@ -3,37 +3,37 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCADetLoteMvto')
 export class TblCADetLoteMvto {
   @PrimaryColumn('int', { nullable: false })
-  NIdCALoteMvto?: any;
+  NIdCALoteMvto?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHorasLabor?: any;
+  NNuHorasLabor?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsHorasLabor?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHorasPago?: any;
+  NNuHorasPago?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsHorasPago?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHorasRecargo25?: any;
+  NNuHorasRecargo25?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsHorasRecargo25?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHorasRecargo50?: any;
+  NNuHorasRecargo50?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsHorasRecargo50?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHorasRecargo100?: any;
+  NNuHorasRecargo100?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsHorasRecargo100?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHorasAtraso?: any;
+  NNuHorasAtraso?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsHorasAtraso?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuDiasFalta?: any;
+  NNuDiasFalta?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -41,32 +41,32 @@ export class TblCADetLoteMvto {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiSubCentroCosto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHENormal?: any;
+  NNuHENormal?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHENocturna?: any;
+  NNuHENocturna?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHEAdicionalNocturna?: any;
+  NNuHEAdicionalNocturna?: number;
   @Column('int', { nullable: false })
-  NIdCATurno?: any;
+  NIdCATurno?: number;
   @Column('int', { nullable: false })
-  NNuExtraFeriadoFinSemana?: any;
+  NNuExtraFeriadoFinSemana?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHorasLabor2?: any;
+  NNuHorasLabor2?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHorasPago2?: any;
+  NNuHorasPago2?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHorasAtraso2?: any;
+  NNuHorasAtraso2?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHENormal2?: any;
+  NNuHENormal2?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHENocturna2?: any;
+  NNuHENocturna2?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHEAdicionalNocturna2?: any;
+  NNuHEAdicionalNocturna2?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHEAFavor?: any;
+  NNuHEAFavor?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHEAntesEntrada1?: any;
+  NNuHEAntesEntrada1?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHEAntesEntrada2?: any;
+  NNuHEAntesEntrada2?: number;
 
 }

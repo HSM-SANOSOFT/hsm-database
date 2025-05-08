@@ -3,16 +3,16 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetContratoConcepto')
 export class TblNoDetContratoConcepto {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtConcepto?: any;
+  NVtConcepto?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NQnPorcentaje?: any;
+  NQnPorcentaje?: number;
 
 }

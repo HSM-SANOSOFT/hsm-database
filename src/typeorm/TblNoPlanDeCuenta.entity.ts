@@ -3,29 +3,29 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoPlanDeCuenta')
 export class TblNoPlanDeCuenta {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiPlanCta?: any;
+  CCiPlanCta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsPlanCuenta?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuNivel1?: any;
+  NNuNivel1?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxSeparador?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuNivel2?: any;
+  NNuNivel2?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuNivel3?: any;
+  NNuNivel3?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuNivel4?: any;
+  NNuNivel4?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuNivel5?: any;
+  NNuNivel5?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuNivel6?: any;
+  NNuNivel6?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuNivel7?: any;
+  NNuNivel7?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuNivel8?: any;
+  NNuNivel8?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuNivel9?: any;
+  NNuNivel9?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCePlanCtas?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -33,11 +33,11 @@ export class TblNoPlanDeCuenta {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

@@ -3,9 +3,9 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetNovedad')
 export class TblNoDetNovedad {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoNovedad?: any;
+  NIdNoNovedad?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -13,15 +13,15 @@ export class TblNoDetNovedad {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiSubCentroCosto?: string;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuCantidad?: any;
+  NNuCantidad?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtConcepto?: any;
+  NVtConcepto?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxObservacion?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -29,10 +29,10 @@ export class TblNoDetNovedad {
   @Column({ type: 'char', length: 1, nullable: false })
   CCePago?: string;
   @Column('int', { nullable: false })
-  NIdNoCtrlNovedadOrigen?: any;
+  NIdNoCtrlNovedadOrigen?: number;
   @Column('int', { nullable: false })
-  NIdNoCtrlNovedadDestino?: any;
+  NIdNoCtrlNovedadDestino?: number;
   @Column('int', { nullable: false })
-  NIdNoJefeInmediato?: any;
+  NIdNoJefeInmediato?: number;
 
 }

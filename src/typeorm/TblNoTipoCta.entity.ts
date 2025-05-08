@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoTipoCta')
 export class TblNoTipoCta {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiTipoCta?: any;
+  CCiTipoCta?: string;
   @Column({ type: 'char', length: 1, nullable: false })
   CDsTipoCta?: string;
   @Column({ type: 'char', length: 1, nullable: false })

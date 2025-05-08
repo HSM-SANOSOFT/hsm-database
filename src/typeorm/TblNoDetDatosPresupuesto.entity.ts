@@ -3,13 +3,13 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetDatosPresupuesto')
 export class TblNoDetDatosPresupuesto {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdPrPresupuesto?: any;
+  NIdPrPresupuesto?: number;
   @Column('int', { nullable: false })
-  NNuPresupuesto?: any;
+  NNuPresupuesto?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiTipoInsumo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -21,6 +21,6 @@ export class TblNoDetDatosPresupuesto {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiSubProyecto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NQnPorcentaje?: any;
+  NQnPorcentaje?: number;
 
 }

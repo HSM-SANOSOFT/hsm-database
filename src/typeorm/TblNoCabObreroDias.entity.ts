@@ -3,21 +3,21 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabObreroDias')
 export class TblNoCabObreroDias {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @PrimaryColumn('int', { nullable: false })
-  NIdNoJefeInmediato?: any;
+  NIdNoJefeInmediato?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCeEstado?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -25,13 +25,13 @@ export class TblNoCabObreroDias {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiProyecto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

@@ -3,23 +3,23 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetBeneficioPagado')
 export class TblNoDetBeneficioPagado {
   @PrimaryColumn('int', { nullable: false })
-  NNuControl?: any;
+  NNuControl?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NNuAnioDesde?: any;
+  NNuAnioDesde?: number;
   @Column('int', { nullable: false })
-  NNuPeriodoDesde?: any;
+  NNuPeriodoDesde?: number;
   @Column('int', { nullable: false })
-  NNuAnioHasta?: any;
+  NNuAnioHasta?: number;
   @Column('int', { nullable: false })
-  NNuPeriodoHasta?: any;
+  NNuPeriodoHasta?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnProvision?: string;
   @Column('int', { nullable: false })
-  NNuAnioVacacionCanc?: any;
+  NNuAnioVacacionCanc?: number;
   @Column('int', { nullable: false })
-  NNuDiasVacacionCanc?: any;
+  NNuDiasVacacionCanc?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiTipoRegion?: string;
 

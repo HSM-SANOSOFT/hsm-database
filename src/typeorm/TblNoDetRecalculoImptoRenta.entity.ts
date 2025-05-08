@@ -3,45 +3,45 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetRecalculoImptoRenta')
 export class TblNoDetRecalculoImptoRenta {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoRecalImptoRenta?: any;
+  NIdNoRecalImptoRenta?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotalIngresos?: any;
+  NVtTotalIngresos?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSistemaAlimentacion?: any;
+  NVtSistemaAlimentacion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRealAlimentacion?: any;
+  NVtRealAlimentacion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSistemaEducacion?: any;
+  NVtSistemaEducacion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRealEducacion?: any;
+  NVtRealEducacion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSistemaVestimenta?: any;
+  NVtSistemaVestimenta?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRealVestimenta?: any;
+  NVtRealVestimenta?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSistemaVivienda?: any;
+  NVtSistemaVivienda?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRealVivienda?: any;
+  NVtRealVivienda?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSistemaSalud?: any;
+  NVtSistemaSalud?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRealSalud?: any;
+  NVtRealSalud?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotalImptoDescontado?: any;
+  NVtTotalImptoDescontado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotalRecalculo?: any;
+  NVtTotalRecalculo?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtAjusteAplicar?: any;
+  NVtAjusteAplicar?: number;
   @Column('int', { nullable: false })
-  NNuCuota?: any;
+  NNuCuota?: number;
   @Column('int', { nullable: false })
-  NIdNoPrestamo?: any;
+  NIdNoPrestamo?: number;
   @Column('int', { nullable: false })
-  NNuPrestamo?: any;
+  NNuPrestamo?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnGenerado?: string;
 

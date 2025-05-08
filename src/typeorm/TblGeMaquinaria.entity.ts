@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeMaquinaria')
 export class TblGeMaquinaria {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiMaquinaria?: any;
+  CCiMaquinaria?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsMaquinaria?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -15,11 +15,11 @@ export class TblGeMaquinaria {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

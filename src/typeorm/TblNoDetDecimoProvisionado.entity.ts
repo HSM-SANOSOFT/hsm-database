@@ -3,11 +3,11 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetDecimoProvisionado')
 export class TblNoDetDecimoProvisionado {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoDecimoProvision?: any;
+  NIdNoDecimoProvision?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -15,9 +15,9 @@ export class TblNoDetDecimoProvisionado {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiSubCentroCosto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtConceptoSistema?: any;
+  NVtConceptoSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtConceptoEdicion?: any;
+  NVtConceptoEdicion?: number;
   @Column('int', { nullable: false })
-  NNuMeses?: any;
+  NNuMeses?: number;
 }

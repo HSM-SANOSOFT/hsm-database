@@ -5,8 +5,8 @@ export class TblNoConfigDistribucionBase {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiConfigDistribucion?: string;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
 
 }

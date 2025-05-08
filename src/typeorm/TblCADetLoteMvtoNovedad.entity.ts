@@ -3,12 +3,12 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCADetLoteMvtoNovedad')
 export class TblCADetLoteMvtoNovedad {
   @PrimaryColumn('int', { nullable: false })
-  NIdCALoteMvto?: any;
+  NIdCALoteMvto?: number;
   @PrimaryColumn('int', { nullable: false })
-  NIdNoNovedad?: any;
+  NIdNoNovedad?: number;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
 
 }

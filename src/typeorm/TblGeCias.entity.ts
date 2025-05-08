@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeCias')
 export class TblGeCias {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsCia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -45,19 +45,19 @@ export class TblGeCias {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCeCia?: string;
   @Column('text', { nullable: false })
-  ImgCia?: any;
+  ImgCia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtDistribucionCCosto?: string;
 }

@@ -3,15 +3,15 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeSucursalRelCiaCI')
 export class TblGeSucursalRelCiaCI {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiCiaCi?: any;
+  CCiCiaCi?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiDivisionCi?: any;
+  CCiDivisionCi?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiSucursalCi?: any;
+  CCiSucursalCi?: string;
 }

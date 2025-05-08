@@ -3,19 +3,19 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeAreaBeneficios')
 export class TblGeAreaBeneficios {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NQnPorcentaje?: any;
+  NQnPorcentaje?: number;
 }

@@ -3,9 +3,9 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCiDetCierreDistribucion')
 export class TblCiDetCierreDistribucion {
   @PrimaryColumn('int', { nullable: false })
-  NIdCiCierreDistribucion?: any;
+  NIdCiCierreDistribucion?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuRegistro?: any;
+  NNuRegistro?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiPlanCta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -21,17 +21,17 @@ export class TblCiDetCierreDistribucion {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiSubProyecto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDebito?: any;
+  NVtDebito?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtCredito?: any;
+  NVtCredito?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxDetalle?: string;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiTipoPres?: string;
 

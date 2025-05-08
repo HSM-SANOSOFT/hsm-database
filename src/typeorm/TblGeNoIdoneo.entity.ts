@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeNoIdoneo')
 export class TblGeNoIdoneo {
   @PrimaryColumn('int', { nullable: false })
-  NIdGeNoIdoneo?: any;
+  NIdGeNoIdoneo?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsApellidos?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -13,9 +13,9 @@ export class TblGeNoIdoneo {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiDocumento?: string;
   @Column('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column('datetime', { nullable: false })
-  DFxBaja?: any;
+  DFxBaja?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiMotivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -27,11 +27,11 @@ export class TblGeNoIdoneo {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

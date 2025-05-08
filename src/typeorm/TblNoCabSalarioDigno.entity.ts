@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabSalarioDigno')
 export class TblNoCabSalarioDigno {
   @Column('int', { nullable: false })
-  NIdNoSalarioDigno?: any;
+  NIdNoSalarioDigno?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -13,19 +13,19 @@ export class TblNoCabSalarioDigno {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoNomina?: string;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column('datetime', { nullable: false })
-  DFxSalarioDigno?: any;
+  DFxSalarioDigno?: Date;
   @Column('int', { nullable: false })
-  NNuAnioCalculo?: any;
+  NNuAnioCalculo?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSalarioDigno?: any;
+  NVtSalarioDigno?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxObservacion?: string;
   @Column('int', { nullable: false })
-  NIdNoNomina?: any;
+  NIdNoNomina?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCeSalarioDigno?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -33,13 +33,13 @@ export class TblNoCabSalarioDigno {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnDiasProvision?: string;
 }

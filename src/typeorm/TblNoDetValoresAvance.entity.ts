@@ -3,13 +3,13 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetValoresAvance')
 export class TblNoDetValoresAvance {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoAvance?: any;
+  NIdNoAvance?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiCargo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -19,15 +19,15 @@ export class TblNoDetValoresAvance {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiSubCentroCosto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldo?: any;
+  NVtSueldo?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoDia?: any;
+  NVtSueldoDia?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoHora?: any;
+  NVtSueldoHora?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotalAvance?: any;
+  NVtTotalAvance?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NvtPagoNomina?: any;
+  NvtPagoNomina?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDiferenciaAvance?: any;
+  NVtDiferenciaAvance?: number;
 }

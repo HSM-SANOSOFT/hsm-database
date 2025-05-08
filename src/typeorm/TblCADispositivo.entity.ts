@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCADispositivo')
 export class TblCADispositivo {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiDispositivo?: any;
+  CCiDispositivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsDispositivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -21,11 +21,11 @@ export class TblCADispositivo {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

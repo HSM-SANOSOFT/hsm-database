@@ -3,9 +3,9 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoRelaTransfMvtoBancario')
 export class TblNoRelaTransfMvtoBancario {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoTransferencia?: any;
+  NIdNoTransferencia?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiDpto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -21,8 +21,8 @@ export class TblNoRelaTransfMvtoBancario {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoMvtoBco?: string;
   @Column('int', { nullable: false })
-  NNuSecuenciaMvtoBco?: any;
+  NNuSecuenciaMvtoBco?: number;
   @Column('int', { nullable: false })
-  NNuAnioMvtoBco?: any;
+  NNuAnioMvtoBco?: number;
 
 }

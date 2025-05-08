@@ -3,21 +3,21 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetProvisionHistorica')
 export class TblNoDetProvisionHistorica {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuMes?: any;
+  NNuMes?: number;
   @Column('int', { nullable: false })
-  NNuDias?: any;
+  NNuDias?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtIngresos?: any;
+  NVtIngresos?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimo4?: any;
+  NVtDecimo4?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimo3?: any;
+  NVtDecimo3?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtVacaciones?: any;
+  NVtVacaciones?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtOrigen?: string;
   @Column({ type: 'char', length: 1, nullable: false })

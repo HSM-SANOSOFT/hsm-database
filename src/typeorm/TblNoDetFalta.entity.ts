@@ -3,17 +3,17 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetFalta')
 export class TblNoDetFalta {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoFalta?: any;
+  NIdNoFalta?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtFalta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiMotivo?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NQnPago?: any;
+  NQnPago?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CSnDescuentoVacacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -25,9 +25,9 @@ export class TblNoDetFalta {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxObservacion?: string;
   @Column('int', { nullable: false })
-  NNuAnioVacacion?: any;
+  NNuAnioVacacion?: number;
   @Column('datetime', { nullable: false })
-  DFxInicioVacacion?: any;
+  DFxInicioVacacion?: Date;
   @Column('datetime', { nullable: false })
-  DFxFinVacacion?: any;
+  DFxFinVacacion?: Date;
 }

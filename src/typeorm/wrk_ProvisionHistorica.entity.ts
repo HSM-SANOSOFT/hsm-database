@@ -13,29 +13,29 @@ export class wrk_ProvisionHistorica {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('int', { nullable: false })
-  NNuMes?: any;
+  NNuMes?: number;
   @Column('int', { nullable: false })
-  NNuDias?: any;
+  NNuDias?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtIngresos?: any;
+  NVtIngresos?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimo3Importa?: any;
+  NVtDecimo3Importa?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimo3Sistema?: any;
+  NVtDecimo3Sistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimo4Importa?: any;
+  NVtDecimo4Importa?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimo4Sistema?: any;
+  NVtDecimo4Sistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtVacacionesImporta?: any;
+  NVtVacacionesImporta?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtVacacionesSistema?: any;
+  NVtVacacionesSistema?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoBasico?: any;
+  NVtSueldoBasico?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtNivelError?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

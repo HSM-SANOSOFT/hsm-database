@@ -3,33 +3,33 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeDetHorasLaboradas')
 export class TblGeDetHorasLaboradas {
   @PrimaryColumn('int', { nullable: false })
-  NIdGeHoras?: any;
+  NIdGeHoras?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldo?: any;
+  NVtSueldo?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoDia?: any;
+  NVtSueldoDia?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoHora?: any;
+  NVtSueldoHora?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHorasLaboradas?: any;
+  NNuHorasLaboradas?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHorasPagoIndividual?: any;
+  NNuHorasPagoIndividual?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHorasPagoNomina?: any;
+  NNuHorasPagoNomina?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuHorasPagoLiquidacion?: any;
+  NNuHorasPagoLiquidacion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuDias?: any;
+  NNuDias?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuDiasIndividual?: any;
+  NNuDiasIndividual?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtHorasPagoNomina?: any;
+  NVtHorasPagoNomina?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCePago?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -39,9 +39,9 @@ export class TblGeDetHorasLaboradas {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxObservacion?: string;
   @Column('int', { nullable: false })
-  NIdNoNomina?: any;
+  NIdNoNomina?: number;
   @Column('int', { nullable: false })
-  NIdNoSecNomina?: any;
+  NIdNoSecNomina?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCeContrato?: string;
 }

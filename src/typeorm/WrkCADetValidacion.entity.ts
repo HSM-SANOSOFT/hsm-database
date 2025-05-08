@@ -3,25 +3,25 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('WrkCADetValidacion')
 export class WrkCADetValidacion {
   @PrimaryColumn({ type: 'varchar' })
-  CCiEstacion?: any;
+  CCiEstacion?: string;
   @PrimaryColumn({ type: 'int' })
-  NNuRegistro?: any;
+  NNuRegistro?: number;
   @Column({ type: 'varchar' })
   CCiCodigo?: string;
   @Column('datetime', { nullable: true })
-  DFxMarcacion?: any;
+  DFxMarcacion?: Date;
   @Column('datetime', { nullable: true })
-  DFxEntrada?: any;
+  DFxEntrada?: Date;
   @Column('datetime', { nullable: true })
-  DFxSalidaReceso?: any;
+  DFxSalidaReceso?: Date;
   @Column('datetime', { nullable: true })
-  DFxEntradaReceso?: any;
+  DFxEntradaReceso?: Date;
   @Column('datetime', { nullable: true })
-  DFxSalida?: any;
+  DFxSalida?: Date;
   @Column('numeric', { precision: 18, scale: 2 })
-  NNuRecargo50?: any;
+  NNuRecargo50?: number;
   @Column('numeric', { precision: 18, scale: 2 })
-  NNuRecargo100?: any;
+  NNuRecargo100?: number;
   @Column({ type: 'varchar' })
   CCtRegistro?: string;
   @Column({ type: 'varchar' })

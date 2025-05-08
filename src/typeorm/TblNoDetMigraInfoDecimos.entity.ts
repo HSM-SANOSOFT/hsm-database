@@ -3,20 +3,20 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetMigraInfoDecimos')
 export class TblNoDetMigraInfoDecimos {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoInfoDecimo?: any;
+  NIdNoInfoDecimo?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnExcluir?: string;
   @Column('int', { nullable: false })
-  NNuDiasSistema?: any;
+  NNuDiasSistema?: number;
   @Column('int', { nullable: false })
-  NNuDiasReal?: any;
+  NNuDiasReal?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtIngresosSistema?: any;
+  NVtIngresosSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtIngresosReal?: any;
+  NVtIngresosReal?: number;
 
 }

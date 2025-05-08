@@ -3,13 +3,13 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCADetImportacion')
 export class TblCADetImportacion {
   @PrimaryColumn('int', { nullable: false })
-  NIdCAImportacion?: any;
+  NIdCAImportacion?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('datetime', { nullable: false })
-  DFxMarcacion?: any;
+  DFxMarcacion?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtMarcacion?: string;
 

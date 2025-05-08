@@ -3,23 +3,23 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblIvDetImplemento')
 export class TblIvDetImplemento {
   @PrimaryColumn('int', { nullable: false })
-  NIdIvImplemento?: any;
+  NIdIvImplemento?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdIvSolicitud?: any;
+  NIdIvSolicitud?: number;
   @Column('int', { nullable: false })
-  NNuSecuenciaSolicitud?: any;
+  NNuSecuenciaSolicitud?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NQnCantidad?: any;
+  NQnCantidad?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtPrecioNomina?: any;
+  NVtPrecioNomina?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtMontoNomina?: any;
+  NVtMontoNomina?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtProcesoNovedad?: string;
   @Column('int', { nullable: false })
-  NidNoPrestamo?: any;
+  NidNoPrestamo?: number;
 }

@@ -3,25 +3,25 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('WrkCAImportaMarcaciones')
 export class WrkCAImportaMarcaciones {
   @PrimaryColumn({ type: 'varchar' })
-  CCiEstacion?: any;
+  CCiEstacion?: string;
   @PrimaryColumn({ type: 'int' })
-  NNuRegistro?: any;
+  NNuRegistro?: number;
   @Column({ type: 'varchar' })
   CCiIdentificacion?: string;
   @Column('datetime', { nullable: true })
-  DFxMarcacion?: any;
+  DFxMarcacion?: Date;
   @Column('datetime', { nullable: true })
-  DFxEntrada?: any;
+  DFxEntrada?: Date;
   @Column('datetime', { nullable: true })
-  DFxSalidaReceso?: any;
+  DFxSalidaReceso?: Date;
   @Column('datetime', { nullable: true })
-  DFxEntradaReceso?: any;
+  DFxEntradaReceso?: Date;
   @Column('datetime', { nullable: true })
-  DFxSalida?: any;
+  DFxSalida?: Date;
   @Column('datetime', { nullable: true })
-  DFxEntrada2?: any;
+  DFxEntrada2?: Date;
   @Column('datetime', { nullable: true })
-  DFxSalida2?: any;
+  DFxSalida2?: Date;
   @Column({ type: 'varchar' })
   CCiError?: string;
   @Column({ type: 'varchar' })

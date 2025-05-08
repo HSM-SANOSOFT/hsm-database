@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoEmpleado')
 export class TblNoEmpleado {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsApellidos?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -15,13 +15,13 @@ export class TblNoEmpleado {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxLibretaMilitar?: string;
   @Column('datetime', { nullable: false })
-  DFxIngreso?: any;
+  DFxIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiNacionalidad?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxLugarNacimiento?: string;
   @Column('datetime', { nullable: false })
-  DFxNacimiento?: any;
+  DFxNacimiento?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtEstadoCivil?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -47,21 +47,21 @@ export class TblNoEmpleado {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxMailPersonal?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuEstatura?: any;
+  NNuEstatura?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNupeso?: any;
+  NNupeso?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuTallaCadera?: any;
+  NNuTallaCadera?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuTallaCintura?: any;
+  NNuTallaCintura?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuTallaCuello?: any;
+  NNuTallaCuello?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuTallaEspalda?: any;
+  NNuTallaEspalda?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuTallaPecho?: any;
+  NNuTallaPecho?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuTallaPie?: any;
+  NNuTallaPie?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxColorOjos?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -81,9 +81,9 @@ export class TblNoEmpleado {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtLicenciaConducir?: string;
   @Column('datetime', { nullable: false })
-  DFxLicenciaConducir?: any;
+  DFxLicenciaConducir?: Date;
   @Column('int', { nullable: false })
-  NIdNoJefeInmediato?: any;
+  NIdNoJefeInmediato?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxNivelEducacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -93,11 +93,11 @@ export class TblNoEmpleado {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxCertificadoSalud?: string;
   @Column('datetime', { nullable: false })
-  DFxCertificadoSalud?: any;
+  DFxCertificadoSalud?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CSnDiscapacitado?: string;
   @Column('int', { nullable: false })
-  NQnDiscapacidad?: any;
+  NQnDiscapacidad?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxConadis?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -121,13 +121,13 @@ export class TblNoEmpleado {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiMaquinaria?: string;
 }

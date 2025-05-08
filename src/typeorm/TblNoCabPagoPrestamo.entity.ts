@@ -3,11 +3,11 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabPagoPrestamo')
 export class TblNoCabPagoPrestamo {
   @PrimaryColumn('int', { nullable: false })
-  NNuPagoPrestamo?: any;
+  NNuPagoPrestamo?: number;
   @PrimaryColumn('int', { nullable: false })
-  NIdNoPrestamo?: any;
+  NIdNoPrestamo?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtMontoCancelar?: any;
+  NVtMontoCancelar?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCePagoPrestamo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -15,11 +15,11 @@ export class TblNoCabPagoPrestamo {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

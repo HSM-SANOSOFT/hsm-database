@@ -15,19 +15,19 @@ export class WRK_TblImpotDetProyectoDias {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiSubCentroCosto?: string;
   @Column('int', { nullable: false })
-  NIdNoJefeInmediato?: any;
+  NIdNoJefeInmediato?: number;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column('int', { nullable: false })
-  NnuSecuencia?: any;
+  NnuSecuencia?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiIdentificacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsNombres?: string;
   @Column('datetime', { nullable: false })
-  DFxRegistro?: any;
+  DFxRegistro?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

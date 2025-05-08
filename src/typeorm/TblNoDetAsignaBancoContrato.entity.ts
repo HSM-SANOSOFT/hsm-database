@@ -3,11 +3,11 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetAsignaBancoContrato')
 export class TblNoDetAsignaBancoContrato {
   @PrimaryColumn('int', { nullable: false })
-  NNuControl?: any;
+  NNuControl?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NidNoContrato?: any;
+  NidNoContrato?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiBancoAnterior?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

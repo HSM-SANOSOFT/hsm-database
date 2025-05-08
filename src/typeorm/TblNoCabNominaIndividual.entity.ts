@@ -3,13 +3,13 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabNominaIndividual')
 export class TblNoCabNominaIndividual {
   @Column('int', { nullable: false })
-  NidNoNominaContrato?: any;
+  NidNoNominaContrato?: number;
   @Column('int', { nullable: false })
-  NidNoNomina?: any;
+  NidNoNomina?: number;
   @Column('int', { nullable: false })
-  NidNoContrato?: any;
+  NidNoContrato?: number;
   @Column('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -19,13 +19,13 @@ export class TblNoCabNominaIndividual {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnNuevoEmpleado?: string;
 }

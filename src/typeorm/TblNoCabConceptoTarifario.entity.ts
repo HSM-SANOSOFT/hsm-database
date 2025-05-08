@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabConceptoTarifario')
 export class TblNoCabConceptoTarifario {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoConceptoTarifario?: any;
+  NIdNoConceptoTarifario?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -13,7 +13,7 @@ export class TblNoCabConceptoTarifario {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoNomina?: string;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCeConceptoTarifario?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -21,15 +21,15 @@ export class TblNoCabConceptoTarifario {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column('int', { nullable: false })
-  NIdNoConceptoDist?: any;
+  NIdNoConceptoDist?: number;
   @Column('int', { nullable: false })
-  NIdNoDesgloseDist?: any;
+  NIdNoDesgloseDist?: number;
 }
