@@ -40,6 +40,7 @@ jobs:
 
       - name: Clean workspace for version bump
         run: |
+          git reset --hard HEAD
           git clean -fd
 
       - name: Bump version & tag
