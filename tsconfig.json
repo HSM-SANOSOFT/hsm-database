@@ -11,14 +11,6 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
-    "paths": {
-      "oracle/*": [
-        "src/oracle/*"
-      ],
-      "typeorm/*": [
-        "src/typeorm/*"
-      ]
-    },
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,

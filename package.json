@@ -7,15 +7,10 @@
       "import": "./dist/index.js",
       "require": "./dist/index.js"
     },
-    "./typeorm": {
-      "import": "./dist/typeorm/index.js",
-      "require": "./dist/typeorm/index.js",
-      "types": "./dist/typeorm/index.d.ts"
-    },
-    "./oracle": {
-      "import": "./dist/oracle/index.js",
-      "require": "./dist/oracle/index.js",
-      "types": "./dist/oracle/index.d.ts"
+    "./*": {
+      "import": "./dist/*.js",
+      "require": "./dist/*.js",
+      "types": "./dist/*.d.ts"
     }
   },
   "scripts": {
@@ -26,7 +21,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "files": [
-    "./dist/*"
+    "dist"
   ],
   "dependencies": {
     "globals": "^16.1.0",
