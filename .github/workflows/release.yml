@@ -49,9 +49,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # esto crea el commit y el tag
-          npm version patch -m "chore(release): %s"
-          git push origin main --follow-tags
+          CURRENT=$(node -e "console.log(require('./package.json').version)")
+          NEXT=$(node -e "let [ma,mi,pa]=require('./package.json').version.split('.').map(Number); pa++; console.log(`${ma}.${mi}.${pa}`)")
+          echo "Tagging release v$NEXT (from $CURRENT)"
+          git tag -a "v$NEXT" -m "chore(release): v$NEXT"
+          git push origin "v$NEXT"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
