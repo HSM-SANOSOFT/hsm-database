@@ -2,21 +2,25 @@
   "compilerOptions": {
     "module": "commonjs",
     "moduleResolution": "node",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
     "target": "ES2023",
-    "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./",
+    "rootDir": "./src",
+    "strict": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "allowSyntheticDefaultImports": true,
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
     "noImplicitAny": false,
     "strictBindCallApply": false,
-    "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
     "typeRoots": [
       "./node_modules/@types"
@@ -25,7 +29,9 @@
       "node"
     ]
   },
-  "include": [
-    "src"
-  ]
+  "exclude": [
+    "node_modules",
+    "dist",
+    "**/*.spec.ts"
+  ],
 }
