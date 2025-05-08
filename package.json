@@ -9,7 +9,7 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
-  "files": ["dist/**/*"],
+  "files": ["dist/oracle"],
   "repository": {
     "type": "git",
     "url": "https://github.com/HSM-SANOSOFT/hsm-database-schema.git"
