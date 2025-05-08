@@ -6,7 +6,7 @@ export class WrkCriterioMYSQL {
   CCiEstacion?: any;
   @PrimaryColumn({ type: 'varchar' })
   CCiTipoParam?: any;
-  @PrimaryColumn('int', { nullable: true })
+  @PrimaryColumn({ type: 'varchar' })
   NNuRegistro?: any;
   @Column({ type: 'varchar' })
   CCiReferencia1?: any;

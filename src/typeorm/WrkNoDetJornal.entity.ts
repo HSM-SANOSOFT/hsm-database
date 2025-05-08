@@ -5,7 +5,7 @@ export class WrkNoDetJornal {
   @PrimaryColumn({ type: 'varchar', length: 20 })
   CCiEstacion!: string;
 
-  @PrimaryColumn('int')
+  @PrimaryColumn({ type: 'int'})
   NNuRegistro!: number;
 
   @Column({ type: 'varchar', length: 13 })
