@@ -3,31 +3,31 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeBanco')
 export class TblGeBanco {
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiBanco?: any;
+  CCiBanco?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsBanco?: any;
+  CDsBanco?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSistemaBanco?: any;
+  CCiSistemaBanco?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiFormatoBanco?: any;
+  CCiFormatoBanco?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoServicio?: any;
+  CCiTipoServicio?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxExtension?: any;
+  CTxExtension?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnSeparaArchivo?: any;
+  CSnSeparaArchivo?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeBanco?: any;
+  CCeBanco?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

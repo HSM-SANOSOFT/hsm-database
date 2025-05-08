@@ -9,9 +9,9 @@ export class TblGeParroquia {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiParroquia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsParroquia?: any;
+  CDsParroquia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiPostal?: any;
+  CCiPostal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeParroquia?: any;
+  CCeParroquia?: string;
 }

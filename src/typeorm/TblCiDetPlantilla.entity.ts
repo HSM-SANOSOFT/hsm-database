@@ -7,17 +7,17 @@ export class TblCiDetPlantilla {
   @PrimaryColumn('int', { nullable: false })
   NNuSecPlantilla?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtOrigenCCosto?: any;
+  CCtOrigenCCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCentroCosto?: any;
+  CCiCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubCentroCosto?: any;
+  CCiSubCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtConcepto?: any;
+  CCtConcepto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiGrupoConcepto?: any;
+  CCiGrupoConcepto?: string;
   @Column('int', { nullable: false })
   NIdNoLabor?: any;
   @Column('int', { nullable: false })
@@ -25,22 +25,22 @@ export class TblCiDetPlantilla {
   @Column('int', { nullable: false })
   NIdNoDesglose?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtDebitoCredito?: any;
+  CCtDebitoCredito?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiPlanCta?: any;
+  CCiPlanCta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCuenta?: any;
+  CCiCuenta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoAuxiliar?: any;
+  CCiTipoAuxiliar?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiAuxiliar?: any;
+  CCiAuxiliar?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDpto?: any;
+  CCiDpto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiProyecto?: any;
+  CCiProyecto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubProyecto?: any;
+  CCiSubProyecto?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiTipoPres?: any;
+  CCiTipoPres?: string;
 
 }

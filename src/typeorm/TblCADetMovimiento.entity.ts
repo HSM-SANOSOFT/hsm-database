@@ -21,27 +21,27 @@ export class TblCADetMovimiento {
   @Column('datetime', { nullable: false })
   DFxRecuperacion?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtRegistro?: any;
+  CCtRegistro?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDispositivo?: any;
+  CCiDispositivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUbicacion?: any;
+  CCiUbicacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtError?: any;
+  CCtError?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnEditado?: any;
+  CSnEditado?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiMotivo?: any;
+  CCiMotivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacionAudt?: any;
+  CTxObservacionAudt?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnDiaRecuperar?: any;
+  CSnDiaRecuperar?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnDiaFavor?: any;
+  CSnDiaFavor?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnHorasExtra?: any;
+  CSnHorasExtra?: string;
   @Column('datetime', { nullable: false })
   DFxEntrada2?: any;
   @Column('datetime', { nullable: false })
@@ -61,11 +61,11 @@ export class TblCADetMovimiento {
   @Column('datetime', { nullable: false })
   DFxMovimientoAudt?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsError?: any;
+  CDsError?: string;
   @Column('datetime', { nullable: false })
   DFxHorasPermiso?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnGenerarAtraso?: any;
+  CSnGenerarAtraso?: string;
   @Column('datetime', { nullable: false })
   DFxHorasAtraso?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })

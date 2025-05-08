@@ -7,7 +7,7 @@ export class WrkCAImportaMarcaciones {
   @PrimaryColumn({ type: 'int' })
   NNuRegistro?: any;
   @Column({ type: 'varchar' })
-  CCiIdentificacion?: any;
+  CCiIdentificacion?: string;
   @Column('datetime', { nullable: true })
   DFxMarcacion?: any;
   @Column('datetime', { nullable: true })
@@ -23,9 +23,9 @@ export class WrkCAImportaMarcaciones {
   @Column('datetime', { nullable: true })
   DFxSalida2?: any;
   @Column({ type: 'varchar' })
-  CCiError?: any;
+  CCiError?: string;
   @Column({ type: 'varchar' })
-  CDsError?: any;
+  CDsError?: string;
 
 
 }

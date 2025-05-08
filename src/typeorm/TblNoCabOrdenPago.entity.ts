@@ -5,47 +5,47 @@ export class TblNoCabOrdenPago {
   @PrimaryColumn('int', { nullable: false })
   NIdNoOrdenPago?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column('int', { nullable: false })
   NNuAnio?: any;
   @Column('int', { nullable: false })
   NNuPeriodo?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtProceso?: any;
+  CCtProceso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiIndividual?: any;
+  CCiIndividual?: string;
   @Column('datetime', { nullable: false })
   DFxOrdenPago?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtOrdenPago?: any;
+  CCtOrdenPago?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnOrdenAgrupada?: any;
+  CSnOrdenAgrupada?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsBeneficiario?: any;
+  CDsBeneficiario?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtOrdenPago?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeOrdenPago?: any;
+  CCeOrdenPago?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
 }

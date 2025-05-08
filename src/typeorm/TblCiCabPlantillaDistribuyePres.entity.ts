@@ -5,33 +5,33 @@ export class TblCiCabPlantillaDistribuyePres {
   @Column('int', { nullable: false })
   NIdCiPlantillaDistribuye?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column('int', { nullable: false })
   NNuControl?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column('int', { nullable: false })
   NIdPrPresupuesto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoComprobante?: any;
+  CCiTipoComprobante?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDpto?: any;
+  CCiDpto?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCePlantillaDistribuye?: any;
+  CCePlantillaDistribuye?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFxIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFxModifica?: any;
 }

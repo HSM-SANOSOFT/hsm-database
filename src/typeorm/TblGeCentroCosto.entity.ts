@@ -5,21 +5,21 @@ export class TblGeCentroCosto {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiCentroCosto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsCentroCosto?: any;
+  CDsCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeCentroCosto?: any;
+  CCeCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnRegistroProyDia?: any;
+  CSnRegistroProyDia?: string;
 }

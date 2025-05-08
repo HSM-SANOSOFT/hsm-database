@@ -9,9 +9,9 @@ export class TblNoDetAgrupacionBatchIESS {
   @Column('int', { nullable: false })
   NIdNoContrato?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiMotivo?: any;
+  CCiMotivo?: string;
   @Column('datetime', { nullable: false })
   DFxFalta?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
@@ -29,6 +29,6 @@ export class TblNoDetAgrupacionBatchIESS {
   @Column('int', { nullable: false })
   NNuDias?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxIESS?: any;
+  CTxIESS?: string;
 
 }

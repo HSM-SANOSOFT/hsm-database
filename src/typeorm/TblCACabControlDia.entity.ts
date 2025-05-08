@@ -3,19 +3,26 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCACabControlDia')
 export class TblCACabControlDia {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato!: number;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso!: string;
+
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso!: Date;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica!: string;
+
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica!: Date;
 }

@@ -9,8 +9,8 @@ export class TblNoDetAsignaBancoContrato {
   @Column('int', { nullable: false })
   NidNoContrato?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiBancoAnterior?: any;
+  CCiBancoAnterior?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiBancoActual?: any;
+  CCiBancoActual?: string;
 
 }

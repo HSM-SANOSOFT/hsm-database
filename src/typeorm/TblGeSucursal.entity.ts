@@ -9,37 +9,37 @@ export class TblGeSucursal {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
   CCiSucursal?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsSucursal?: any;
+  CDsSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxTelefono?: any;
+  CTxTelefono?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxFax?: any;
+  CTxFax?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxDireccion?: any;
+  CTxDireccion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxEmail?: any;
+  CTxEmail?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxIESS?: any;
+  CTxIESS?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnMatriz?: any;
+  CSnMatriz?: string;
   @Column('text', { nullable: false })
   ImgSucursal?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeSucursal?: any;
+  CCeSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsReferencia?: any;
+  CDsReferencia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnDecimoTipoNomina?: any;
+  CSnDecimoTipoNomina?: string;
 }

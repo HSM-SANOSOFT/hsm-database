@@ -7,10 +7,10 @@ export class TblNoOrigenConcepto {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiDetOrigen?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsOrigen?: any;
+  CDsOrigen?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsDetOrigen?: any;
+  CDsDetOrigen?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnUnico?: any;
+  CSnUnico?: string;
 
 }

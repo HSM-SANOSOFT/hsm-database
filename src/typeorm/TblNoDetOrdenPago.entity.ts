@@ -11,54 +11,54 @@ export class TblNoDetOrdenPago {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtNeto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsBeneficiario?: any;
+  CDsBeneficiario?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiPlanCta?: any;
+  CCiPlanCta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCuenta?: any;
+  CCiCuenta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoAuxiliar?: any;
+  CCiTipoAuxiliar?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiAuxiliar?: any;
+  CCiAuxiliar?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDpto?: any;
+  CCiDpto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiProyecto?: any;
+  CCiProyecto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubProyecto?: any;
+  CCiSubProyecto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeDetOrdenPago?: any;
+  CCeDetOrdenPago?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCiaOrden?: any;
+  CCiCiaOrden?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivisionOrden?: any;
+  CCiDivisionOrden?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursalOrden?: any;
+  CCiSucursalOrden?: string;
   @Column('int', { nullable: false })
   NNuControlOrden?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCiaPago?: any;
+  CCiCiaPago?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivisionPago?: any;
+  CCiDivisionPago?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursalPago?: any;
+  CCiSucursalPago?: string;
   @Column('int', { nullable: false })
   NNuControlPago?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiBanco?: any;
+  CCiBanco?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxCuenta?: any;
+  CTxCuenta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxNumCheque?: any;
+  CTxNumCheque?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeReferencia?: any;
+  CCeReferencia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCentroCosto?: any;
+  CCiCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubCentroCosto?: any;
+  CCiSubCentroCosto?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnProcesado?: any;
+  CSnProcesado?: string;
 
 }

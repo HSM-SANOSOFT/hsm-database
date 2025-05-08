@@ -3,31 +3,44 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCACabConfigMarcaciones')
 export class TblCACabConfigMarcaciones {
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiConfigMarcacion?: any;
+  CCiConfigMarcacion!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtTurno?: any;
+  CCtTurno!: string;
+
   @Column('datetime', { nullable: false })
-  DFxMaxEntradaDiurna?: any;
+  DFxMaxEntradaDiurna!: Date;
+
   @Column('datetime', { nullable: false })
-  DFxMinSalidaDiurna?: any;
+  DFxMinSalidaDiurna!: Date;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnCalculaHSuplAntesEntrada?: any;
+  CSnCalculaHSuplAntesEntrada!: string;
+
   @Column('datetime', { nullable: false })
-  DFxMaxSalidaDiurna?: any;
+  DFxMaxSalidaDiurna!: Date;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnSgteDiaMaxSalida?: any;
+  CSnSgteDiaMaxSalida!: string;
+
   @Column('datetime', { nullable: false })
-  DFxMaxEntradaNocturna?: any;
+  DFxMaxEntradaNocturna!: Date;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnCalculaHSuplSalidaNocturna?: any;
+  CSnCalculaHSuplSalidaNocturna!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnCalculaHExtFinSemanaNocturna?: any;
+  CSnCalculaHExtFinSemanaNocturna!: string;
+  
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NQnHExtrasFinSemana?: any;
+  NQnHExtrasFinSemana!: number;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica!: string;
+  
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica!: string;
+  
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica!: Date;
 }

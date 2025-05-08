@@ -3,27 +3,27 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeCabSectorial')
 export class TblGeCabSectorial {
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSectorial?: any;
+  CCiSectorial?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsSectorial?: any;
+  CDsSectorial?: string;
   @Column('datetime', { nullable: false })
   DFxSectorial?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxOficio?: any;
+  CTxOficio?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsObservacion?: any;
+  CDsObservacion?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeSectorial?: any;
+  CCeSectorial?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

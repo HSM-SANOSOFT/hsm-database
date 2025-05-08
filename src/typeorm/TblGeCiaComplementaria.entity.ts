@@ -5,37 +5,37 @@ export class TblGeCiaComplementaria {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiCiaComplementaria?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsCiaComplementaria?: any;
+  CDsCiaComplementaria?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiRucComplementaria?: any;
+  CCiRucComplementaria?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsContacto?: any;
+  CDsContacto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxTelefono?: any;
+  CTxTelefono?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxFax?: any;
+  CTxFax?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxEmail?: any;
+  CTxEmail?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiProvincia?: any;
+  CCiProvincia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCanton?: any;
+  CCiCanton?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiParroquia?: any;
+  CCiParroquia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxDireccion?: any;
+  CTxDireccion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeCiaComplementaria?: any;
+  CCeCiaComplementaria?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

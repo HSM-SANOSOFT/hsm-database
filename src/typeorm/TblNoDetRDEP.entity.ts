@@ -9,17 +9,17 @@ export class TblNoDetRDEP {
   @Column('int', { nullable: false })
   NIdNoEmpleado?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiProvincia?: any;
+  CCiProvincia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCanton?: any;
+  CCiCanton?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiParroquia?: any;
+  CCiParroquia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxDireccion?: any;
+  CTxDireccion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxNumVivienda?: any;
+  CTxNumVivienda?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxTelefono?: any;
+  CTxTelefono?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuMeses?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
@@ -125,23 +125,23 @@ export class TblNoDetRDEP {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuRetencionesSistema?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnExcluirEmpleado?: any;
+  CSnExcluirEmpleado?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxEstablecimiento?: any;
+  CTxEstablecimiento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxResidenciaTrab?: any;
+  CTxResidenciaTrab?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxPaisResidencia?: any;
+  CTxPaisResidencia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxAplicaConvenio?: any;
+  CTxAplicaConvenio?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtTipoTrabDiscap?: any;
+  CCtTipoTrabDiscap?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NQnpPorcentajeDiscap?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtDiscapacidad?: any;
+  CCtDiscapacidad?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  NidNoDiscapacidad?: any;
+  NidNoDiscapacidad?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtBonificacion?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
@@ -151,7 +151,7 @@ export class TblNoDetRDEP {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtAporteIESSVacacionesSistema?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeContrato?: any;
+  CCeContrato?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtVacaciones?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
@@ -165,6 +165,6 @@ export class TblNoDetRDEP {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtTransporteSistema?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnGalapagos?: any;
+  CSnGalapagos?: string;
 
 }

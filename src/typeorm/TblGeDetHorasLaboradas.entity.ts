@@ -31,17 +31,17 @@ export class TblGeDetHorasLaboradas {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtHorasPagoNomina?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCePago?: any;
+  CCePago?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCePagoIndividual?: any;
+  CCePagoIndividual?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiMotivo?: any;
+  CCiMotivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column('int', { nullable: false })
   NIdNoNomina?: any;
   @Column('int', { nullable: false })
   NIdNoSecNomina?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeContrato?: any;
+  CCeContrato?: string;
 }

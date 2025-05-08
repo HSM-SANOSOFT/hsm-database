@@ -9,5 +9,5 @@ export class TblGeDetSectorialMasivo {
   @PrimaryColumn('int', { nullable: false })
   NidNoContrato?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCodigoIESS?: any;
+  CCiCodigoIESS?: string;
 }

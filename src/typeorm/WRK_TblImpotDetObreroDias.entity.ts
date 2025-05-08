@@ -3,15 +3,15 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('WRK_TblImpotDetObreroDias')
 export class WRK_TblImpotDetObreroDias {
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column('int', { nullable: false })
   NIdNoJefeInmediato?: any;
   @Column('int', { nullable: false })
@@ -21,9 +21,9 @@ export class WRK_TblImpotDetObreroDias {
   @Column('int', { nullable: false })
   NnuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  Identificacion?: any;
+  Identificacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  Nombres?: any;
+  Nombres?: string;
   @Column('datetime', { nullable: false })
   DFxRegistro?: any;
   @Column('int', { nullable: false })
@@ -31,5 +31,5 @@ export class WRK_TblImpotDetObreroDias {
   @Column('int', { nullable: false })
   NnuMinutos?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacion?: any;
+  CDsEstacion?: string;
 }

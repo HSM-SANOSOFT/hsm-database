@@ -1,149 +1,220 @@
-import { Entity, Column, PrimaryColumn } from 'typeorm';
+import { Entity, Column } from 'typeorm';
 
 @Entity('TblCACabTurno')
 export class TblCACabTurno {
   @Column('int', { nullable: false })
-  NIdCATurno?: any;
+  NIdCATurno!: number;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTurno?: any;
+  CCiTurno!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsTurno?: any;
+  CDsTurno!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtTurno?: any;
+  CCtTurno!: string;
+
   @Column('datetime', { nullable: false })
-  DFxEntrada?: any;
+  DFxEntrada!: Date;
+
   @Column('datetime', { nullable: false })
-  DFxSalida?: any;
+  DFxSalida!: Date;
+
   @Column('datetime', { nullable: false })
-  DFxReceso?: any;
+  DFxReceso!: Date;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnCalculaExtras?: any;
+  CSnCalculaExtras!: string;
+
   @Column('datetime', { nullable: false })
-  DFxHolguraExtra?: any;
+  DFxHolguraExtra!: Date;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnCalculaAtraso?: any;
+  CSnCalculaAtraso!: string;
+
   @Column('datetime', { nullable: false })
-  DFxHolguraAtraso?: any;
+  DFxHolguraAtraso!: Date;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnRecuperacion?: any;
+  CSnRecuperacion!: string;
+
   @Column('datetime', { nullable: false })
-  DFxRecuperacion?: any;
+  DFxRecuperacion!: Date;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnControlReceso?: any;
+  CSnControlReceso!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeTurno?: any;
+  CCeTurno!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso!: string;
+
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso!: Date;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica!: string;
+
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica!: Date;
+
   @Column('int', { nullable: false })
-  NIdNoConceptoHoraExtra?: any;
+  NIdNoConceptoHoraExtra!: number;
+
   @Column('int', { nullable: false })
-  NIdNoDesgloseHoraExtra?: any;
+  NIdNoDesgloseHoraExtra!: number;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnHoraExtraAdicional?: any;
+  CSnHoraExtraAdicional!: string;
+
   @Column('datetime', { nullable: false })
-  DFxExtraAdicionalDesde?: any;
+  DFxExtraAdicionalDesde!: Date;
+
   @Column('datetime', { nullable: false })
-  DFxExtraAdicionalHasta?: any;
+  DFxExtraAdicionalHasta!: Date;
+
   @Column('int', { nullable: false })
-  NIdNoConceptoExtraAdicional?: any;
+  NIdNoConceptoExtraAdicional!: number;
+
   @Column('int', { nullable: false })
-  NIdNoDesgloseExtraAdicional?: any;
+  NIdNoDesgloseExtraAdicional!: number;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnHoraExtraNocturno?: any;
+  CSnHoraExtraNocturno!: string;
+
   @Column('datetime', { nullable: false })
-  DFxExtraNocturnoDesde?: any;
+  DFxExtraNocturnoDesde!: Date;
+
   @Column('datetime', { nullable: false })
-  DFxExtraNocturnoHasta?: any;
+  DFxExtraNocturnoHasta!: Date;
+
   @Column('int', { nullable: false })
-  NIdNoConceptoExtraNocturno?: any;
+  NIdNoConceptoExtraNocturno!: number;
+
   @Column('int', { nullable: false })
-  NIdNoDesgloseExtraNocturno?: any;
+  NIdNoDesgloseExtraNocturno!: number;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtMarcacion?: any;
+  CCtMarcacion!: string;
+
   @Column('datetime', { nullable: false })
-  DFxEntrada2?: any;
+  DFxEntrada2!: Date;
+
   @Column('datetime', { nullable: false })
-  DFxSalida2?: any;
+  DFxSalida2!: Date;
+
   @Column('datetime', { nullable: false })
-  DFxReceso2?: any;
+  DFxReceso2!: Date;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnCalculaExtras2?: any;
+  CSnCalculaExtras2!: string;
+
   @Column('datetime', { nullable: false })
-  DFxHolguraExtra2?: any;
+  DFxHolguraExtra2!: Date;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnCalculaAtraso2?: any;
+  CSnCalculaAtraso2!: string;
+
   @Column('datetime', { nullable: false })
-  DFxHolguraAtraso2?: any;
+  DFxHolguraAtraso2!: Date;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnRecuperacion2?: any;
+  CSnRecuperacion2!: string;
+
   @Column('datetime', { nullable: false })
-  DFxRecuperacion2?: any;
+  DFxRecuperacion2!: Date;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnControlReceso2?: any;
+  CSnControlReceso2!: string;
+
   @Column('int', { nullable: false })
-  NIdNoConceptoHoraExtra2?: any;
+  NIdNoConceptoHoraExtra2!: number;
+
   @Column('int', { nullable: false })
-  NIdNoDesgloseHoraExtra2?: any;
+  NIdNoDesgloseHoraExtra2!: number;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnHoraExtraAdicional2?: any;
+  CSnHoraExtraAdicional2!: string;
+
   @Column('datetime', { nullable: false })
-  DFxExtraAdicionalDesde2?: any;
+  DFxExtraAdicionalDesde2!: Date;
+
   @Column('datetime', { nullable: false })
-  DFxExtraAdicionalHasta2?: any;
+  DFxExtraAdicionalHasta2!: Date;
+
   @Column('int', { nullable: false })
-  NIdNoConceptoExtraAdicional2?: any;
+  NIdNoConceptoExtraAdicional2!: number;
+
   @Column('int', { nullable: false })
-  NIdNoDesgloseExtraAdicional2?: any;
+  NIdNoDesgloseExtraAdicional2!: number;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnHoraExtraNocturno2?: any;
+  CSnHoraExtraNocturno2!: string;
+
   @Column('datetime', { nullable: false })
-  DFxExtraNocturnoDesde2?: any;
+  DFxExtraNocturnoDesde2!: Date;
+
   @Column('datetime', { nullable: false })
-  DFxExtraNocturnoHasta2?: any;
+  DFxExtraNocturnoHasta2!: Date;
+
   @Column('int', { nullable: false })
-  NIdNoConceptoExtraNocturno2?: any;
+  NIdNoConceptoExtraNocturno2!: number;
+
   @Column('int', { nullable: false })
-  NIdNoDesgloseExtraNocturno2?: any;
+  NIdNoDesgloseExtraNocturno2!: number;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnEntreDosDias1?: any;
+  CSnEntreDosDias1!: string;
+
   @Column('datetime', { nullable: false })
-  DFxHolguraExtraHasta1?: any;
+  DFxHolguraExtraHasta1!: Date;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnExtrasEntreDosDias1?: any;
+  CSnExtrasEntreDosDias1!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnExtraNoctEntreDosDias1?: any;
+  CSnExtraNoctEntreDosDias1!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnEntreDosDias2?: any;
+  CSnEntreDosDias2!: string;
+
   @Column('datetime', { nullable: false })
-  DFxHolguraExtraHasta2?: any;
+  DFxHolguraExtraHasta2!: Date;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnExtrasEntreDosDias2?: any;
+  CSnExtrasEntreDosDias2!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnExtraNoctEntreDosDias2?: any;
+  CSnExtraNoctEntreDosDias2!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnExtraAntesEntrada1?: any;
+  CSnExtraAntesEntrada1!: string;
+
   @Column('datetime', { nullable: false })
-  DFxExtraAntesEntrada1?: any;
+  DFxExtraAntesEntrada1!: Date;
+
   @Column('int', { nullable: false })
-  NIdNoConceptoAntesEntrada1?: any;
+  NIdNoConceptoAntesEntrada1!: number;
+
   @Column('int', { nullable: false })
-  NIdNoDesgloseAntesEntrada1?: any;
+  NIdNoDesgloseAntesEntrada1!: number;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnExtraAntesEntrada2?: any;
+  CSnExtraAntesEntrada2!: string;
+
   @Column('datetime', { nullable: false })
-  DFxExtraAntesEntrada2?: any;
+  DFxExtraAntesEntrada2!: Date;
+
   @Column('int', { nullable: false })
-  NIdNoConceptoAntesEntrada2?: any;
+  NIdNoConceptoAntesEntrada2!: number;
+
   @Column('int', { nullable: false })
-  NIdNoDesgloseAntesEntrada2?: any;
+  NIdNoDesgloseAntesEntrada2!: number;
 }

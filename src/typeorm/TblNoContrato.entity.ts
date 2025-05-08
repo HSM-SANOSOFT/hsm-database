@@ -5,81 +5,81 @@ export class TblNoContrato {
   @PrimaryColumn('int', { nullable: false })
   NIdNoContrato?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column('int', { nullable: false })
   NIdNoEmpleado?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoContrato?: any;
+  CCiTipoContrato?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCargo?: any;
+  CCiCargo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCodigoIESS?: any;
+  CCiCodigoIESS?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCodigoMRL?: any;
+  CCiCodigoMRL?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtFormaPago?: any;
+  CCtFormaPago?: string;
   @Column('datetime', { nullable: false })
   DFxVigencia?: any;
   @Column('datetime', { nullable: false })
   DFxSalida?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiBanco?: any;
+  CCiBanco?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtCuenta?: any;
+  CCtCuenta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxCuenta?: any;
+  CTxCuenta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiBancoDebito?: any;
+  CCiBancoDebito?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnAfeptaDistribucionCCosto?: any;
+  CSnAfeptaDistribucionCCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCiaComplementaria?: any;
+  CCiCiaComplementaria?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtModoCalculoHoras?: any;
+  CCtModoCalculoHoras?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnPreliquidado?: any;
+  CSnPreliquidado?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeContrato?: any;
+  CCeContrato?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column('int', { nullable: false })
   NIdNoSector?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnImptoRentaAsumido?: any;
+  CSnImptoRentaAsumido?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnHorasExtraMaxima?: any;
+  CSnHorasExtraMaxima?: string;
   @Column('int', { nullable: false })
   NQnHorasExtra?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiProveedor?: any;
+  CCiProveedor?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnIncentivo?: any;
+  CSnIncentivo?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnCalculaAvance?: any;
+  CSnCalculaAvance?: string;
   @Column('datetime', { nullable: false })
   DFxHistorico?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiVendedor?: any;
+  CCiVendedor?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtControlVacacion?: any;
+  CCtControlVacacion?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnMostrarNominaPreLiquidado?: any;
+  CSnMostrarNominaPreLiquidado?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnCalcularRubrosLiq?: any;
+  CSnCalcularRubrosLiq?: string;
 }

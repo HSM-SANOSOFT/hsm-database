@@ -11,7 +11,7 @@ export class TblNoDetLaborCuadrilla {
   @Column('int', { nullable: false })
   NIdNoDesglose?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtOrigen?: any;
+  CCtOrigen?: string;
   @Column('int', { nullable: false })
   NIdGeOrigen?: any;
   @Column('int', { nullable: false })
@@ -19,11 +19,11 @@ export class TblNoDetLaborCuadrilla {
   @Column('datetime', { nullable: false })
   DFxHoraLabor?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtHora?: any;
+  CCtHora?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NQnPorcentaje?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUnidadMedida?: any;
+  CCiUnidadMedida?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtTarifa?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })

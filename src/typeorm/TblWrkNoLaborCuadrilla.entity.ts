@@ -7,9 +7,9 @@ export class TblWrkNoLaborCuadrilla {
   @PrimaryColumn('int', { nullable: false })
   NNuRegistro?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiLabor?: any;
+  CCiLabor?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTarea?: any;
+  CCiTarea?: string;
   @Column('int', { nullable: false })
   NNuBoleta?: any;
   @Column('datetime', { nullable: false })
@@ -19,15 +19,15 @@ export class TblWrkNoLaborCuadrilla {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuPorcentaje?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtHora?: any;
+  CCtHora?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDocumento?: any;
+  CCiDocumento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtDetalle?: any;
+  CCtDetalle?: string;
   @Column('int', { nullable: false })
   NNuCuadrilla?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiError?: any;
+  CCiError?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsError?: any;
+  CDsError?: string;
 }

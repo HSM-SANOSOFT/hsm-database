@@ -7,12 +7,12 @@ export class TblNoDetContratoCuentaBco {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtCuenta?: any;
+  CCtCuenta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiBanco?: any;
+  CCiBanco?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxCuenta?: any;
+  CTxCuenta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeCuenta?: any;
+  CCeCuenta?: string;
 
 }

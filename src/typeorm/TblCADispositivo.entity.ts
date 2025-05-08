@@ -5,27 +5,27 @@ export class TblCADispositivo {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiDispositivo?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsDispositivo?: any;
+  CDsDispositivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiAlterno?: any;
+  CCiAlterno?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUbicacion?: any;
+  CCiUbicacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtImportacion?: any;
+  CCtImportacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxRefImportacion?: any;
+  CTxRefImportacion?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeDispositivo?: any;
+  CCeDispositivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

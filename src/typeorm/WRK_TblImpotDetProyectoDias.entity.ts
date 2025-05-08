@@ -3,17 +3,17 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('WRK_TblImpotDetProyectoDias')
 export class WRK_TblImpotDetProyectoDias {
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubCentroCosto?: any;
+  CCiSubCentroCosto?: string;
   @Column('int', { nullable: false })
   NIdNoJefeInmediato?: any;
   @Column('int', { nullable: false })
@@ -23,13 +23,13 @@ export class WRK_TblImpotDetProyectoDias {
   @Column('int', { nullable: false })
   NnuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiIdentificacion?: any;
+  CCiIdentificacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsNombres?: any;
+  CDsNombres?: string;
   @Column('datetime', { nullable: false })
   DFxRegistro?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCentroCosto?: any;
+  CCiCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacion?: any;
+  CDsEstacion?: string;
 }

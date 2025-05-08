@@ -15,12 +15,12 @@ export class TblNoDetLiquidacionHaberesSistema {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtConcepto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtEgresoIngreso?: any;
+  CCtEgresoIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxDetObservacionAux?: any;
+  CTxDetObservacionAux?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiOrigen?: any;
+  CCiOrigen?: string;
 
 }

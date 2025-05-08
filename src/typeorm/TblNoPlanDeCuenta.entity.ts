@@ -5,11 +5,11 @@ export class TblNoPlanDeCuenta {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
   CCiPlanCta?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsPlanCuenta?: any;
+  CDsPlanCuenta?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuNivel1?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxSeparador?: any;
+  CTxSeparador?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuNivel2?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
@@ -27,17 +27,17 @@ export class TblNoPlanDeCuenta {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuNivel9?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCePlanCtas?: any;
+  CCePlanCtas?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

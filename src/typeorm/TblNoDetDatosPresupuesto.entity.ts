@@ -11,15 +11,15 @@ export class TblNoDetDatosPresupuesto {
   @Column('int', { nullable: false })
   NNuPresupuesto?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiTipoInsumo?: any;
+  CCiTipoInsumo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiInsumo?: any;
+  CCiInsumo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDpto?: any;
+  CCiDpto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiProyecto?: any;
+  CCiProyecto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubProyecto?: any;
+  CCiSubProyecto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NQnPorcentaje?: any;
 

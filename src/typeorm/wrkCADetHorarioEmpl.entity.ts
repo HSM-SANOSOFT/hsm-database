@@ -17,7 +17,7 @@ export class wrkCADetHorarioEmpl {
   @Column('int', { nullable: true })
   NIdNoContrato?: any;
   @Column({ type: 'char' })
-  CSnAutoMarcacion?: any;
+  CSnAutoMarcacion?: string;
   @Column('int', { nullable: true })
   NIdCATurno?: any;
   @Column('datetime', { nullable: true })

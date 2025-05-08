@@ -11,5 +11,5 @@ export class TblGeDetTablaVirtualDatos {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsValorDato?: any;
+  CDsValorDato?: string;
 }

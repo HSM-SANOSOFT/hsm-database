@@ -3,29 +3,29 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeCabParametro')
 export class TblGeCabParametro {
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiParametro?: any;
+  CCiParametro?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsParametro?: any;
+  CDsParametro?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxTexto?: any;
+  CTxTexto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuValor?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxReferencia?: any;
+  CTxReferencia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnDetalle?: any;
+  CSnDetalle?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsValoresPosibles?: any;
+  CDsValoresPosibles?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

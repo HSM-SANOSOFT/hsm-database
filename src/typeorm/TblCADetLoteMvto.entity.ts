@@ -11,35 +11,35 @@ export class TblCADetLoteMvto {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuHorasLabor?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsHorasLabor?: any;
+  CDsHorasLabor?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuHorasPago?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsHorasPago?: any;
+  CDsHorasPago?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuHorasRecargo25?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsHorasRecargo25?: any;
+  CDsHorasRecargo25?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuHorasRecargo50?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsHorasRecargo50?: any;
+  CDsHorasRecargo50?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuHorasRecargo100?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsHorasRecargo100?: any;
+  CDsHorasRecargo100?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuHorasAtraso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsHorasAtraso?: any;
+  CDsHorasAtraso?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuDiasFalta?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCentroCosto?: any;
+  CCiCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubCentroCosto?: any;
+  CCiSubCentroCosto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuHENormal?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })

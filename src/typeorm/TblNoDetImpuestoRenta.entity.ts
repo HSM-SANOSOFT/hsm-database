@@ -59,7 +59,7 @@ export class TblNoDetImpuestoRenta {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtImptoRenta?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnPrimerRegistro?: any;
+  CSnPrimerRegistro?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtTotalBonificacionOtroEmpl?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })

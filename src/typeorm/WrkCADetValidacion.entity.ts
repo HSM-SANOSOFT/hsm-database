@@ -7,7 +7,7 @@ export class WrkCADetValidacion {
   @PrimaryColumn({ type: 'int' })
   NNuRegistro?: any;
   @Column({ type: 'varchar' })
-  CCiCodigo?: any;
+  CCiCodigo?: string;
   @Column('datetime', { nullable: true })
   DFxMarcacion?: any;
   @Column('datetime', { nullable: true })
@@ -23,8 +23,8 @@ export class WrkCADetValidacion {
   @Column('numeric', { precision: 18, scale: 2 })
   NNuRecargo100?: any;
   @Column({ type: 'varchar' })
-  CCtRegistro?: any;
+  CCtRegistro?: string;
   @Column({ type: 'varchar' })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
 
 }

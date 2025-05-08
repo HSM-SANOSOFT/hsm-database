@@ -5,21 +5,21 @@ export class TblGeProvincia {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiProvincia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsProvincia?: any;
+  CDsProvincia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiRegion?: any;
+  CCiRegion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeProvincia?: any;
+  CCeProvincia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

@@ -5,13 +5,13 @@ export class TblNoCabUtilidad {
   @Column('int', { nullable: false })
   NIdNoUtilidad?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column('int', { nullable: false })
   NNuAnio?: any;
   @Column('int', { nullable: false })
@@ -21,25 +21,25 @@ export class TblNoCabUtilidad {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtUtilidad?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column('int', { nullable: false })
   NIdNoNomina?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeUtilidad?: any;
+  CCeUtilidad?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnCalculoImportacion?: any;
+  CSnCalculoImportacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtFormaPago?: any;
+  CCtFormaPago?: string;
 }

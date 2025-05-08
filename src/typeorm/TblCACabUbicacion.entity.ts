@@ -1,23 +1,31 @@
-import { Entity, Column, PrimaryColumn } from 'typeorm';
+import { Entity, Column } from 'typeorm';
 
 @Entity('TblCACabUbicacion')
 export class TblCACabUbicacion {
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUbicacion?: any;
+  CCiUbicacion!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsUbicacion?: any;
+  CDsUbicacion!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeUbicacion?: any;
+  CCeUbicacion!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso!: string;
+
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso!: Date;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica!: string;
+
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica!: Date;
 }

@@ -7,15 +7,15 @@ export class TblNoDetConcepto {
   @PrimaryColumn('int', { nullable: false })
   NIdNoDesglose?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDetConcepto?: any;
+  CCiDetConcepto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsDetConcepto?: any;
+  CDsDetConcepto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUnidadMedida?: any;
+  CCiUnidadMedida?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtConcepto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeDetConcepto?: any;
+  CCeDetConcepto?: string;
   @Column('int', { nullable: false })
   NNuPrioridadDesglose?: any;
 

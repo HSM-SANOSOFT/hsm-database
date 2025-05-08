@@ -5,47 +5,47 @@ export class TblNoCabRDEP {
   @PrimaryColumn('int', { nullable: false })
   NIdNoRDEP?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column('int', { nullable: false })
   NNuAnio?: any;
   @Column('datetime', { nullable: false })
   DFxRDEP?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxRUCContador?: any;
+  CTxRUCContador?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxRazonSocial?: any;
+  CTxRazonSocial?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxDireccionCia?: any;
+  CTxDireccionCia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxTelefonoCia?: any;
+  CTxTelefonoCia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeRDEP?: any;
+  CCeRDEP?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtTraerDatos?: any;
+  CCtTraerDatos?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnDC13Provision?: any;
+  CSnDC13Provision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnDC14Provision?: any;
+  CSnDC14Provision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnVacacionProvision?: any;
+  CSnVacacionProvision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnMostrarLiquidados?: any;
+  CSnMostrarLiquidados?: string;
 }

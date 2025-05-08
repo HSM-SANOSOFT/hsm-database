@@ -3,33 +3,47 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCACabValidacion')
 export class TblCACabValidacion {
   @PrimaryColumn('int', { nullable: false })
-  NIdCAValidacion?: any;
+  NIdCAValidacion!: number;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal!: string;
+
   @Column('int', { nullable: false })
-  NNuValidacion?: any;
+  NNuValidacion!: number;
+
   @Column('datetime', { nullable: false })
-  DFxIniValidacion?: any;
+  DFxIniValidacion!: Date;
+
   @Column('datetime', { nullable: false })
-  DFxFinValidacion?: any;
+  DFxFinValidacion!: Date;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeValidacion?: any;
+  CCeValidacion!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso!: string;
+
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso!: Date;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica!: string;
+
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica!: Date;
 }

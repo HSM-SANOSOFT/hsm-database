@@ -21,9 +21,9 @@ export class TblGeReporteCia {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   Referencia5?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  NombreRpt?: any;
+  NombreRpt?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  Descripcion?: any;
+  Descripcion?: string;
   @Column('int', { nullable: false })
   NNuLineas?: any;
 }

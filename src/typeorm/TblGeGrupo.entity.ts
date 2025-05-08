@@ -5,19 +5,19 @@ export class TblGeGrupo {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
   CCiGrupo?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsGrupo?: any;
+  CDsGrupo?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeGrupo?: any;
+  CCeGrupo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

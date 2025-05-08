@@ -9,11 +9,11 @@ export class TblNoDetComision {
   @Column('int', { nullable: false })
   NIdNoContrato?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCentroCosto?: any;
+  CCiCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubCentroCosto?: any;
+  CCiSubCentroCosto?: string;
   @Column('int', { nullable: false })
   NIdNoConceptoPorc1?: any;
   @Column('int', { nullable: false })
@@ -35,6 +35,6 @@ export class TblNoDetComision {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtComisionPorc3?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
 
 }

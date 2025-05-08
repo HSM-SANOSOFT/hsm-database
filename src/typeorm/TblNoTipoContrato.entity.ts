@@ -5,27 +5,27 @@ export class TblNoTipoContrato {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiTipoContrato?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsTipoContrato?: any;
+  CDsTipoContrato?: string;
   @Column('int', { nullable: false })
   NNuDuracion?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtTipoContrato?: any;
+  CCtTipoContrato?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnParcial?: any;
+  CSnParcial?: string;
   @Column('int', { nullable: false })
   NNuHorasParcial?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeTipoContrato?: any;
+  CCeTipoContrato?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

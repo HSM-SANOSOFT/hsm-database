@@ -3,27 +3,27 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCargo')
 export class TblNoCargo {
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCargo?: any;
+  CCiCargo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsCargo?: any;
+  CDsCargo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtCargo?: any;
+  CCtCargo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiNivel?: any;
+  CCiNivel?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnCancelaNomina?: any;
+  CSnCancelaNomina?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeCargo?: any;
+  CCeCargo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })

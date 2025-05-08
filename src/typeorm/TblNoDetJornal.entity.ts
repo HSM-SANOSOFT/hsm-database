@@ -7,7 +7,7 @@ export class TblNoDetJornal {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column('int', { nullable: false })
   NIdNoContrato?: any;
   @Column('int', { nullable: false })
@@ -15,9 +15,9 @@ export class TblNoDetJornal {
   @Column('int', { nullable: false })
   NIdNoDesglose?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUnidadMedida?: any;
+  CCiUnidadMedida?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtJornal?: any;
+  CCtJornal?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuCantidad?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })

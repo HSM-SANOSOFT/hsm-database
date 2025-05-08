@@ -17,7 +17,7 @@ export class TblNoDetPrestamo {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtTotal?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeCuota?: any;
+  CCeCuota?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtSaldo?: any;
   @Column('int', { nullable: false })

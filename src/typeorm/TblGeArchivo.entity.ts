@@ -3,21 +3,21 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeArchivo')
 export class TblGeArchivo {
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiOpcion?: any;
+  CCiOpcion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtArchivo?: any;
+  CCtArchivo?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiReferencia1?: any;
+  CCiReferencia1?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiReferencia2?: any;
+  CCiReferencia2?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiReferencia3?: any;
+  CCiReferencia3?: string;
   @Column('int', { nullable: false })
   NNuReferencia1?: any;
   @Column('int', { nullable: false })
@@ -27,11 +27,11 @@ export class TblGeArchivo {
   @Column('int', { nullable: false })
   NNuPosicion?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsSubRutaArchivo?: any;
+  CDsSubRutaArchivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsNombreArchivo?: any;
+  CDsNombreArchivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsExtensionArchivo?: any;
+  CDsExtensionArchivo?: string;
   @Column('int', { nullable: false })
   NNuArchivo?: any;
 }

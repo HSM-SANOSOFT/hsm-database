@@ -5,17 +5,17 @@ export class TblNoCabPrestamo {
   @PrimaryColumn('int', { nullable: false })
   NIdNoPrestamo?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column('int', { nullable: false })
   NNuPrestamo?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtPrestamo?: any;
+  CCtPrestamo?: string;
   @Column('int', { nullable: false })
   NIdNoContrato?: any;
   @Column('int', { nullable: false })
@@ -23,13 +23,13 @@ export class TblNoCabPrestamo {
   @Column('int', { nullable: false })
   NIdNoDesglose?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiMotivoPrestamo?: any;
+  CCiMotivoPrestamo?: string;
   @Column('datetime', { nullable: false })
   DFxPrestamo?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtPeriocidad?: any;
+  CCtPeriocidad?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtCalculo?: any;
+  CCtCalculo?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtCuota?: any;
   @Column('int', { nullable: false })
@@ -43,29 +43,29 @@ export class TblNoCabPrestamo {
   @Column('datetime', { nullable: false })
   DFxPrimerVcmto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxReferencia?: any;
+  CTxReferencia?: string;
   @Column('int', { nullable: false })
   NIdNoPrestamoOrigen?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtDestinoPago?: any;
+  CCtDestinoPago?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtOrigen?: any;
+  CCtOrigen?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCePrestamo?: any;
+  CCePrestamo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnAmortizacionManual?: any;
+  CSnAmortizacionManual?: string;
 }

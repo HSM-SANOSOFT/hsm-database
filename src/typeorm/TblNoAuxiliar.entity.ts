@@ -5,19 +5,19 @@ export class TblNoAuxiliar {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
   CCiAuxiliar?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsAuxiliar?: any;
+  CDsAuxiliar?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeAuxiliar?: any;
+  CCeAuxiliar?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

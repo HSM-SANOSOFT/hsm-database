@@ -5,59 +5,59 @@ export class TblGeCias {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
   CCiCia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsCia?: any;
+  CDsCia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsCiaLarga?: any;
+  CDsCiaLarga?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiGrupo?: any;
+  CCiGrupo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiRuc?: any;
+  CCiRuc?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxRegPatronal?: any;
+  CTxRegPatronal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSectorial?: any;
+  CCiSectorial?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxTelefono?: any;
+  CTxTelefono?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxFax?: any;
+  CTxFax?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxEmail?: any;
+  CTxEmail?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiProvincia?: any;
+  CCiProvincia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCanton?: any;
+  CCiCanton?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiParroquia?: any;
+  CCiParroquia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxDireccion?: any;
+  CTxDireccion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtIdRepresentante?: any;
+  CCtIdRepresentante?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiIdRepresentante?: any;
+  CCiIdRepresentante?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsRepresentante?: any;
+  CDsRepresentante?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCargoRep?: any;
+  CCiCargoRep?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiIdRUCContador?: any;
+  CCiIdRUCContador?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsContador?: any;
+  CDsContador?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeCia?: any;
+  CCeCia?: string;
   @Column('text', { nullable: false })
   ImgCia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtDistribucionCCosto?: any;
+  CCtDistribucionCCosto?: string;
 }

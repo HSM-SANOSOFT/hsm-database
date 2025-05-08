@@ -15,8 +15,8 @@ export class TblNoDetProyeccionSueldo {
   @Column('datetime', { nullable: false })
   DFxVigencia?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeProyeccion?: any;
+  CCeProyeccion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
 
 }

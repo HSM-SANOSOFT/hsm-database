@@ -5,19 +5,19 @@ export class TblNoGrupoConcepto {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiGrupoConcepto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsGrupoConcepto?: any;
+  CDsGrupoConcepto?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeGrupoConcepto?: any;
+  CCeGrupoConcepto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

@@ -19,6 +19,6 @@ export class TblNoDetLiqHaberesProvision {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtVacaciones?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
 
 }

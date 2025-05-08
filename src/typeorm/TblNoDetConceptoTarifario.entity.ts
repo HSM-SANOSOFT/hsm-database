@@ -9,11 +9,11 @@ export class TblNoDetConceptoTarifario {
   @PrimaryColumn('int', { nullable: false })
   NIdNoDesglose?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUnidadMedida?: any;
+  CCiUnidadMedida?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtConcepto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeDetConceptoTarifario?: any;
+  CCeDetConceptoTarifario?: string;
   @Column('int', { nullable: false })
   NNuPersona?: any;
 

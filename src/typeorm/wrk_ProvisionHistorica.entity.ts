@@ -3,15 +3,15 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('wrk_ProvisionHistorica')
 export class wrk_ProvisionHistorica {
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacion?: any;
+  CDsEstacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDocumento?: any;
+  CCiDocumento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CNoEmpleadoImporta?: any;
+  CNoEmpleadoImporta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CNoEmpleadoSistema?: any;
+  CNoEmpleadoSistema?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column('int', { nullable: false })
   NNuAnio?: any;
   @Column('int', { nullable: false })
@@ -37,23 +37,23 @@ export class wrk_ProvisionHistorica {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtSueldoBasico?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtNivelError?: any;
+  CCtNivelError?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtError?: any;
+  CCtError?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsError?: any;
+  CDsError?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnOtroEmpleadorImporta?: any;
+  CSnOtroEmpleadorImporta?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnOtroEmpleadorSistema?: any;
+  CSnOtroEmpleadorSistema?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtOrigen?: any;
+  CCtOrigen?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeProvisionD3?: any;
+  CCeProvisionD3?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeProvisionD4?: any;
+  CCeProvisionD4?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeVacaciones?: any;
+  CCeVacaciones?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsExisteObra?: any;
+  CDsExisteObra?: string;
 }

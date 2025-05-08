@@ -11,19 +11,19 @@ export class TblGeDetHorasLaboradasCCosto {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCentroCosto?: any;
+  CCiCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubCentroCosto?: any;
+  CCiSubCentroCosto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuHoras?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuHorasReales?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiMotivo?: any;
+  CCiMotivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacionMotivo?: any;
+  CTxObservacionMotivo?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtRegistro?: any;
+  CCtRegistro?: string;
 }
