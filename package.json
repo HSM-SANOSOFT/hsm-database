@@ -26,6 +26,9 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
+  "files": [
+    "dist"
+  ],
   "dependencies": {
     "globals": "^16.1.0",
     "oracledb": "^6.8.0"

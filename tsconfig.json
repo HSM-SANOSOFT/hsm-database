@@ -10,7 +10,15 @@
     "target": "ES2023",
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": "./src",
+    "baseUrl": "./",
+    "paths": {
+      "@oracle/*": [
+        "src/oracle/*"
+      ],
+      "@typeorm/*": [
+        "src/typeorm/*"
+      ]
+    },
     "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
@@ -26,6 +34,6 @@
     ]
   },
   "include": [
-    "src/**/*.ts"
+    "src"
   ]
 }
