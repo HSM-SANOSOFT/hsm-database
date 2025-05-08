@@ -40,9 +40,6 @@ jobs:
 
       - name: Clean workspace for version bump
         run: |
-          # descarta cambios en tracked files
-          git reset --hard HEAD
-          # elimina archivos/carpetas no trackeados (dist/, node_modules/, etc.)
           git clean -fd
 
       - name: Bump version & tag
