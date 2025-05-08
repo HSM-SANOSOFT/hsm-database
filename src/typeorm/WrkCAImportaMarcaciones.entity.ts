@@ -4,7 +4,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 export class WrkCAImportaMarcaciones {
   @PrimaryColumn({ type: 'varchar' })
   CCiEstacion?: any;
-  @PrimaryColumn('int', { nullable: true })
+  @PrimaryColumn({ type: 'int' })
   NNuRegistro?: any;
   @Column({ type: 'varchar' })
   CCiIdentificacion?: any;

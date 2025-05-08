@@ -6,7 +6,7 @@ export class WrkCriterioConsulta {
   CCiEstacion?: any;
   @PrimaryColumn({ type: 'varchar' })
   CCiTipoParam?: any;
-  @PrimaryColumn('int', { nullable: true })
+  @PrimaryColumn({ type: 'varchar' })
   NNuRegistro?: any;
   @Column({ type: 'char' })
   CCiCia?: any;

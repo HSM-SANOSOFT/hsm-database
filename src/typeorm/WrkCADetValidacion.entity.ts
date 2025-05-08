@@ -4,7 +4,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 export class WrkCADetValidacion {
   @PrimaryColumn({ type: 'varchar' })
   CCiEstacion?: any;
-  @PrimaryColumn('int', { nullable: true })
+  @PrimaryColumn({ type: 'int' })
   NNuRegistro?: any;
   @Column({ type: 'varchar' })
   CCiCodigo?: any;
