@@ -2,7 +2,6 @@
   "name": "@hsm-sanosoft/hsm-database-schema",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  
   "scripts": {
     "build": "tsc -p tsconfig.build.json"
   },
@@ -35,5 +34,5 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.32.0"
   },
-  "version": "0.0.11"
+  "version": "0.0.12"
 }
