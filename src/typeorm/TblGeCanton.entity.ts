@@ -7,19 +7,19 @@ export class TblGeCanton {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiCanton?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsCanton?: any;
+  CDsCanton?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeCanton?: any;
+  CCeCanton?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

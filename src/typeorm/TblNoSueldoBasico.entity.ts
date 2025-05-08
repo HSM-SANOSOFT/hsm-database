@@ -11,9 +11,9 @@ export class TblNoSueldoBasico {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtSueldoBasico?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })

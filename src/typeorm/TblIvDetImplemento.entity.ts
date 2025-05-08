@@ -19,7 +19,7 @@ export class TblIvDetImplemento {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtMontoNomina?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtProcesoNovedad?: any;
+  CCtProcesoNovedad?: string;
   @Column('int', { nullable: false })
   NidNoPrestamo?: any;
 }

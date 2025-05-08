@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('WrkDetCtrlNovedad')
 export class WrkDetCtrlNovedad {
   @Column({ type: 'varchar' })
-  CCiEstacion?: any;
+  CCiEstacion?: string;
   @Column('int', { nullable: true })
   NNuSecuencia?: any;
   @Column('int', { nullable: true })

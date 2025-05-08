@@ -5,21 +5,21 @@ export class TblNoCabConcepto {
   @PrimaryColumn('int', { nullable: false })
   NIdNoConcepto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiConcepto?: any;
+  CCiConcepto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsConcepto?: any;
+  CDsConcepto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiGrupoConcepto?: any;
+  CCiGrupoConcepto?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtConcepto?: any;
+  CCtConcepto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsTitulo?: any;
+  CDsTitulo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiOrigen?: any;
+  CCiOrigen?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDetOrigen?: any;
+  CCiDetOrigen?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtVencimiento?: any;
+  CCtVencimiento?: string;
   @Column('datetime', { nullable: false })
   DFxVencimiento?: any;
   @Column('int', { nullable: false })
@@ -27,71 +27,71 @@ export class TblNoCabConcepto {
   @Column('int', { nullable: false })
   NNuPrioridadConcepto?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtEgresoIngreso?: any;
+  CCtEgresoIngreso?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtCargo?: any;
+  CCtCargo?: string;
   @Column('int', { nullable: false })
   NNuTransaccionMax?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsObservacion?: any;
+  CDsObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtProceso?: any;
+  CCtProceso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiIndividual?: any;
+  CCiIndividual?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnControlLabores?: any;
+  CSnControlLabores?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnDescPrestamo?: any;
+  CSnDescPrestamo?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnIESS?: any;
+  CSnIESS?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnImprimir?: any;
+  CSnImprimir?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnIndividual?: any;
+  CSnIndividual?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnLiquidacion?: any;
+  CSnLiquidacion?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnPredeterminado?: any;
+  CSnPredeterminado?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnSRI?: any;
+  CSnSRI?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnSobreTiempoSRI?: any;
+  CSnSobreTiempoSRI?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnAfectaNomina?: any;
+  CSnAfectaNomina?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnTransfiereEnProcesos?: any;
+  CSnTransfiereEnProcesos?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnReservado?: any;
+  CSnReservado?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeConcepto?: any;
+  CCeConcepto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  NIdNoConceptoTransferir?: any;
+  NIdNoConceptoTransferir?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  NIdNoDesgloseTransferir?: any;
+  NIdNoDesgloseTransferir?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnIRProyectado?: any;
+  CSnIRProyectado?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  NIdNoConceptoRelaIRAsumido?: any;
+  NIdNoConceptoRelaIRAsumido?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  NIdNoDesgloseRelaIRAsumido?: any;
+  NIdNoDesgloseRelaIRAsumido?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnNominaQuincena?: any;
+  CSnNominaQuincena?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnAfectaIR?: any;
+  CSnAfectaIR?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtAfectaColumna?: any;
+  CCtAfectaColumna?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnMostrarCalendario?: any;
+  CSnMostrarCalendario?: string;
 }

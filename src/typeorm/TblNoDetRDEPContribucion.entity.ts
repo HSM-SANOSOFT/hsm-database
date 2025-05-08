@@ -9,9 +9,9 @@ export class TblNoDetRDEPContribucion {
   @Column('int', { nullable: false })
   NIdNoEmpleado?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeContrato?: any;
+  CCeContrato?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnExcluirEmpleado?: any;
+  CSnExcluirEmpleado?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtRemuneracionContribEsteEmplSist?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })

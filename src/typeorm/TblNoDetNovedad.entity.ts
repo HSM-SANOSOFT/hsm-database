@@ -7,11 +7,11 @@ export class TblNoDetNovedad {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCentroCosto?: any;
+  CCiCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubCentroCosto?: any;
+  CCiSubCentroCosto?: string;
   @Column('int', { nullable: false })
   NIdNoContrato?: any;
   @Column('int', { nullable: false })
@@ -23,11 +23,11 @@ export class TblNoDetNovedad {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtConcepto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnAutomatico?: any;
+  CSnAutomatico?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCePago?: any;
+  CCePago?: string;
   @Column('int', { nullable: false })
   NIdNoCtrlNovedadOrigen?: any;
   @Column('int', { nullable: false })

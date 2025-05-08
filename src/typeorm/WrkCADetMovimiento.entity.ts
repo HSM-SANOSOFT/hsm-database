@@ -21,27 +21,27 @@ export class WrkCADetMovimiento {
   @Column('datetime', { nullable: true })
   DFxRecuperacion?: any;
   @Column({ type: 'varchar' })
-  CCtRegistro?: any;
+  CCtRegistro?: string;
   @Column({ type: 'varchar' })
-  CCiDispositivo?: any;
+  CCiDispositivo?: string;
   @Column({ type: 'varchar' })
-  CCiUbicacion?: any;
+  CCiUbicacion?: string;
   @Column({ type: 'varchar' })
-  CCtError?: any;
+  CCtError?: string;
   @Column({ type: 'varchar' })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column({ type: 'varchar' })
-  CSnEditado?: any;
+  CSnEditado?: string;
   @Column({ type: 'varchar' })
-  CCiMotivo?: any;
+  CCiMotivo?: string;
   @Column({ type: 'varchar' })
-  CTxObservacionAudt?: any;
+  CTxObservacionAudt?: string;
   @Column({ type: 'char' })
-  CSnDiaRecuperar?: any;
+  CSnDiaRecuperar?: string;
   @Column({ type: 'char' })
-  CSnDiaFavor?: any;
+  CSnDiaFavor?: string;
   @Column({ type: 'char' })
-  CSnHorasExtra?: any;
+  CSnHorasExtra?: string;
   @Column('datetime', { nullable: true })
   DFxEntrada2?: any;
   @Column('datetime', { nullable: true })
@@ -61,11 +61,11 @@ export class WrkCADetMovimiento {
   @Column('datetime', { nullable: true })
   DFxMovimientoAudt?: any;
   @Column({ type: 'varchar' })
-  CDsError?: any;
+  CDsError?: string;
   @Column('datetime', { nullable: true })
   DFxHorasPermiso?: any;
   @Column({ type: 'char' })
-  CSnGenerarAtraso?: any;
+  CSnGenerarAtraso?: string;
   @Column('datetime', { nullable: true })
   DFxHorasAtraso?: any;
   @Column('numeric', { precision: 18, scale: 2 })

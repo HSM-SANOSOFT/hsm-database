@@ -13,9 +13,9 @@ export class TblNoDetDistribuyeEmpleado {
   @Column('int', { nullable: false })
   NIdPrPresupuesto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDpto?: any;
+  CCiDpto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiProyecto?: any;
+  CCiProyecto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubProyecto?: any;
+  CCiSubProyecto?: string;
 }

@@ -9,21 +9,21 @@ export class WrkCriterioConsulta {
   @PrimaryColumn({ type: 'varchar' })
   NNuRegistro?: any;
   @Column({ type: 'char' })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char' })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char' })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar' })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column({ type: 'varchar' })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar' })
-  CCiCentroCosto?: any;
+  CCiCentroCosto?: string;
   @Column({ type: 'varchar' })
-  CCiSubCentroCosto?: any;
+  CCiSubCentroCosto?: string;
   @Column({ type: 'varchar' })
-  CCiCargo?: any;
+  CCiCargo?: string;
   @Column('int', { nullable: true })
   NIdNoContrato?: any;
   @Column('int', { nullable: true })
@@ -33,11 +33,11 @@ export class WrkCriterioConsulta {
   @Column('int', { nullable: true })
   NIdNoDesglose?: any;
   @Column({ type: 'varchar' })
-  CCiReferencia1?: any;
+  CCiReferencia1?: string;
   @Column({ type: 'varchar' })
-  CCiReferencia2?: any;
+  CCiReferencia2?: string;
   @Column({ type: 'varchar' })
-  CCiReferencia3?: any;
+  CCiReferencia3?: string;
   @Column('int', { nullable: true })
   NIdGeReferencia1?: any;
   @Column('int', { nullable: true })

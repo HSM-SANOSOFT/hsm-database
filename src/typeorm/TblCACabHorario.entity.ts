@@ -3,45 +3,65 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCACabHorario')
 export class TblCACabHorario {
   @PrimaryColumn('int', { nullable: false })
-  NIdCAHorario?: any;
+  NIdCAHorario!: number;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina!: string;
+
   @Column('int', { nullable: false })
-  NNuHorario?: any;
+  NNuHorario!: number;
+
   @Column('datetime', { nullable: false })
-  DFxIniHorario?: any;
+  DFxIniHorario!: Date;
+
   @Column('datetime', { nullable: false })
-  DFxFinHorario?: any;
+  DFxFinHorario!: Date;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeHorario?: any;
+  CCeHorario!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso!: string;
+
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso!: Date;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica!: string;
+
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica!: Date;
+
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio!: number;
+
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo!: number;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnTurnoPeriodoAnt?: any;
+  CSnTurnoPeriodoAnt!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtFormaRegistro1?: any;
+  CCtFormaRegistro1!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtFormaRegistro2?: any;
+  CCtFormaRegistro2!: string;
 }

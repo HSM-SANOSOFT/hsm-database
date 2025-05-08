@@ -5,13 +5,13 @@ export class TblCiCabCierreDistribucion {
   @Column('int', { nullable: false })
   NIdCiCierreDistribucion?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column('int', { nullable: false })
   NNuAnio?: any;
   @Column('int', { nullable: false })
@@ -19,9 +19,9 @@ export class TblCiCabCierreDistribucion {
   @Column('datetime', { nullable: false })
   DFxCierre?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtProceso?: any;
+  CCtProceso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiIndividual?: any;
+  CCiIndividual?: string;
   @Column('int', { nullable: false })
   NNuAsiento?: any;
   @Column('int', { nullable: false })
@@ -29,23 +29,23 @@ export class TblCiCabCierreDistribucion {
   @Column('int', { nullable: false })
   NNuPeriodoCtbl?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoComprobante?: any;
+  CCiTipoComprobante?: string;
   @Column('int', { nullable: false })
   NNuComprobante?: any;
   @Column('int', { nullable: false })
   NIdCiMovimiento?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeCierre?: any;
+  CCeCierre?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column('int', { nullable: false })

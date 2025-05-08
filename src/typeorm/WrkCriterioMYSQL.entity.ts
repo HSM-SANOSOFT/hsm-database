@@ -9,25 +9,25 @@ export class WrkCriterioMYSQL {
   @PrimaryColumn({ type: 'varchar' })
   NNuRegistro?: any;
   @Column({ type: 'varchar' })
-  CCiReferencia1?: any;
+  CCiReferencia1?: string;
   @Column({ type: 'varchar' })
-  CCiReferencia2?: any;
+  CCiReferencia2?: string;
   @Column({ type: 'varchar' })
-  CCiReferencia3?: any;
+  CCiReferencia3?: string;
   @Column({ type: 'varchar' })
-  CCiReferencia4?: any;
+  CCiReferencia4?: string;
   @Column({ type: 'varchar' })
-  CCiReferencia5?: any;
+  CCiReferencia5?: string;
   @Column({ type: 'varchar' })
-  CCiReferencia6?: any;
+  CCiReferencia6?: string;
   @Column({ type: 'varchar' })
-  CCiReferencia7?: any;
+  CCiReferencia7?: string;
   @Column({ type: 'varchar' })
-  CCiReferencia8?: any;
+  CCiReferencia8?: string;
   @Column({ type: 'varchar' })
-  CCiReferencia9?: any;
+  CCiReferencia9?: string;
   @Column({ type: 'varchar' })
-  CCiReferencia10?: any;
+  CCiReferencia10?: string;
   @Column('int', { nullable: true })
   NIdGeReferencia1?: any;
   @Column('int', { nullable: true })
@@ -49,34 +49,34 @@ export class WrkCriterioMYSQL {
   @Column('int', { nullable: true })
   NIdGeReferencia10?: any;
   @Column({ type: 'varchar' })
-  CNoReferencia1?: any;
+  CNoReferencia1?: string;
   @Column({ type: 'varchar' })
-  CNoReferencia2?: any;
+  CNoReferencia2?: string;
   @Column({ type: 'varchar' })
-  CNoReferencia3?: any;
+  CNoReferencia3?: string;
   @Column({ type: 'varchar' })
-  CNoReferencia4?: any;
+  CNoReferencia4?: string;
   @Column({ type: 'varchar' })
-  CNoReferencia5?: any;
+  CNoReferencia5?: string;
   @Column({ type: 'varchar' })
-  CNoReferencia6?: any;
+  CNoReferencia6?: string;
   @Column({ type: 'varchar' })
-  CNoReferencia7?: any;
+  CNoReferencia7?: string;
   @Column({ type: 'varchar' })
-  CNoReferencia8?: any;
+  CNoReferencia8?: string;
   @Column({ type: 'varchar' })
-  CNoReferencia9?: any;
+  CNoReferencia9?: string;
   @Column({ type: 'varchar' })
-  CNoReferencia10?: any;
+  CNoReferencia10?: string;
   @Column({ type: 'varchar' })
-  DFxFecha1?: any;
+  DFxFecha1?: string;
   @Column({ type: 'varchar' })
-  DFxFecha2?: any;
+  DFxFecha2?: string;
   @Column({ type: 'varchar' })
-  DFxFecha3?: any;
+  DFxFecha3?: string;
   @Column({ type: 'varchar' })
-  DFxFecha4?: any;
+  DFxFecha4?: string;
   @Column({ type: 'varchar' })
-  DFxFecha5?: any;
+  DFxFecha5?: string;
 
 }

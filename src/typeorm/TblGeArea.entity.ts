@@ -11,21 +11,21 @@ export class TblGeArea {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsArea?: any;
+  CDsArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiReferencia1?: any;
+  CCiReferencia1?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeArea?: any;
+  CCeArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column('datetime', { nullable: false })
@@ -49,7 +49,7 @@ export class TblGeArea {
   @Column('int', { nullable: false })
   NIdNoDesgloseDom?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtAjusteNomina?: any;
+  CCtAjusteNomina?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuFactorAjuste?: any;
   @Column('datetime', { nullable: false })
@@ -57,13 +57,13 @@ export class TblGeArea {
   @Column('datetime', { nullable: false })
   DFxFinReal?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnAplicaConceptoDscto?: any;
+  CSnAplicaConceptoDscto?: string;
   @Column('int', { nullable: false })
   NIdNoConceptoRecargoNoct?: any;
   @Column('int', { nullable: false })
   NIdNoDesgloseRecargoNoct?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsDireccion?: any;
+  CDsDireccion?: string;
   @Column('datetime', { nullable: false })
   DFxHoraInicio?: any;
   @Column('datetime', { nullable: false })
@@ -73,13 +73,13 @@ export class TblGeArea {
   @Column('int', { nullable: false })
   NIdNoDesgloseSuplExtr?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxIESS?: any;
+  CTxIESS?: string;
   @Column('int', { nullable: false })
   NIdNoConceptoAjuste?: any;
   @Column('int', { nullable: false })
   NIdNoDesgloseAjuste?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoRegion?: any;
+  CCiTipoRegion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoRegistroProy?: any;
+  CCiTipoRegistroProy?: string;
 }

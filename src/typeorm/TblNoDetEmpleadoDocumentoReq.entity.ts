@@ -7,7 +7,7 @@ export class TblNoDetEmpleadoDocumentoReq {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtDocumento?: any;
+  CCtDocumento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
 }

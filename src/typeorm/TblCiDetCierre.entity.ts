@@ -13,39 +13,39 @@ export class TblCiDetCierre {
   @Column('int', { nullable: false })
   NNuPeriodoCtbl?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoComprobante?: any;
+  CCiTipoComprobante?: string;
   @Column('int', { nullable: false })
   NNuComprobante?: any;
   @Column('int', { nullable: false })
   NIdCiMovimiento?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiPlanCta?: any;
+  CCiPlanCta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCuenta?: any;
+  CCiCuenta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoAuxiliar?: any;
+  CCiTipoAuxiliar?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiAuxiliar?: any;
+  CCiAuxiliar?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDpto?: any;
+  CCiDpto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiProyecto?: any;
+  CCiProyecto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubProyecto?: any;
+  CCiSubProyecto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtDebito?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtCredito?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxDetalle?: any;
+  CTxDetalle?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCentroCosto?: any;
+  CCiCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubCentroCosto?: any;
+  CCiSubCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiGrupoConcepto?: any;
+  CCiGrupoConcepto?: string;
   @Column('int', { nullable: false })
   NIdNoLabor?: any;
   @Column('int', { nullable: false })
@@ -55,7 +55,7 @@ export class TblCiDetCierre {
   @Column('int', { nullable: false })
   NIdNoContrato?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiTipoPres?: any;
+  CCiTipoPres?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtPlantilla?: any;
+  CCtPlantilla?: string;
 }

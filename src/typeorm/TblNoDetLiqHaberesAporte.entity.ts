@@ -7,7 +7,7 @@ export class TblNoDetLiqHaberesAporte {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtDetalle?: any;
+  CCtDetalle?: string;
   @Column('int', { nullable: false })
   NIdNoConcepto?: any;
   @Column('int', { nullable: false })
@@ -17,5 +17,5 @@ export class TblNoDetLiqHaberesAporte {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtConcepto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
 }

@@ -3,35 +3,35 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCuenta')
 export class TblNoCuenta {
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiPlanCta?: any;
+  CCiPlanCta?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCuenta?: any;
+  CCiCuenta?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiTipoCta?: any;
+  CCiTipoCta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CdsCuentaEditada?: any;
+  CdsCuentaEditada?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsCuenta?: any;
+  CDsCuenta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxAlias?: any;
+  CTxAlias?: string;
   @Column('text', { nullable: false })
   BSnAceptaAux?: any;
   @Column('text', { nullable: false })
   BSnTercerImporte?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtTituloDetalle?: any;
+  CCtTituloDetalle?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxReservadoUsuario?: any;
+  CTxReservadoUsuario?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngr?: any;
+  CCiUsuarioIngr?: string;
   @Column('datetime', { nullable: false })
   DFiCreacion?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiUsuarioModi?: any;
+  CCiUsuarioModi?: string;
   @Column('datetime', { nullable: false })
   DFuModificacion?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioInac?: any;
+  CCiUsuarioInac?: string;
   @Column('datetime', { nullable: false })
   DFuInactiva?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
@@ -45,19 +45,19 @@ export class TblNoCuenta {
   @Column('text', { nullable: false })
   BsnAceptaProyecto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiAlterno?: any;
+  CCiAlterno?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtAcreedoraDeudora?: any;
+  CCtAcreedoraDeudora?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSNFijaVariable?: any;
+  CSNFijaVariable?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CciTipoUso?: any;
+  CciTipoUso?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnUsoModulo?: any;
+  CSnUsoModulo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiGrupoAlternoCta?: any;
+  CCiGrupoAlternoCta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CNoAlterno?: any;
+  CNoAlterno?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeCuenta?: any;
+  CCeCuenta?: string;
 }

@@ -15,12 +15,12 @@ export class TblNoDetBeneficioPagado {
   @Column('int', { nullable: false })
   NNuPeriodoHasta?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnProvision?: any;
+  CSnProvision?: string;
   @Column('int', { nullable: false })
   NNuAnioVacacionCanc?: any;
   @Column('int', { nullable: false })
   NNuDiasVacacionCanc?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiTipoRegion?: any;
+  CCiTipoRegion?: string;
 
 }

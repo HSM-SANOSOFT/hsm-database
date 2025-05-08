@@ -11,11 +11,11 @@ export class TblNoDetVacaciones {
   @Column('datetime', { nullable: false })
   DFxHasta?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnDiaGozado?: any;
+  CSnDiaGozado?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnDiaPagado?: any;
+  CSnDiaPagado?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column('int', { nullable: false })
   NNuDiasInterrumpidos?: any;
   @Column('int', { nullable: false })

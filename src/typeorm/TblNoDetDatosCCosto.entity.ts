@@ -13,11 +13,11 @@ export class TblNoDetDatosCCosto {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCentroCosto?: any;
+  CCiCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubCentroCosto?: any;
+  CCiSubCentroCosto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtSueldo?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
@@ -29,6 +29,6 @@ export class TblNoDetDatosCCosto {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtSueldoBase?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeArea?: any;
+  CCeArea?: string;
 
 }

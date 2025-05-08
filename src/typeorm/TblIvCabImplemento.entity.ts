@@ -5,13 +5,13 @@ export class TblIvCabImplemento {
   @PrimaryColumn('int', { nullable: false })
   NIdIvImplemento?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column('int', { nullable: false })
   NNuAnio?: any;
   @Column('int', { nullable: false })
@@ -19,23 +19,23 @@ export class TblIvCabImplemento {
   @Column('int', { nullable: false })
   NidNoNovedad?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeImplemento?: any;
+  CCeImplemento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiEstacionIngreso?: any;
+  CCiEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFxIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiEstacionModifica?: any;
+  CCiEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFxModifica?: any;
   @Column('datetime', { nullable: false })
   DFxAprueba?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioAprueba?: any;
+  CCiUsuarioAprueba?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionAprueba?: any;
+  CDsEstacionAprueba?: string;
 }

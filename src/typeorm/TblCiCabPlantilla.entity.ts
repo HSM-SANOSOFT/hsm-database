@@ -5,41 +5,41 @@ export class TblCiCabPlantilla {
   @PrimaryColumn('int', { nullable: false })
   NIdCiPlantilla?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoComprobante?: any;
+  CCiTipoComprobante?: string;
   @Column('int', { nullable: false })
   NNuAsiento?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsObservacion?: any;
+  CDsObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtPlantilla?: any;
+  CCtPlantilla?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtProceso?: any;
+  CCtProceso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiIndividual?: any;
+  CCiIndividual?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCePlantilla?: any;
+  CCePlantilla?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtAsiento?: any;
+  CCtAsiento?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnGenerarContxObra?: any;
+  CSnGenerarContxObra?: string;
 }

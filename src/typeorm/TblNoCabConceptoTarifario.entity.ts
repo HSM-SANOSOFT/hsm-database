@@ -5,27 +5,27 @@ export class TblNoCabConceptoTarifario {
   @PrimaryColumn('int', { nullable: false })
   NIdNoConceptoTarifario?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column('int', { nullable: false })
   NIdNoConcepto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeConceptoTarifario?: any;
+  CCeConceptoTarifario?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column('int', { nullable: false })

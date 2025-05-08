@@ -3,27 +3,38 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCACabImportacion')
 export class TblCACabImportacion {
   @PrimaryColumn('int', { nullable: false })
-  NIdCAImportacion?: any;
+  NIdCAImportacion!: number;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDispositivo?: any;
+  CCiDispositivo!: string;
+
   @Column('datetime', { nullable: false })
-  DFxImportacion?: any;
+  DFxImportacion!: Date;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxArchivo?: any;
+  CTxArchivo!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeImportacion?: any;
+  CCeImportacion!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso!: string;
+
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso!: Date;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica!: string;
+
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica!: Date;
 }

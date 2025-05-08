@@ -13,11 +13,11 @@ export class TblNoDetDistribuyePresObra {
   @Column('int', { nullable: false })
   NIdNoDesglose?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCiaCtble?: any;
+  CCiCiaCtble?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivisionCtble?: any;
+  CCiDivisionCtble?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursalCtble?: any;
+  CCiSucursalCtble?: string;
   @Column('int', { nullable: false })
   NNuOrden?: any;
 }

@@ -7,7 +7,7 @@ export class TblNoDetLiquidacionPeriodo {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtProceso?: any;
+  CCtProceso?: string;
   @Column('int', { nullable: false })
   NNuAnio?: any;
   @Column('int', { nullable: false })

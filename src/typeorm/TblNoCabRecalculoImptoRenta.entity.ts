@@ -5,17 +5,17 @@ export class TblNoCabRecalculoImptoRenta {
   @PrimaryColumn('int', { nullable: false })
   NIdNoRecalImptoRenta?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column('int', { nullable: false })
   NNuControl?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column('int', { nullable: false })
   NNuAnio?: any;
   @Column('int', { nullable: false })
@@ -23,25 +23,25 @@ export class TblNoCabRecalculoImptoRenta {
   @Column('datetime', { nullable: false })
   DFxRecalImptoRenta?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column('int', { nullable: false })
   NidNoConcepto?: any;
   @Column('int', { nullable: false })
   NidNoDesglose?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeRecalImptoRenta?: any;
+  CCeRecalImptoRenta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtProceso?: any;
+  CCtProceso?: string;
 }

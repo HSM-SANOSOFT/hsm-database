@@ -7,7 +7,7 @@ export class TblNoDetContratoHistoriaSueldo {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtHistoria?: any;
+  CCtHistoria?: string;
   @Column('datetime', { nullable: false })
   DFxHistoria?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
@@ -21,12 +21,12 @@ export class TblNoDetContratoHistoriaSueldo {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtSueldoBase?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
 
 }

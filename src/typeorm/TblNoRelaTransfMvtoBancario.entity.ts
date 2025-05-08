@@ -7,19 +7,19 @@ export class TblNoRelaTransfMvtoBancario {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDpto?: any;
+  CCiDpto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiProyecto?: any;
+  CCiProyecto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubProyecto?: any;
+  CCiSubProyecto?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCiaMvtoBco?: any;
+  CCiCiaMvtoBco?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivisionMvtoBco?: any;
+  CCiDivisionMvtoBco?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursalMvtoBco?: any;
+  CCiSucursalMvtoBco?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoMvtoBco?: any;
+  CCiTipoMvtoBco?: string;
   @Column('int', { nullable: false })
   NNuSecuenciaMvtoBco?: any;
   @Column('int', { nullable: false })

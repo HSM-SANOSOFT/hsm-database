@@ -5,29 +5,29 @@ export class TblGeConfigCorreo {
   @PrimaryColumn('int', { nullable: false })
   NIdGeConfigCorreo?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsServidorSMTP?: any;
+  CDsServidorSMTP?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuario?: any;
+  CCiUsuario?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsCorreo?: any;
+  CDsCorreo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsClave?: any;
+  CDsClave?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeCorreo?: any;
+  CCeCorreo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column('int', { nullable: false })
   NNuPuertoSMTP?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsUsuario?: any;
+  CDsUsuario?: string;
 }

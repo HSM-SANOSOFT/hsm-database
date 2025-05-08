@@ -5,7 +5,7 @@ export class TblGeCabDeducible {
   @Column('int', { nullable: false })
   NIdGeDeducible?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsGeDeducible?: any;
+  CDsGeDeducible?: string;
   @Column('int', { nullable: false })
   NNuAnio?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
@@ -17,17 +17,17 @@ export class TblGeCabDeducible {
   @Column('datetime', { nullable: false })
   DFxProyeccion3?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeGeDeducible?: any;
+  CCeGeDeducible?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

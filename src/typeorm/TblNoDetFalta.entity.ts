@@ -9,21 +9,21 @@ export class TblNoDetFalta {
   @Column('int', { nullable: false })
   NIdNoContrato?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtFalta?: any;
+  CCtFalta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiMotivo?: any;
+  CCiMotivo?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NQnPago?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnDescuentoVacacion?: any;
+  CSnDescuentoVacacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtProceso?: any;
+  CCtProceso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiIndividual?: any;
+  CCiIndividual?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxReportaFalta?: any;
+  CTxReportaFalta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column('int', { nullable: false })
   NNuAnioVacacion?: any;
   @Column('datetime', { nullable: false })

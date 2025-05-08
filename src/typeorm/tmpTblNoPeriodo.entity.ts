@@ -3,19 +3,19 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('tmpTblNoPeriodo')
 export class tmpTblNoPeriodo {
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column('int', { nullable: false })
   NNuAnio?: any;
   @Column('int', { nullable: false })
   NNuPeriodo?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtPeriodo?: any;
+  CCtPeriodo?: string;
   @Column('int', { nullable: false })
   NNuCatorcena?: any;
   @Column('int', { nullable: false })
@@ -33,17 +33,17 @@ export class tmpTblNoPeriodo {
   @Column('datetime', { nullable: false })
   DFxFinProduccion?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCePeriodo?: any;
+  CCePeriodo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

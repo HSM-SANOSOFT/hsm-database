@@ -5,13 +5,13 @@ export class TblNoCabLiquidacionVacaciones {
   @PrimaryColumn('int', { nullable: false })
   NIdNoLiqVacaciones?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column('int', { nullable: false })
   NNuAnio?: any;
   @Column('int', { nullable: false })
@@ -31,7 +31,7 @@ export class TblNoCabLiquidacionVacaciones {
   @Column('datetime', { nullable: false })
   DFxFinLiquidacion?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnGoce?: any;
+  CSnGoce?: string;
   @Column('datetime', { nullable: false })
   DFxIniGoce?: any;
   @Column('datetime', { nullable: false })
@@ -41,47 +41,47 @@ export class TblNoCabLiquidacionVacaciones {
   @Column('int', { nullable: false })
   NIdNoNovedad?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeLiquidacion?: any;
+  CCeLiquidacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtCalculo?: any;
+  CCtCalculo?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnAfectaNomina?: any;
+  CSnAfectaNomina?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtPagoLiquidacion?: any;
+  CCtPagoLiquidacion?: string;
   @Column('int', { nullable: false })
   NNuDiasTomados?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtProceso?: any;
+  CCtProceso?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnDiaAdicAplicaIESS?: any;
+  CSnDiaAdicAplicaIESS?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnMostrarVacaciones?: any;
+  CSnMostrarVacaciones?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnMostrarIgresoEgreso?: any;
+  CSnMostrarIgresoEgreso?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnIESSSueldo?: any;
+  CSnIESSSueldo?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtSueldo?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnCalcularFondoReserva?: any;
+  CSnCalcularFondoReserva?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnDiasVacaciones?: any;
+  CSnDiasVacaciones?: string;
   @Column('int', { nullable: false })
   NQnDiasVacaciones?: any;
   @Column('int', { nullable: false })
@@ -91,5 +91,5 @@ export class TblNoCabLiquidacionVacaciones {
   @Column('int', { nullable: false })
   NNuDiasOtroMedio?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnTotalLiquidacion?: any;
+  CSnTotalLiquidacion?: string;
 }

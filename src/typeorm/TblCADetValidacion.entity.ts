@@ -27,8 +27,8 @@ export class TblCADetValidacion {
   @Column('datetime', { nullable: false })
   DFxRecargo100?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtRegistro?: any;
+  CCtRegistro?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
 
 }

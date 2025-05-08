@@ -63,21 +63,21 @@ export class TblNoDetRDEPMensual {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtBonificacion?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxEstablecimiento?: any;
+  CTxEstablecimiento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxResidenciaTrab?: any;
+  CTxResidenciaTrab?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxPaisResidencia?: any;
+  CTxPaisResidencia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxAplicaConvenio?: any;
+  CTxAplicaConvenio?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtTipoTrabDiscap?: any;
+  CCtTipoTrabDiscap?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NQnpPorcentajeDiscap?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtDiscapacidad?: any;
+  CCtDiscapacidad?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  NidNoDiscapacidad?: any;
+  NidNoDiscapacidad?: string;
   @Column('int', { nullable: false })
   NNuDiasVacaciones?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })

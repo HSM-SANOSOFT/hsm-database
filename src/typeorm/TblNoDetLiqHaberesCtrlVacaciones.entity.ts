@@ -13,7 +13,7 @@ export class TblNoDetLiqHaberesCtrlVacaciones {
   @Column('datetime', { nullable: false })
   DFxFinLiquidacion?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnGenerarConcepto?: any;
+  CSnGenerarConcepto?: string;
   @Column('int', { nullable: false })
   NNuDiasTomados?: any;
   @Column('int', { nullable: false })

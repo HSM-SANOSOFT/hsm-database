@@ -17,10 +17,10 @@ export class TblNoDetProyectoDia {
   @Column('datetime', { nullable: false })
   DFxRegistro?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCentroCostoOrig?: any;
+  CCiCentroCostoOrig?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCentroCosto?: any;
+  CCiCentroCosto?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtColor?: any;
+  CCtColor?: string;
 
 }

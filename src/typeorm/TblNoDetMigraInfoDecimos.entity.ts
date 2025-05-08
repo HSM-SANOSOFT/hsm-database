@@ -9,7 +9,7 @@ export class TblNoDetMigraInfoDecimos {
   @Column('int', { nullable: false })
   NIdNoContrato?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnExcluir?: any;
+  CSnExcluir?: string;
   @Column('int', { nullable: false })
   NNuDiasSistema?: any;
   @Column('int', { nullable: false })

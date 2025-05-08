@@ -11,6 +11,6 @@ export class TblCADetImportacion {
   @Column('datetime', { nullable: false })
   DFxMarcacion?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtMarcacion?: any;
+  CCtMarcacion?: string;
 
 }

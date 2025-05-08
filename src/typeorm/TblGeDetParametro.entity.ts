@@ -11,9 +11,9 @@ export class TblGeDetParametro {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
   CCiSucursal?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxTexto?: any;
+  CTxTexto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuValor?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxReferencia?: any;
+  CTxReferencia?: string;
 }

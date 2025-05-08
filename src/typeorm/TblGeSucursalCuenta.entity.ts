@@ -11,20 +11,20 @@ export class TblGeSucursalCuenta {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiBanco?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCtaCte?: any;
+  CCiCtaCte?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
   CCtCuenta?: any;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CTxCuenta?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxReferencia?: any;
+  CTxReferencia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxReferencia2?: any;
+  CTxReferencia2?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoMvto?: any;
+  CCiTipoMvto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiMotivo?: any;
+  CCiMotivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeSucursalCuenta?: any;
+  CCeSucursalCuenta?: string;
 
 }

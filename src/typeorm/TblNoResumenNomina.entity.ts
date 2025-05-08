@@ -5,13 +5,13 @@ export class TblNoResumenNomina {
   @PrimaryColumn('int', { nullable: false })
   NIdNoNomina?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column('int', { nullable: false })
   NNuAnio?: any;
   @Column('int', { nullable: false })
@@ -19,7 +19,7 @@ export class TblNoResumenNomina {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCtProceso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiIndividual?: any;
+  CCiIndividual?: string;
   @PrimaryColumn('int', { nullable: false })
   NIdNoContrato?: any;
   @Column('int', { nullable: false })
@@ -31,35 +31,35 @@ export class TblNoResumenNomina {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtNeto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtFormaPago?: any;
+  CCtFormaPago?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtCuenta?: any;
+  CCtCuenta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiBanco?: any;
+  CCiBanco?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxCuenta?: any;
+  CTxCuenta?: string;
   @Column('int', { nullable: false })
   NIdNoTransferencia?: any;
   @Column('int', { nullable: false })
   NIdNoOrdenPago?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCiaMvtoBco?: any;
+  CCiCiaMvtoBco?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivisionMvtoBco?: any;
+  CCiDivisionMvtoBco?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursalMvtoBco?: any;
+  CCiSucursalMvtoBco?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoMvtoBco?: any;
+  CCiTipoMvtoBco?: string;
   @Column('int', { nullable: false })
   NNuSecuenciaMvtoBco?: any;
   @Column('int', { nullable: false })
   NNuAnioMvtoBco?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiAreaCont?: any;
+  CCiAreaCont?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCentroCostoCont?: any;
+  CCiCentroCostoCont?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubCentroCostoCont?: any;
+  CCiSubCentroCostoCont?: string;
 }

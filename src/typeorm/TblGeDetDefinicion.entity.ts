@@ -7,12 +7,12 @@ export class TblGeDetDefinicion {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiReferencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsReferencia?: any;
+  CDsReferencia?: string;
   @Column('int', { nullable: false })
   NVtReferencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxReferencia?: any;
+  CTxReferencia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeReferencia?: any;
+  CCeReferencia?: string;
 
 }

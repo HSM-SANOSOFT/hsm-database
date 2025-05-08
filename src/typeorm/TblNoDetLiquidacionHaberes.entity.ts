@@ -7,7 +7,7 @@ export class TblNoDetLiquidacionHaberes {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtDetalle?: any;
+  CCtDetalle?: string;
   @Column('int', { nullable: false })
   NIdNoConcepto?: any;
   @Column('int', { nullable: false })
@@ -17,14 +17,14 @@ export class TblNoDetLiquidacionHaberes {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtConcepto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxDetObservacion?: any;
+  CTxDetObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtEgresoIngreso?: any;
+  CCtEgresoIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxDetObservacionAux?: any;
+  CTxDetObservacionAux?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiOrigen?: any;
+  CCiOrigen?: string;
 
 }

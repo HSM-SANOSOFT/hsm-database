@@ -9,27 +9,27 @@ export class TblNoDetInformacionMRL {
   @Column('int', { nullable: false })
   NIdNoContrato?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCargo?: any;
+  CCiCargo?: string;
   @Column('int', { nullable: false })
   NNuDias?: any;
   @Column('int', { nullable: false })
   NNuCargas?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtAcreditacion?: any;
+  CCtAcreditacion?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtIngresos?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtDescuento?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnParcial?: any;
+  CSnParcial?: string;
   @Column('int', { nullable: false })
   NNuHorasParcial?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtDecimo?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnMensualizoD13?: any;
+  CSnMensualizoD13?: string;
   @Column('datetime', { nullable: false })
   DFxMensualizacionD13?: any;
   @Column('datetime', { nullable: false })

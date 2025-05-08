@@ -11,7 +11,7 @@ export class TblNoDetVacacionesPlanificadas {
   @Column('datetime', { nullable: false })
   DFxHasta?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeVacacion?: any;
+  CCeVacacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
 }

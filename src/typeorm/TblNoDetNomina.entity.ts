@@ -21,13 +21,13 @@ export class TblNoDetNomina {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtNeto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtRegistro?: any;
+  CCtRegistro?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCentroCosto?: any;
+  CCiCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubCentroCosto?: any;
+  CCiSubCentroCosto?: string;
   @Column('int', { nullable: false })
   NNuAnioProvision?: any;
   @Column('int', { nullable: false })

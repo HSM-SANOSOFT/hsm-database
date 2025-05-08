@@ -7,7 +7,7 @@ export class TblNoDetLiquidacionVacaciones {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtDetalle?: any;
+  CCtDetalle?: string;
   @Column('int', { nullable: false })
   NIdNoConcepto?: any;
   @Column('int', { nullable: false })
@@ -21,8 +21,8 @@ export class TblNoDetLiquidacionVacaciones {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtConceptoSistema?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxDetObservacion?: any;
+  CTxDetObservacion?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnEgresoIngreso?: any;
+  CSnEgresoIngreso?: string;
 
 }

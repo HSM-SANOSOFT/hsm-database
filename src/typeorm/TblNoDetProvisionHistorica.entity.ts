@@ -19,16 +19,16 @@ export class TblNoDetProvisionHistorica {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtVacaciones?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtOrigen?: any;
+  CCtOrigen?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnOtroEmpleador?: any;
+  CSnOtroEmpleador?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeVacaciones?: any;
+  CCeVacaciones?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeProvisionD4?: any;
+  CCeProvisionD4?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeProvisionD3?: any;
+  CCeProvisionD3?: string;
 
 }

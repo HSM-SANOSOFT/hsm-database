@@ -3,45 +3,65 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCACabMovimiento')
 export class TblCACabMovimiento {
   @Column('int', { nullable: false })
-  NIdCAMovimiento?: any;
+  NIdCAMovimiento!: number;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision!: string;
+
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina!: string;
+
   @Column('int', { nullable: false })
-  NNuMovimiento?: any;
+  NNuMovimiento!: number;
+
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio!: number;
+
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo!: number;
+
   @Column('datetime', { nullable: false })
-  DFxMovimiento?: any;
+  DFxMovimiento!: Date;
+
   @Column('int', { nullable: false })
-  NIdCaHorario?: any;
+  NIdCaHorario!: number;
+
   @Column('int', { nullable: false })
-  NIdCATurno?: any;
+  NIdCATurno!: number;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtMovimiento?: any;
+  CCtMovimiento!: string;
+
   @Column('int', { nullable: false })
-  NIdCALoteMvto?: any;
+  NIdCALoteMvto!: number;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeMovimiento?: any;
+  CCeMovimiento!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso!: string;
+
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso!: Date;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica!: string;
+
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica!: string;
+
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica!: Date;
 }

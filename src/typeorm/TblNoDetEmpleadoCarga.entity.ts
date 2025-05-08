@@ -7,17 +7,17 @@ export class TblNoDetEmpleadoCarga {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtCarga?: any;
+  CCtCarga?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtSexo?: any;
+  CCtSexo?: string;
   @Column('datetime', { nullable: false })
   DFxNacimiento?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDocumento?: any;
+  CCiDocumento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsApellidos?: any;
+  CDsApellidos?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsNombres?: any;
+  CDsNombres?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnDiscapacidad?: any;
+  CSnDiscapacidad?: string;
 }

@@ -7,12 +7,12 @@ export class TblNoDetConceptoFormula {
   @PrimaryColumn('int', { nullable: false })
   NNuFormula?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxCondicion?: any;
+  CTxCondicion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxFormulaVerdadero?: any;
+  CTxFormulaVerdadero?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxFormulaFalso?: any;
+  CTxFormulaFalso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsObservacion?: any;
+  CDsObservacion?: string;
 
 }

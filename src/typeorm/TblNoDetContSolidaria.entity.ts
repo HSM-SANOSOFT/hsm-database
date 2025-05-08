@@ -11,7 +11,7 @@ export class TblNoDetContSolidaria {
   @Column('datetime', { nullable: false })
   DFxVigencia?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnPrimerRegistro?: any;
+  CSnPrimerRegistro?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtBaseAbril?: any;
   @Column('int', { nullable: false })

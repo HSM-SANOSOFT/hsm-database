@@ -11,15 +11,15 @@ export class TblNoDetLoteLiquidacion {
   @Column('datetime', { nullable: false })
   DFxLiquidacion?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiMotivo?: any;
+  CCiMotivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiMotivoVistoBueno?: any;
+  CCiMotivoVistoBueno?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnDespido?: any;
+  CSnDespido?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnDeshaucio?: any;
+  CSnDeshaucio?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column('int', { nullable: false })
   NIdNoLiquidacion?: any;
 

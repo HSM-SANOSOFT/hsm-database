@@ -5,53 +5,53 @@ export class TblNoTipoNomina {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiTipoNomina?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsTipoNomina?: any;
+  CDsTipoNomina?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiOrigenProceso?: any;
+  CCiOrigenProceso?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnControlHoras?: any;
+  CSnControlHoras?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnCancelaAnticipos?: any;
+  CSnCancelaAnticipos?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtOrigenSueldo?: any;
+  CCtOrigenSueldo?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeTipoNomina?: any;
+  CCeTipoNomina?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnAfectaRDEP?: any;
+  CSnAfectaRDEP?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnTipoObrero?: any;
+  CSnTipoObrero?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnBeneficiosxPorcentaje?: any;
+  CSnBeneficiosxPorcentaje?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtPorcentaje?: any;
+  CCtPorcentaje?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnGenerarHorasDia?: any;
+  CSnGenerarHorasDia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtGeneracion?: any;
+  CCtGeneracion?: string;
   @Column('int', { nullable: false })
   NidNoConcepto?: any;
   @Column('int', { nullable: false })
   NidNoDesglose?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnDesahucio?: any;
+  CSnDesahucio?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtCalculoDesahucio?: any;
+  CCtCalculoDesahucio?: string;
   @Column('int', { nullable: false })
   NQnTipoObrero?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnBajaD14Area?: any;
+  CSnBajaD14Area?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnDiasProyecto?: any;
+  CSnDiasProyecto?: string;
 }

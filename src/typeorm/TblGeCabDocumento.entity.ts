@@ -3,27 +3,27 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeCabDocumento')
 export class TblGeCabDocumento {
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDocumento?: any;
+  CCiDocumento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsDocumento?: any;
+  CDsDocumento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsArchivo?: any;
+  CDsArchivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtDocumento?: any;
+  CCtDocumento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiReferencia?: any;
+  CCiReferencia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeDocumento?: any;
+  CCeDocumento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

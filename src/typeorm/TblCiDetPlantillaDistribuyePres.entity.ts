@@ -7,18 +7,18 @@ export class TblCiDetPlantillaDistribuyePres {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtOrigen?: any;
+  CCtOrigen?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDpto?: any;
+  CCiDpto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiProyecto?: any;
+  CCiProyecto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiSubProyecto?: any;
+  CCiSubProyecto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCuenta?: any;
+  CCiCuenta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoAuxiliar?: any;
+  CCiTipoAuxiliar?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiAuxiliar?: any;
+  CCiAuxiliar?: string;
 
 }

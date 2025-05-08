@@ -5,23 +5,23 @@ export class TblGeFeriado {
   @PrimaryColumn('int', { nullable: false })
   NIdGeFeriado?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsFeriado?: any;
+  CDsFeriado?: string;
   @Column('datetime', { nullable: false })
   DFxIniFeriado?: any;
   @Column('datetime', { nullable: false })
   DFxFinFeriado?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeFeriado?: any;
+  CCeFeriado?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column('int', { nullable: false })

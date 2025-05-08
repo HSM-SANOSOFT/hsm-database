@@ -5,47 +5,47 @@ export class TblNoEmpleado {
   @PrimaryColumn('int', { nullable: false })
   NIdNoEmpleado?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsApellidos?: any;
+  CDsApellidos?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsNombres?: any;
+  CDsNombres?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtDocumento?: any;
+  CCtDocumento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDocumento?: any;
+  CCiDocumento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxLibretaMilitar?: any;
+  CTxLibretaMilitar?: string;
   @Column('datetime', { nullable: false })
   DFxIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiNacionalidad?: any;
+  CCiNacionalidad?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxLugarNacimiento?: any;
+  CTxLugarNacimiento?: string;
   @Column('datetime', { nullable: false })
   DFxNacimiento?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtEstadoCivil?: any;
+  CCtEstadoCivil?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiProvincia?: any;
+  CCiProvincia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCanton?: any;
+  CCiCanton?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiParroquia?: any;
+  CCiParroquia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxSector?: any;
+  CTxSector?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxDireccion?: any;
+  CTxDireccion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtVivienda?: any;
+  CCtVivienda?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxNumVivienda?: any;
+  CTxNumVivienda?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxTelefono?: any;
+  CTxTelefono?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxCelular?: any;
+  CTxCelular?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxMail?: any;
+  CTxMail?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxMailPersonal?: any;
+  CTxMailPersonal?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuEstatura?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
@@ -63,71 +63,71 @@ export class TblNoEmpleado {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NNuTallaPie?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxColorOjos?: any;
+  CTxColorOjos?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxColorPiel?: any;
+  CTxColorPiel?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxTipoSangre?: any;
+  CTxTipoSangre?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtSexo?: any;
+  CCtSexo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsContacto?: any;
+  CDsContacto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxDireccionContacto?: any;
+  CTxDireccionContacto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxTelfContato1?: any;
+  CTxTelfContato1?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxTelfContato2?: any;
+  CTxTelfContato2?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtLicenciaConducir?: any;
+  CCtLicenciaConducir?: string;
   @Column('datetime', { nullable: false })
   DFxLicenciaConducir?: any;
   @Column('int', { nullable: false })
   NIdNoJefeInmediato?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxNivelEducacion?: any;
+  CTxNivelEducacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnCertificadoSalud?: any;
+  CSnCertificadoSalud?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCertificadoSalud?: any;
+  CCiCertificadoSalud?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxCertificadoSalud?: any;
+  CTxCertificadoSalud?: string;
   @Column('datetime', { nullable: false })
   DFxCertificadoSalud?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnDiscapacitado?: any;
+  CSnDiscapacitado?: string;
   @Column('int', { nullable: false })
   NQnDiscapacidad?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxConadis?: any;
+  CTxConadis?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxDiscapacidad?: any;
+  CTxDiscapacidad?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnFichaMedica?: any;
+  CSnFichaMedica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CSnEmbarazada?: any;
+  CSnEmbarazada?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnMarcacion?: any;
+  CSnMarcacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiReloj?: any;
+  CCiReloj?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnMultiEmpresa?: any;
+  CSnMultiEmpresa?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxObservacion?: any;
+  CTxObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeEmpleado?: any;
+  CCeEmpleado?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiMaquinaria?: any;
+  CCiMaquinaria?: string;
 }

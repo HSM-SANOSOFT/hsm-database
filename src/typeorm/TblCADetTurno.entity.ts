@@ -7,7 +7,7 @@ export class TblCADetTurno {
   @PrimaryColumn('int', { nullable: false })
   NNuSecuencia?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtAtraso?: any;
+  CCtAtraso?: string;
   @Column('datetime', { nullable: false })
   DFxAtraso?: any;
   @Column('datetime', { nullable: false })

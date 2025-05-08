@@ -5,11 +5,11 @@ export class TblNoCabProyeccionSueldo {
   @PrimaryColumn('int', { nullable: false })
   NIdNoProyeccion?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column('int', { nullable: false })
   NNuControl?: any;
   @Column('datetime', { nullable: false })
@@ -17,27 +17,27 @@ export class TblNoCabProyeccionSueldo {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtSueldo?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCtSueldo?: any;
+  CCtSueldo?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeProyeccionSueldo?: any;
+  CCeProyeccionSueldo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsObservacion?: any;
+  CDsObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioAprueba?: any;
+  CCiUsuarioAprueba?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionAprueba?: any;
+  CDsEstacionAprueba?: string;
   @Column('datetime', { nullable: false })
   DFxAprueba?: any;
 }

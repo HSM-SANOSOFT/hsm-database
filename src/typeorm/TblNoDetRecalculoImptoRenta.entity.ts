@@ -43,6 +43,6 @@ export class TblNoDetRecalculoImptoRenta {
   @Column('int', { nullable: false })
   NNuPrestamo?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnGenerado?: any;
+  CSnGenerado?: string;
 
 }

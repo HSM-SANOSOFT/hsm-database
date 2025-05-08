@@ -11,7 +11,7 @@ export class TblNoDetBatchIESS {
   @Column('datetime', { nullable: false })
   DFxFalta?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiMotivo?: any;
+  CCiMotivo?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtSueldoAntSistema?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
@@ -27,6 +27,6 @@ export class TblNoDetBatchIESS {
   @Column('int', { nullable: false })
   NNuDias?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxIESS?: any;
+  CTxIESS?: string;
 
 }

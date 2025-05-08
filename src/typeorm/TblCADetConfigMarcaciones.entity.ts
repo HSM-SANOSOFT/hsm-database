@@ -3,19 +3,26 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCADetConfigMarcaciones')
 export class TblCADetConfigMarcaciones {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiConfigMarcacion?: any;
+  CCiConfigMarcacion!: string;
+
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCtJornada?: any;
+  CCtJornada!: string;
+
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto!: number;
+
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose!: number;
+
   @Column('datetime', { nullable: false })
-  DFxEntradaLey?: any;
+  DFxEntradaLey!: Date;
+
   @Column('datetime', { nullable: false })
-  DFxSalidaLey?: any;
+  DFxSalidaLey!: Date;
+
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuMaxHorasDias?: any;
+  NNuMaxHorasDias!: number;
+
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuMaxHorasSemana?: any;
+  NNuMaxHorasSemana!: number;
 }

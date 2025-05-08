@@ -5,9 +5,9 @@ export class TblNoRel_Auxiliar_TipoAuxiliarAudt {
   @Column('int', { nullable: false })
   NNuControl?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCiTipoAuxiliar?: any;
+  CCiTipoAuxiliar?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiAlterno?: any;
+  CCiAlterno?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeRel_Aux_TipoAux?: any;
+  CCeRel_Aux_TipoAux?: string;
 }

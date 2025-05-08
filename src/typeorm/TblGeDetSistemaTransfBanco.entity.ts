@@ -7,7 +7,7 @@ export class TblGeDetSistemaTransfBanco {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiFormatoBanco?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsFormatoBanco?: any;
+  CDsFormatoBanco?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeFormatoBanco?: any;
+  CCeFormatoBanco?: string;
 }

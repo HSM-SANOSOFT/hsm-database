@@ -7,27 +7,27 @@ export class TblNoMotivo {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiMotivo?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsMotivo?: any;
+  CDsMotivo?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnReferencia1?: any;
+  CSnReferencia1?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnReferencia2?: any;
+  CSnReferencia2?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnReferencia3?: any;
+  CSnReferencia3?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnReferencia4?: any;
+  CSnReferencia4?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeMotivo?: any;
+  CCeMotivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

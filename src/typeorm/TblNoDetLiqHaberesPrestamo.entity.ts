@@ -13,5 +13,5 @@ export class TblNoDetLiqHaberesPrestamo {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtDescuento?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsObservacion?: any;
+  CDsObservacion?: string;
 }

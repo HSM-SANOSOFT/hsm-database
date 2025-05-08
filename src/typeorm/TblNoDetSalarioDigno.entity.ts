@@ -9,13 +9,13 @@ export class TblNoDetSalarioDigno {
   @Column('int', { nullable: false })
   NIdNoContrato?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column('int', { nullable: false })
   NNuDiasContratoSistema?: any;
   @Column('int', { nullable: false })
   NNuDiasContrato?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CSnParcial?: any;
+  CSnParcial?: string;
   @Column('int', { nullable: false })
   NNuHorasParcial?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
@@ -55,6 +55,6 @@ export class TblNoDetSalarioDigno {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtSalarioDigno?: any;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtAcreditacion?: any;
+  CCtAcreditacion?: string;
 
 }

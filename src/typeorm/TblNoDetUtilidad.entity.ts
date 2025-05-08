@@ -9,17 +9,17 @@ export class TblNoDetUtilidad {
   @Column('int', { nullable: false })
   NIdNoContrato?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCargo?: any;
+  CCiCargo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCodigoIESS?: any;
+  CCiCodigoIESS?: string;
   @Column('datetime', { nullable: false })
   DFxIniContrato?: any;
   @Column('datetime', { nullable: false })
   DFxFinContrato?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCeContrato?: any;
+  CCeContrato?: string;
   @Column('int', { nullable: false })
   NNuCargasSistema?: any;
   @Column('int', { nullable: false })
@@ -45,7 +45,7 @@ export class TblNoDetUtilidad {
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtDescuentos?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
   NVtNetoUtilidadSist?: any;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })

@@ -7,7 +7,7 @@ export class TblDetNominaProyectoDias {
   @Column('int', { nullable: false })
   NNuControlProyecto?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuario?: any;
+  CCiUsuario?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiEstacion?: any;
+  CCiEstacion?: string;
 }

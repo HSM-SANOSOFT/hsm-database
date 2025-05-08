@@ -3,23 +3,23 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeCabDefinicion')
 export class TblGeCabDefinicion {
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiDefinicion?: any;
+  CCiDefinicion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsDefinicion?: any;
+  CDsDefinicion?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCtDefinicion?: any;
+  CCtDefinicion?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeDefinicion?: any;
+  CCeDefinicion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioIngreso?: any;
+  CCiUsuarioIngreso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionIngreso?: any;
+  CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
   DFiIngreso?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiUsuarioModifica?: any;
+  CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsEstacionModifica?: any;
+  CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
   DFmModifica?: any;
 }

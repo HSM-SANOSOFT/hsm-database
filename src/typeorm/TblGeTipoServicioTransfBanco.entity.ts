@@ -7,8 +7,8 @@ export class TblGeTipoServicioTransfBanco {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
   CCiTipoServicio?: any;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CDsTipoServicio?: any;
+  CDsTipoServicio?: string;
   @Column({ type: 'char', length: 1, nullable: false })
-  CCeTipoServicio?: any;
+  CCeTipoServicio?: string;
 
 }
