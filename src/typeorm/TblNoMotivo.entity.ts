@@ -3,9 +3,9 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoMotivo')
 export class TblNoMotivo {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiModulo?: any;
+  CCiModulo?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiMotivo?: any;
+  CCiMotivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsMotivo?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -23,11 +23,11 @@ export class TblNoMotivo {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

@@ -9,7 +9,7 @@ export class TblGeCabParametro {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxTexto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuValor?: any;
+  NNuValor?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxReferencia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -21,11 +21,11 @@ export class TblGeCabParametro {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

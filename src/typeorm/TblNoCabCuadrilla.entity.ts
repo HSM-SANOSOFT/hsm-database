@@ -3,21 +3,21 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabCuadrilla')
 export class TblNoCabCuadrilla {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @PrimaryColumn('int', { nullable: false })
-  NNuCuadrilla?: any;
+  NNuCuadrilla?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsCuadrilla?: string;
   @Column('int', { nullable: false })
-  NIdNoJefeInmediato?: any;
+  NIdNoJefeInmediato?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxReferencia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -29,13 +29,13 @@ export class TblNoCabCuadrilla {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiCentroCosto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

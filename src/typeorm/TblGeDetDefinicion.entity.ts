@@ -3,13 +3,13 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeDetDefinicion')
 export class TblGeDetDefinicion {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiDefinicion?: any;
+  CCiDefinicion?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiReferencia?: any;
+  CCiReferencia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsReferencia?: string;
   @Column('int', { nullable: false })
-  NVtReferencia?: any;
+  NVtReferencia?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxReferencia?: string;
   @Column({ type: 'char', length: 1, nullable: false })

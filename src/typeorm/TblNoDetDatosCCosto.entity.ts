@@ -3,15 +3,15 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetDatosCCosto')
 export class TblNoDetDatosCCosto {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @PrimaryColumn('int', { nullable: false })
-  NidNoContrato?: any;
+  NidNoContrato?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -19,15 +19,15 @@ export class TblNoDetDatosCCosto {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiSubCentroCosto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldo?: any;
+  NVtSueldo?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoDia?: any;
+  NVtSueldoDia?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoHora?: any;
+  NVtSueldoHora?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoAnual?: any;
+  NVtSueldoAnual?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoBase?: any;
+  NVtSueldoBase?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCeArea?: string;
 

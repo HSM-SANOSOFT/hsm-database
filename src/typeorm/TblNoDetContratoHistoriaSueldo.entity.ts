@@ -3,23 +3,23 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetContratoHistoriaSueldo')
 export class TblNoDetContratoHistoriaSueldo {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtHistoria?: string;
   @Column('datetime', { nullable: false })
-  DFxHistoria?: any;
+  DFxHistoria?: Date;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldo?: any;
+  NVtSueldo?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoDia?: any;
+  NVtSueldoDia?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoHora?: any;
+  NVtSueldoHora?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoAnual?: any;
+  NVtSueldoAnual?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoBase?: any;
+  NVtSueldoBase?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

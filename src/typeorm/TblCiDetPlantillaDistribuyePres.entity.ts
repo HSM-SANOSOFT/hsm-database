@@ -3,9 +3,9 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCiDetPlantillaDistribuyePres')
 export class TblCiDetPlantillaDistribuyePres {
   @PrimaryColumn('int', { nullable: false })
-  NIdCiPlantillaDistribuye?: any;
+  NIdCiPlantillaDistribuye?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtOrigen?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

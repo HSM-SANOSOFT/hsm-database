@@ -3,31 +3,31 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetAgrupacionBatchIESS')
 export class TblNoDetAgrupacionBatchIESS {
   @PrimaryColumn('int', { nullable: false })
-  NidNoBatchIESS?: any;
+  NidNoBatchIESS?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiMotivo?: string;
   @Column('datetime', { nullable: false })
-  DFxFalta?: any;
+  DFxFalta?: Date;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoAntSistema?: any;
+  NVtSueldoAntSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoAnt?: any;
+  NVtSueldoAnt?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtNetoSistema?: any;
+  NVtNetoSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtNeto?: any;
+  NVtNeto?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldo?: any;
+  NVtSueldo?: number;
   @Column('int', { nullable: false })
-  NNuDiasSistema?: any;
+  NNuDiasSistema?: number;
   @Column('int', { nullable: false })
-  NNuDias?: any;
+  NNuDias?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxIESS?: string;
 

@@ -3,23 +3,23 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeSecuencia')
 export class TblGeSecuencia {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoSecu?: any;
+  CCiTipoSecu?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiReferencia1?: any;
+  CCiReferencia1?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiReferencia2?: any;
+  CCiReferencia2?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiReferencia3?: any;
+  CCiReferencia3?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiReferencia4?: any;
+  CCiReferencia4?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiReferencia5?: any;
+  CCiReferencia5?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
 }

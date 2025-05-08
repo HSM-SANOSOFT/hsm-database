@@ -3,106 +3,106 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoRelTotalHorasObrero')
 export class TblNoRelTotalHorasObrero {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @PrimaryColumn('int', { nullable: false })
-  NIdNoJefeInmediato?: any;
+  NIdNoJefeInmediato?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @PrimaryColumn('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuDiasTrabjados?: any;
+  NNuDiasTrabjados?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldo?: any;
+  NVtSueldo?: number;
   @Column('int', { nullable: false })
-  NNuHorasTrabajadas?: any;
+  NNuHorasTrabajadas?: number;
   @Column('int', { nullable: false })
-  NNuHorasNoTrabajadas?: any;
+  NNuHorasNoTrabajadas?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtHorasNoLaboradas?: any;
+  NVtHorasNoLaboradas?: number;
   @Column('int', { nullable: false })
-  NNuHorasExtraLV?: any;
+  NNuHorasExtraLV?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtHorasExtraLV?: any;
+  NVtHorasExtraLV?: number;
   @Column('int', { nullable: false })
-  NNuHorasExtraSab?: any;
+  NNuHorasExtraSab?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtHorasExtraSab?: any;
+  NVtHorasExtraSab?: number;
   @Column('int', { nullable: false })
-  NNuHorasExtraDom?: any;
+  NNuHorasExtraDom?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtHorasExtraDom?: any;
+  NVtHorasExtraDom?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuDiasAsumidos?: any;
+  NNuDiasAsumidos?: number;
   @Column('int', { nullable: false })
-  NNuHorasAsumidas?: any;
+  NNuHorasAsumidas?: number;
   @Column('int', { nullable: false })
-  NNuMinutosTrabajados?: any;
+  NNuMinutosTrabajados?: number;
   @Column('int', { nullable: false })
-  NNuMinutosNoTrabajados?: any;
+  NNuMinutosNoTrabajados?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtMinutosNoLaborados?: any;
+  NVtMinutosNoLaborados?: number;
   @Column('int', { nullable: false })
-  NNuMinutosAsumidos?: any;
+  NNuMinutosAsumidos?: number;
   @Column('int', { nullable: false })
-  NNuMinutosExtraLV?: any;
+  NNuMinutosExtraLV?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtMinutosExtraLV?: any;
+  NVtMinutosExtraLV?: number;
   @Column('int', { nullable: false })
-  NNuMinutosExtraSab?: any;
+  NNuMinutosExtraSab?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtMinutosExtraSab?: any;
+  NVtMinutosExtraSab?: number;
   @Column('int', { nullable: false })
-  NNuMinutosExtraDom?: any;
+  NNuMinutosExtraDom?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtMinutosExtraDom?: any;
+  NVtMinutosExtraDom?: number;
   @Column('int', { nullable: false })
-  NNuHorasFeriadoLV?: any;
+  NNuHorasFeriadoLV?: number;
   @Column('int', { nullable: false })
-  NNuMinutosFeriadoLV?: any;
+  NNuMinutosFeriadoLV?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtHorasFeriadoLV?: any;
+  NVtHorasFeriadoLV?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtMinutosFeriadoLV?: any;
+  NVtMinutosFeriadoLV?: number;
   @Column('int', { nullable: false })
-  NNuHorasFeriadoSab?: any;
+  NNuHorasFeriadoSab?: number;
   @Column('int', { nullable: false })
-  NNuMinutosFeriadoSab?: any;
+  NNuMinutosFeriadoSab?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtHorasFeriadoSab?: any;
+  NVtHorasFeriadoSab?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtMinutosFeriadoSab?: any;
+  NVtMinutosFeriadoSab?: number;
   @Column('int', { nullable: false })
-  NNuHorasFeriadoDom?: any;
+  NNuHorasFeriadoDom?: number;
   @Column('int', { nullable: false })
-  NNuMinutosFeriadoDom?: any;
+  NNuMinutosFeriadoDom?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtHorasFeriadoDom?: any;
+  NVtHorasFeriadoDom?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtMinutosFeriadoDom?: any;
+  NVtMinutosFeriadoDom?: number;
   @Column('datetime', { nullable: false })
-  NNuHoraRecargoNocturno?: any;
+  NNuHoraRecargoNocturno?: Date;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NvtHoraRecargoNocturno?: any;
+  NvtHoraRecargoNocturno?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuDiasNoTrabajados?: any;
+  NNuDiasNoTrabajados?: number;
   @Column('datetime', { nullable: false })
-  NNuHoraRecargoNocturno2?: any;
+  NNuHoraRecargoNocturno2?: Date;
   @Column('datetime', { nullable: false })
-  NNuHoraSuplExtr1?: any;
+  NNuHoraSuplExtr1?: Date;
   @Column('datetime', { nullable: false })
-  NNuHoraSuplExtr2?: any;
+  NNuHoraSuplExtr2?: Date;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtHoraSuplExtr?: any;
+  NVtHoraSuplExtr?: number;
 
 }

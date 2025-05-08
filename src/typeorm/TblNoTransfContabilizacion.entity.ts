@@ -3,13 +3,13 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoTransfContabilizacion')
 export class TblNoTransfContabilizacion {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoTransferencia?: any;
+  NIdNoTransferencia?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuRegistro?: any;
+  NNuRegistro?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoComprobante?: string;
   @Column('int', { nullable: false })
-  NNuAsiento?: any;
+  NNuAsiento?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiPlanCta?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -25,9 +25,9 @@ export class TblNoTransfContabilizacion {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiSubProyecto?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDebito?: any;
+  NVtDebito?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtCredito?: any;
+  NVtCredito?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -37,5 +37,5 @@ export class TblNoTransfContabilizacion {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxDetalle?: string;
   @Column('int', { nullable: false })
-  NidNoContrato?: any;
+  NidNoContrato?: number;
 }

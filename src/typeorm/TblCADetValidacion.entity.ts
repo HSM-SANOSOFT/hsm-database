@@ -3,29 +3,29 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCADetValidacion')
 export class TblCADetValidacion {
   @PrimaryColumn('int', { nullable: false })
-  NIdCAValidacion?: any;
+  NIdCAValidacion?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('int', { nullable: false })
-  NIdCAMovimiento?: any;
+  NIdCAMovimiento?: number;
   @Column('int', { nullable: false })
-  NIdCASecMvto?: any;
+  NIdCASecMvto?: number;
   @Column('datetime', { nullable: false })
-  DFxValidacion?: any;
+  DFxValidacion?: Date;
   @Column('datetime', { nullable: false })
-  DFxEntrada?: any;
+  DFxEntrada?: Date;
   @Column('datetime', { nullable: false })
-  DFxSalidaReceso?: any;
+  DFxSalidaReceso?: Date;
   @Column('datetime', { nullable: false })
-  DFxEntradaReceso?: any;
+  DFxEntradaReceso?: Date;
   @Column('datetime', { nullable: false })
-  DFxSalida?: any;
+  DFxSalida?: Date;
   @Column('datetime', { nullable: false })
-  DFxRecargo50?: any;
+  DFxRecargo50?: Date;
   @Column('datetime', { nullable: false })
-  DFxRecargo100?: any;
+  DFxRecargo100?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtRegistro?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

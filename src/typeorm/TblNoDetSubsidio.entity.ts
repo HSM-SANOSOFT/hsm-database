@@ -3,15 +3,15 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetSubsidio')
 export class TblNoDetSubsidio {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoNovedad?: any;
+  NIdNoNovedad?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecNovedad?: any;
+  NNuSecNovedad?: number;
   @PrimaryColumn('datetime', { nullable: false })
-  DFxSubsidio?: any;
+  DFxSubsidio?: Date;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuCantidad?: any;
+  NNuCantidad?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
 
 
 }

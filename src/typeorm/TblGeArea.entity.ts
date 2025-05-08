@@ -3,13 +3,13 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeArea')
 export class TblGeArea {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -21,63 +21,63 @@ export class TblGeArea {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column('datetime', { nullable: false })
-  DFxInicio?: any;
+  DFxInicio?: Date;
   @Column('datetime', { nullable: false })
-  DFxFin?: any;
+  DFxFin?: Date;
   @Column('int', { nullable: false })
-  NIdNoConceptoDscto?: any;
+  NIdNoConceptoDscto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesgloseDscto?: any;
+  NIdNoDesgloseDscto?: number;
   @Column('int', { nullable: false })
-  NIdNoConceptoLV?: any;
+  NIdNoConceptoLV?: number;
   @Column('int', { nullable: false })
-  NIdNoDesgloseLV?: any;
+  NIdNoDesgloseLV?: number;
   @Column('int', { nullable: false })
-  NIdNoConceptoSab?: any;
+  NIdNoConceptoSab?: number;
   @Column('int', { nullable: false })
-  NIdNoDesgloseSab?: any;
+  NIdNoDesgloseSab?: number;
   @Column('int', { nullable: false })
-  NIdNoConceptoDom?: any;
+  NIdNoConceptoDom?: number;
   @Column('int', { nullable: false })
-  NIdNoDesgloseDom?: any;
+  NIdNoDesgloseDom?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtAjusteNomina?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuFactorAjuste?: any;
+  NNuFactorAjuste?: number;
   @Column('datetime', { nullable: false })
-  DFxInicioReal?: any;
+  DFxInicioReal?: Date;
   @Column('datetime', { nullable: false })
-  DFxFinReal?: any;
+  DFxFinReal?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnAplicaConceptoDscto?: string;
   @Column('int', { nullable: false })
-  NIdNoConceptoRecargoNoct?: any;
+  NIdNoConceptoRecargoNoct?: number;
   @Column('int', { nullable: false })
-  NIdNoDesgloseRecargoNoct?: any;
+  NIdNoDesgloseRecargoNoct?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsDireccion?: string;
   @Column('datetime', { nullable: false })
-  DFxHoraInicio?: any;
+  DFxHoraInicio?: Date;
   @Column('datetime', { nullable: false })
-  DFxHoraFin?: any;
+  DFxHoraFin?: Date;
   @Column('int', { nullable: false })
-  NIdNoConceptoSuplExtr?: any;
+  NIdNoConceptoSuplExtr?: number;
   @Column('int', { nullable: false })
-  NIdNoDesgloseSuplExtr?: any;
+  NIdNoDesgloseSuplExtr?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxIESS?: string;
   @Column('int', { nullable: false })
-  NIdNoConceptoAjuste?: any;
+  NIdNoConceptoAjuste?: number;
   @Column('int', { nullable: false })
-  NIdNoDesgloseAjuste?: any;
+  NIdNoDesgloseAjuste?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoRegion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

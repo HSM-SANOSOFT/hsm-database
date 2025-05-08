@@ -3,33 +3,33 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetLaborCuadrilla')
 export class TblNoDetLaborCuadrilla {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoLabor?: any;
+  NIdNoLabor?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtOrigen?: string;
   @Column('int', { nullable: false })
-  NIdGeOrigen?: any;
+  NIdGeOrigen?: number;
   @Column('int', { nullable: false })
-  NNuBoleta?: any;
+  NNuBoleta?: number;
   @Column('datetime', { nullable: false })
-  DFxHoraLabor?: any;
+  DFxHoraLabor?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtHora?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NQnPorcentaje?: any;
+  NQnPorcentaje?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUnidadMedida?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTarifa?: any;
+  NVtTarifa?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuCantidad?: any;
+  NNuCantidad?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtJornal?: any;
+  NVtJornal?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTarifaOrig?: any;
+  NVtTarifaOrig?: number;
 }

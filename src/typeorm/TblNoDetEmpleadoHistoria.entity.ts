@@ -3,9 +3,9 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetEmpleadoHistoria')
 export class TblNoDetEmpleadoHistoria {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -13,11 +13,11 @@ export class TblNoDetEmpleadoHistoria {
   @Column({ type: 'char', length: 1, nullable: false })
   CCiSucursal?: string;
   @Column('datetime', { nullable: false })
-  DFxVigencia?: any;
+  DFxVigencia?: Date;
   @Column('datetime', { nullable: false })
-  DFxSalida?: any;
+  DFxSalida?: Date;
   @Column('int', { nullable: false })
-  NNuDias?: any;
+  NNuDias?: number;
   @Column('int', { nullable: false })
-  NidNoReferencia?: any;
+  NidNoReferencia?: number;
 }

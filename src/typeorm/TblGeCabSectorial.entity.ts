@@ -7,7 +7,7 @@ export class TblGeCabSectorial {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsSectorial?: string;
   @Column('datetime', { nullable: false })
-  DFxSectorial?: any;
+  DFxSectorial?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxOficio?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -19,11 +19,11 @@ export class TblGeCabSectorial {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

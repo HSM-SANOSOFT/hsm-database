@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabLiquidacionHaberes')
 export class TblNoCabLiquidacionHaberes {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoLiqHaberes?: any;
+  NIdNoLiqHaberes?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -13,15 +13,15 @@ export class TblNoCabLiquidacionHaberes {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoNomina?: string;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column('int', { nullable: false })
-  NNuLiquidacion?: any;
+  NNuLiquidacion?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('datetime', { nullable: false })
-  DFxLiquidacion?: any;
+  DFxLiquidacion?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiMotivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -39,23 +39,23 @@ export class TblNoCabLiquidacionHaberes {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtUltimaRemuneracion?: any;
+  NVtUltimaRemuneracion?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column('int', { nullable: false })
-  NNuCodMRL?: any;
+  NNuCodMRL?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnDiasVacaciones?: string;
   @Column('int', { nullable: false })
-  NQnDiasVacaciones?: any;
+  NQnDiasVacaciones?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnDetalleVacaciones?: string;
 }

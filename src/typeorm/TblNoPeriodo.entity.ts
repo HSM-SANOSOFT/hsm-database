@@ -3,37 +3,37 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoPeriodo')
 export class TblNoPeriodo {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @PrimaryColumn('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtPeriodo?: string;
   @Column('int', { nullable: false })
-  NNuCatorcena?: any;
+  NNuCatorcena?: number;
   @Column('int', { nullable: false })
-  NNuMes?: any;
+  NNuMes?: number;
   @Column('int', { nullable: false })
-  NNuMesCatorcena?: any;
+  NNuMesCatorcena?: number;
   @Column('datetime', { nullable: false })
-  DFxIniPeriodo?: any;
+  DFxIniPeriodo?: Date;
   @Column('datetime', { nullable: false })
-  DFxFinPeriodo?: any;
+  DFxFinPeriodo?: Date;
   @Column('datetime', { nullable: false })
-  DFxPago?: any;
+  DFxPago?: Date;
   @Column('datetime', { nullable: false })
-  DFxIniProduccion?: any;
+  DFxIniProduccion?: Date;
   @Column('datetime', { nullable: false })
-  DFxFinProduccion?: any;
+  DFxFinProduccion?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CCePeriodo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -41,18 +41,18 @@ export class TblNoPeriodo {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtRegistro?: string;
   @Column('datetime', { nullable: false })
-  DFxIniPeriodoOrig?: any;
+  DFxIniPeriodoOrig?: Date;
   @Column('datetime', { nullable: false })
-  DFxFinPeriodoOrig?: any;
+  DFxFinPeriodoOrig?: Date;
 
 }

@@ -3,86 +3,86 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetRDEPContribucion')
 export class TblNoDetRDEPContribucion {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoRDEP?: any;
+  NIdNoRDEP?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCeContrato?: string;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnExcluirEmpleado?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRemuneracionContribEsteEmplSist?: any;
+  NVtRemuneracionContribEsteEmplSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRemuneracionContribEsteEmpl?: any;
+  NVtRemuneracionContribEsteEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRemuneracionContribOtroEmplSist?: any;
+  NVtRemuneracionContribOtroEmplSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRemuneracionContribOtroEmpl?: any;
+  NVtRemuneracionContribOtroEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtExoneracionContribucionSist?: any;
+  NVtExoneracionContribucionSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtExoneracionContribucion?: any;
+  NVtExoneracionContribucion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotalRemuneracionContribSist?: any;
+  NVtTotalRemuneracionContribSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotalRemuneracionContrib?: any;
+  NVtTotalRemuneracionContrib?: number;
   @Column('int', { nullable: false })
-  NNuMesesContribEsteEmplSist?: any;
+  NNuMesesContribEsteEmplSist?: number;
   @Column('int', { nullable: false })
-  NNuMesesContribEsteEmpl?: any;
+  NNuMesesContribEsteEmpl?: number;
   @Column('int', { nullable: false })
-  NNuMesesContribOtroEmplSist?: any;
+  NNuMesesContribOtroEmplSist?: number;
   @Column('int', { nullable: false })
-  NNuMesesContribOtroEmpl?: any;
+  NNuMesesContribOtroEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRemuneracionPromedioContribSist?: any;
+  NVtRemuneracionPromedioContribSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRemuneracionPromedioContrib?: any;
+  NVtRemuneracionPromedioContrib?: number;
   @Column('int', { nullable: false })
-  NNuMesesContribGeneradaOtroEmplSist?: any;
+  NNuMesesContribGeneradaOtroEmplSist?: number;
   @Column('int', { nullable: false })
-  NNuMesesContribGeneradaOtroEmpl?: any;
+  NNuMesesContribGeneradaOtroEmpl?: number;
   @Column('int', { nullable: false })
-  NNuMesesContribGeneradaEsteEmplSist?: any;
+  NNuMesesContribGeneradaEsteEmplSist?: number;
   @Column('int', { nullable: false })
-  NNuMesesContribGeneradaEsteEmpl?: any;
+  NNuMesesContribGeneradaEsteEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotalContribucionGeneradaSist?: any;
+  NVtTotalContribucionGeneradaSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotalContribucionGenerada?: any;
+  NVtTotalContribucionGenerada?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtCreditoTribDonacionOtroEmplSist?: any;
+  NVtCreditoTribDonacionOtroEmplSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtCreditoTribDonacionOtroEmpl?: any;
+  NVtCreditoTribDonacionOtroEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtCreditoTribDonacionEsteEmplSist?: any;
+  NVtCreditoTribDonacionEsteEmplSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtCreditoTribDonacionEsteEmpl?: any;
+  NVtCreditoTribDonacionEsteEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtCreditoTribDonacionNoEsteEmplSist?: any;
+  NVtCreditoTribDonacionNoEsteEmplSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtCreditoTribDonacionNoEsteEmpl?: any;
+  NVtCreditoTribDonacionNoEsteEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtContribucionPagarSist?: any;
+  NVtContribucionPagarSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtContribucionPagar?: any;
+  NVtContribucionPagar?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtContribucionAsumidaOtroEmplSist?: any;
+  NVtContribucionAsumidaOtroEmplSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtContribucionAsumidaOtroEmpl?: any;
+  NVtContribucionAsumidaOtroEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtContribucionRetenidaOtroEmplSist?: any;
+  NVtContribucionRetenidaOtroEmplSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtContribucionRetenidaOtroEmpl?: any;
+  NVtContribucionRetenidaOtroEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtContribucionAsumidaEsteEmplSist?: any;
+  NVtContribucionAsumidaEsteEmplSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtContribucionAsumidaEsteEmpl?: any;
+  NVtContribucionAsumidaEsteEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtContribucionRetenidaEsteEmplSist?: any;
+  NVtContribucionRetenidaEsteEmplSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtContribucionRetenidaEsteEmpl?: any;
+  NVtContribucionRetenidaEsteEmpl?: number;
 
 }

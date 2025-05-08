@@ -3,16 +3,16 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCADetTurno')
 export class TblCADetTurno {
   @PrimaryColumn('int', { nullable: false })
-  NIdCaTurno?: any;
+  NIdCaTurno?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtAtraso?: string;
   @Column('datetime', { nullable: false })
-  DFxAtraso?: any;
+  DFxAtraso?: Date;
   @Column('datetime', { nullable: false })
-  DFxPenalidad?: any;
+  DFxPenalidad?: Date;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtPenalidad?: any;
+  NVtPenalidad?: number;
 
 }

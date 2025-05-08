@@ -3,23 +3,23 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetNomina')
 export class TblNoDetNomina {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoNomina?: any;
+  NIdNoNomina?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuCantidad?: any;
+  NNuCantidad?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtConcepto?: any;
+  NVtConcepto?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtNeto?: any;
+  NVtNeto?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtRegistro?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -29,12 +29,12 @@ export class TblNoDetNomina {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiSubCentroCosto?: string;
   @Column('int', { nullable: false })
-  NNuAnioProvision?: any;
+  NNuAnioProvision?: number;
   @Column('int', { nullable: false })
-  NNuMesProvision?: any;
+  NNuMesProvision?: number;
   @Column('int', { nullable: false })
-  NIdNoPrestamo?: any;
+  NIdNoPrestamo?: number;
   @Column('int', { nullable: false })
-  NNuCuota?: any;
+  NNuCuota?: number;
 
 }

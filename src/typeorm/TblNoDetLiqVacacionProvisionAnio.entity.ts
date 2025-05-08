@@ -3,22 +3,22 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetLiqVacacionProvisionAnio')
 export class TblNoDetLiqVacacionProvisionAnio {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoLiqVacaciones?: any;
+  NIdNoLiqVacaciones?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('datetime', { nullable: false })
-  DFxIniLiquidacion?: any;
+  DFxIniLiquidacion?: Date;
   @Column('datetime', { nullable: false })
-  DFxFinLiquidacion?: any;
+  DFxFinLiquidacion?: Date;
   @Column('int', { nullable: false })
-  NNuDiasPendiente?: any;
+  NNuDiasPendiente?: number;
   @Column('int', { nullable: false })
-  NNuDiasTomados?: any;
+  NNuDiasTomados?: number;
   @Column('int', { nullable: false })
-  NNuDiasLiquidar?: any;
+  NNuDiasLiquidar?: number;
   @Column('int', { nullable: false })
-  NIdNoCrtlVacaciones?: any;
+  NIdNoCrtlVacaciones?: number;
 
 }

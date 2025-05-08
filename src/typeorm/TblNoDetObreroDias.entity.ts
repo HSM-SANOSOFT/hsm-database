@@ -3,38 +3,38 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetObreroDias')
 export class TblNoDetObreroDias {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiArea?: any;
+  CCiArea?: string;
   @PrimaryColumn('int', { nullable: false })
-  NIdNoJefeInmediato?: any;
+  NIdNoJefeInmediato?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @PrimaryColumn('int', { nullable: false })
-  NnuSecuencia?: any;
+  NnuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('datetime', { nullable: false })
-  DFxRegistro?: any;
+  DFxRegistro?: Date;
   @Column('int', { nullable: false })
-  NnuHoras?: any;
+  NnuHoras?: number;
   @Column('int', { nullable: false })
-  NNuMinutos?: any;
+  NNuMinutos?: number;
   @Column('datetime', { nullable: false })
-  NNuHoraRecargoNocturno?: any;
+  NNuHoraRecargoNocturno?: Date;
   @Column('datetime', { nullable: false })
-  NNuHoraRecargoNocturno2?: any;
+  NNuHoraRecargoNocturno2?: Date;
   @Column('datetime', { nullable: false })
-  NNuHoraSuplExtr1?: any;
+  NNuHoraSuplExtr1?: Date;
   @Column('datetime', { nullable: false })
-  NNuHoraSuplExtr2?: any;
+  NNuHoraSuplExtr2?: Date;
 
 }

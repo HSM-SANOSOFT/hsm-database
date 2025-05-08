@@ -11,27 +11,27 @@ export class tmpTblNoPeriodo {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoNomina?: string;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtPeriodo?: string;
   @Column('int', { nullable: false })
-  NNuCatorcena?: any;
+  NNuCatorcena?: number;
   @Column('int', { nullable: false })
-  NNuMes?: any;
+  NNuMes?: number;
   @Column('int', { nullable: false })
-  NNuMesCatorcena?: any;
+  NNuMesCatorcena?: number;
   @Column('datetime', { nullable: false })
-  DFxIniPeriodo?: any;
+  DFxIniPeriodo?: Date;
   @Column('datetime', { nullable: false })
-  DFxFinPeriodo?: any;
+  DFxFinPeriodo?: Date;
   @Column('datetime', { nullable: false })
-  DFxPago?: any;
+  DFxPago?: Date;
   @Column('datetime', { nullable: false })
-  DFxIniProduccion?: any;
+  DFxIniProduccion?: Date;
   @Column('datetime', { nullable: false })
-  DFxFinProduccion?: any;
+  DFxFinProduccion?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CCePeriodo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -39,11 +39,11 @@ export class tmpTblNoPeriodo {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

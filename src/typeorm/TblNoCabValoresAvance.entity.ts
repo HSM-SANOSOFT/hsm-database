@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabValoresAvance')
 export class TblNoCabValoresAvance {
   @Column('int', { nullable: false })
-  NIdNoAvance?: any;
+  NIdNoAvance?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiCia?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -15,19 +15,19 @@ export class TblNoCabValoresAvance {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxReferencia?: string;
   @Column('int', { nullable: false })
-  NIdNoNomina?: any;
+  NIdNoNomina?: number;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCeAvance?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -35,11 +35,11 @@ export class TblNoCabValoresAvance {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
 }

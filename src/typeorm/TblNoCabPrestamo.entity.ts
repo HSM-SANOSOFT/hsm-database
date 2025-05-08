@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabPrestamo')
 export class TblNoCabPrestamo {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoPrestamo?: any;
+  NIdNoPrestamo?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -13,39 +13,39 @@ export class TblNoCabPrestamo {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoNomina?: string;
   @Column('int', { nullable: false })
-  NNuPrestamo?: any;
+  NNuPrestamo?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtPrestamo?: string;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiMotivoPrestamo?: string;
   @Column('datetime', { nullable: false })
-  DFxPrestamo?: any;
+  DFxPrestamo?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtPeriocidad?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtCalculo?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtCuota?: any;
+  NVtCuota?: number;
   @Column('int', { nullable: false })
-  NNuCuotas?: any;
+  NNuCuotas?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtMonto?: any;
+  NVtMonto?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NQnInteres?: any;
+  NQnInteres?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtPrestamo?: any;
+  NVtPrestamo?: number;
   @Column('datetime', { nullable: false })
-  DFxPrimerVcmto?: any;
+  DFxPrimerVcmto?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxReferencia?: string;
   @Column('int', { nullable: false })
-  NIdNoPrestamoOrigen?: any;
+  NIdNoPrestamoOrigen?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtDestinoPago?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -57,13 +57,13 @@ export class TblNoCabPrestamo {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column({ type: 'char', length: 1, nullable: false })

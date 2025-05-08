@@ -3,9 +3,9 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCiDetPlantillaDistribucion')
 export class TblCiDetPlantillaDistribucion {
   @PrimaryColumn('int', { nullable: false })
-  NIdCiPlantilla?: any;
+  NIdCiPlantilla?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecPlantilla?: any;
+  NNuSecPlantilla?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtSituacion?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -13,9 +13,9 @@ export class TblCiDetPlantillaDistribucion {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtConcepto?: string;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtDebitoCredito?: string;
   @Column({ type: 'char', length: 1, nullable: false })

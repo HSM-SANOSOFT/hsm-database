@@ -3,20 +3,20 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoSueldoBasico')
 export class TblNoSueldoBasico {
   @PrimaryColumn('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuMesDesde?: any;
+  NNuMesDesde?: number;
   @Column('int', { nullable: false })
-  NNuMesHasta?: any;
+  NNuMesHasta?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoBasico?: any;
+  NVtSueldoBasico?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtAporteIESS?: any;
+  NVtAporteIESS?: number;
 
 }

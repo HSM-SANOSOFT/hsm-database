@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabOrdenPago')
 export class TblNoCabOrdenPago {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoOrdenPago?: any;
+  NIdNoOrdenPago?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -13,15 +13,15 @@ export class TblNoCabOrdenPago {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoNomina?: string;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtProceso?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiIndividual?: string;
   @Column('datetime', { nullable: false })
-  DFxOrdenPago?: any;
+  DFxOrdenPago?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtOrdenPago?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -29,7 +29,7 @@ export class TblNoCabOrdenPago {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsBeneficiario?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtOrdenPago?: any;
+  NVtOrdenPago?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -39,13 +39,13 @@ export class TblNoCabOrdenPago {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
 }

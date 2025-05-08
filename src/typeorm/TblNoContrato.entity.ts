@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoContrato')
 export class TblNoContrato {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -13,7 +13,7 @@ export class TblNoContrato {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoNomina?: string;
   @Column('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoContrato?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -25,9 +25,9 @@ export class TblNoContrato {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtFormaPago?: string;
   @Column('datetime', { nullable: false })
-  DFxVigencia?: any;
+  DFxVigencia?: Date;
   @Column('datetime', { nullable: false })
-  DFxSalida?: any;
+  DFxSalida?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiBanco?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -51,21 +51,21 @@ export class TblNoContrato {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column('int', { nullable: false })
-  NIdNoSector?: any;
+  NIdNoSector?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnImptoRentaAsumido?: string;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnHorasExtraMaxima?: string;
   @Column('int', { nullable: false })
-  NQnHorasExtra?: any;
+  NQnHorasExtra?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiProveedor?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -73,7 +73,7 @@ export class TblNoContrato {
   @Column({ type: 'char', length: 1, nullable: false })
   CSnCalculaAvance?: string;
   @Column('datetime', { nullable: false })
-  DFxHistorico?: any;
+  DFxHistorico?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiVendedor?: string;
   @Column({ type: 'char', length: 1, nullable: false })

@@ -3,15 +3,15 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetLiqHaberesPrestamo')
 export class TblNoDetLiqHaberesPrestamo {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoLiqHaberes?: any;
+  NIdNoLiqHaberes?: number;
   @PrimaryColumn('int', { nullable: false })
-  NIdNoPrestamo?: any;
+  NIdNoPrestamo?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuCuota?: any;
+  NNuCuota?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSaldo?: any;
+  NVtSaldo?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDescuento?: any;
+  NVtDescuento?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsObservacion?: string;
 }

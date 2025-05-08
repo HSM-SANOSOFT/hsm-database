@@ -3,16 +3,16 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetLiquidacionPeriodo')
 export class TblNoDetLiquidacionPeriodo {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoLiqVacaciones?: any;
+  NIdNoLiqVacaciones?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtProceso?: string;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column('int', { nullable: false })
-  NNuDias?: any;
+  NNuDias?: number;
 
 }

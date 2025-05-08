@@ -3,28 +3,28 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetPrestamo')
 export class TblNoDetPrestamo {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoPrestamo?: any;
+  NIdNoPrestamo?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuCuota?: any;
+  NNuCuota?: number;
   @Column('int', { nullable: false })
-  NIdNoConceptoDscto?: any;
+  NIdNoConceptoDscto?: number;
   @Column('datetime', { nullable: false })
-  DFxVcmto?: any;
+  DFxVcmto?: Date;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtCuota?: any;
+  NVtCuota?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtInteres?: any;
+  NVtInteres?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotal?: any;
+  NVtTotal?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCeCuota?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSaldo?: any;
+  NVtSaldo?: number;
   @Column('int', { nullable: false })
-  NIdNoNomina?: any;
+  NIdNoNomina?: number;
   @Column('int', { nullable: false })
-  NIdNoSecNomina?: any;
+  NIdNoSecNomina?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtPago?: any;
+  NVtPago?: number;
 
 }

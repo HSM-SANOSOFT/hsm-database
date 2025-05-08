@@ -19,13 +19,13 @@ export class TblGeArchivo {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiReferencia3?: string;
   @Column('int', { nullable: false })
-  NNuReferencia1?: any;
+  NNuReferencia1?: number;
   @Column('int', { nullable: false })
-  NNuReferencia2?: any;
+  NNuReferencia2?: number;
   @Column('int', { nullable: false })
-  NNuReferencia3?: any;
+  NNuReferencia3?: number;
   @Column('int', { nullable: false })
-  NNuPosicion?: any;
+  NNuPosicion?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsSubRutaArchivo?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -33,5 +33,5 @@ export class TblGeArchivo {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsExtensionArchivo?: string;
   @Column('int', { nullable: false })
-  NNuArchivo?: any;
+  NNuArchivo?: number;
 }

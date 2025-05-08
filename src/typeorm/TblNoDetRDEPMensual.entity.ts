@@ -3,65 +3,65 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetRDEPMensual')
 export class TblNoDetRDEPMensual {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoRDEP?: any;
+  NIdNoRDEP?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column('int', { nullable: false })
-  NNuDias?: any;
+  NNuDias?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldo?: any;
+  NVtSueldo?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSobreSueldo?: any;
+  NVtSobreSueldo?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtUtilidades?: any;
+  NVtUtilidades?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtImpuestoRtaAsumido?: any;
+  NVtImpuestoRtaAsumido?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimoTercero?: any;
+  NVtDecimoTercero?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimocuarto?: any;
+  NVtDecimocuarto?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtFondoReserva?: any;
+  NVtFondoReserva?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtFondoReservaCancelado?: any;
+  NVtFondoReservaCancelado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSalarioDigno?: any;
+  NVtSalarioDigno?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtIngresosNoGravable?: any;
+  NVtIngresosNoGravable?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtAporteIESS?: any;
+  NVtAporteIESS?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtGPAlimentacion?: any;
+  NVtGPAlimentacion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtGPEducacion?: any;
+  NVtGPEducacion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtGPSalud?: any;
+  NVtGPSalud?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtGPVestimenta?: any;
+  NVtGPVestimenta?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtGPVivienda?: any;
+  NVtGPVivienda?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRebajaDiscapacidad?: any;
+  NVtRebajaDiscapacidad?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRebajaTerceraEdad?: any;
+  NVtRebajaTerceraEdad?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDesahucio?: any;
+  NVtDesahucio?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDespido?: any;
+  NVtDespido?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuRetenciones?: any;
+  NNuRetenciones?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBaseImponible?: any;
+  NVtBaseImponible?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtImpuestoRtaEmpleador?: any;
+  NVtImpuestoRtaEmpleador?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtImpuestoRtaRetenido?: any;
+  NVtImpuestoRtaRetenido?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBonificacion?: any;
+  NVtBonificacion?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxEstablecimiento?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -73,24 +73,24 @@ export class TblNoDetRDEPMensual {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtTipoTrabDiscap?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NQnpPorcentajeDiscap?: any;
+  NQnpPorcentajeDiscap?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtDiscapacidad?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   NidNoDiscapacidad?: string;
   @Column('int', { nullable: false })
-  NNuDiasVacaciones?: any;
+  NNuDiasVacaciones?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtVacaciones?: any;
+  NVtVacaciones?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtAporteIESSVacaciones?: any;
+  NVtAporteIESSVacaciones?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimoTerceroProv?: any;
+  NVtDecimoTerceroProv?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimocuartoProv?: any;
+  NVtDecimocuartoProv?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtAlimentacion?: any;
+  NVtAlimentacion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTransporte?: any;
+  NVtTransporte?: number;
 
 }

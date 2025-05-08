@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoTipoNomina')
 export class TblNoTipoNomina {
   @PrimaryColumn({ type: 'varchar', length: 255, nullable: false })
-  CCiTipoNomina?: any;
+  CCiTipoNomina?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsTipoNomina?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -21,13 +21,13 @@ export class TblNoTipoNomina {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnAfectaRDEP?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -41,15 +41,15 @@ export class TblNoTipoNomina {
   @Column({ type: 'char', length: 1, nullable: false })
   CCtGeneracion?: string;
   @Column('int', { nullable: false })
-  NidNoConcepto?: any;
+  NidNoConcepto?: number;
   @Column('int', { nullable: false })
-  NidNoDesglose?: any;
+  NidNoDesglose?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnDesahucio?: string;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtCalculoDesahucio?: string;
   @Column('int', { nullable: false })
-  NQnTipoObrero?: any;
+  NQnTipoObrero?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnBajaD14Area?: string;
   @Column({ type: 'char', length: 1, nullable: false })

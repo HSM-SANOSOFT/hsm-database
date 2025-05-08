@@ -3,11 +3,11 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetUtilidad')
 export class TblNoDetUtilidad {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoUtilidad?: any;
+  NIdNoUtilidad?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoNomina?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -15,40 +15,40 @@ export class TblNoDetUtilidad {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiCodigoIESS?: string;
   @Column('datetime', { nullable: false })
-  DFxIniContrato?: any;
+  DFxIniContrato?: Date;
   @Column('datetime', { nullable: false })
-  DFxFinContrato?: any;
+  DFxFinContrato?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCeContrato?: string;
   @Column('int', { nullable: false })
-  NNuCargasSistema?: any;
+  NNuCargasSistema?: number;
   @Column('int', { nullable: false })
-  NNuCargas?: any;
+  NNuCargas?: number;
   @Column('int', { nullable: false })
-  NNuDiasContratoSistema?: any;
+  NNuDiasContratoSistema?: number;
   @Column('int', { nullable: false })
-  NNuDiasContrato?: any;
+  NNuDiasContrato?: number;
   @Column('int', { nullable: false })
-  NNuTotalDiasSistema?: any;
+  NNuTotalDiasSistema?: number;
   @Column('int', { nullable: false })
-  NNuTotalDias?: any;
+  NNuTotalDias?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtPorcUtilidad1Sistema?: any;
+  NVtPorcUtilidad1Sistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtPorcUtilidad1?: any;
+  NVtPorcUtilidad1?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtPorcUtilidad2Sistema?: any;
+  NVtPorcUtilidad2Sistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtPorcUtilidad2?: any;
+  NVtPorcUtilidad2?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDescuentosSistema?: any;
+  NVtDescuentosSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDescuentos?: any;
+  NVtDescuentos?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtNetoUtilidadSist?: any;
+  NVtNetoUtilidadSist?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtNetoUtilidad?: any;
+  NVtNetoUtilidad?: number;
 
 }

@@ -3,33 +3,33 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetJornal')
 export class TblNoDetJornal {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoJornal?: any;
+  NIdNoJornal?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUnidadMedida?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtJornal?: string;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuCantidad?: any;
+  NNuCantidad?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtJornal?: any;
+  NVtJornal?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTarifa?: any;
+  NVtTarifa?: number;
   @Column('int', { nullable: false })
-  NIdNoConceptoOrig?: any;
+  NIdNoConceptoOrig?: number;
   @Column('int', { nullable: false })
-  NIdNoDesgloseOrig?: any;
+  NIdNoDesgloseOrig?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTarifaOrig?: any;
+  NVtTarifaOrig?: number;
   @Column('int', { nullable: false })
-  NNuPersona?: any;
+  NNuPersona?: number;
 }

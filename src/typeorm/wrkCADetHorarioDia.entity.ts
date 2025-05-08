@@ -3,17 +3,17 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('wrkCADetHorarioDia')
 export class wrkCADetHorarioDia {
   @PrimaryColumn({ type: 'varchar' })
-  CCiEstacion?: any;
+  CCiEstacion?: string;
   @PrimaryColumn({ type: 'varchar' })
-  CCiTipoParam?: any;
+  CCiTipoParam?: string;
   @PrimaryColumn({ type: 'int' })
-  NNuRegistro?: any;
+  NNuRegistro?: number;
   @Column('int', { nullable: true })
-  NIdCAHorario?: any;
+  NIdCAHorario?: number;
   @Column('int', { nullable: true })
-  NIdCASecHorarioDia?: any;
+  NIdCASecHorarioDia?: number;
   @Column('int', { nullable: true })
-  NIdCATurno?: any;
+  NIdCATurno?: number;
   @Column('datetime', { nullable: true })
-  DFxHorario?: any;
+  DFxHorario?: Date;
 }

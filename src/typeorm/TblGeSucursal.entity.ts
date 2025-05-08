@@ -3,11 +3,11 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblGeSucursal')
 export class TblGeSucursal {
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiCia?: any;
+  CCiCia?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiDivision?: any;
+  CCiDivision?: string;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCiSucursal?: any;
+  CCiSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -23,7 +23,7 @@ export class TblGeSucursal {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CSnMatriz?: string;
   @Column('text', { nullable: false })
-  ImgSucursal?: any;
+  ImgSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCeSucursal?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -31,13 +31,13 @@ export class TblGeSucursal {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsReferencia?: string;
   @Column({ type: 'char', length: 1, nullable: false })

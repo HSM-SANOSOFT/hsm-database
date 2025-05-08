@@ -3,89 +3,89 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetImpuestoRentaReal')
 export class TblNoDetImpuestoRentaReal {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoImptoRenta?: any;
+  NIdNoImptoRenta?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column('int', { nullable: false })
-  NNuPeriodoOtroEmpl?: any;
+  NNuPeriodoOtroEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotalSueldoOtroEmpl?: any;
+  NVtTotalSueldoOtroEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotalSobreSueldoOtroEmpl?: any;
+  NVtTotalSobreSueldoOtroEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotalIESSOtroEmpl?: any;
+  NVtTotalIESSOtroEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotalBonificacionOtroEmpl?: any;
+  NVtTotalBonificacionOtroEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTotalIngresosInd?: any;
+  NVtTotalIngresosInd?: number;
   @Column('int', { nullable: false })
-  NNuPeriodoAcumulado?: any;
+  NNuPeriodoAcumulado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoAcumulado?: any;
+  NVtSueldoAcumulado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSobreSueldoAcumulado?: any;
+  NVtSobreSueldoAcumulado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtIESSAcumulado?: any;
+  NVtIESSAcumulado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBonificacionAcumulado?: any;
+  NVtBonificacionAcumulado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoActual?: any;
+  NVtSueldoActual?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSobreSueldoActual?: any;
+  NVtSobreSueldoActual?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBonificacionActual?: any;
+  NVtBonificacionActual?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoProyectado?: any;
+  NVtSueldoProyectado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSobreSueldoProyectado?: any;
+  NVtSobreSueldoProyectado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtIESSProyectado?: any;
+  NVtIESSProyectado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBonificacionProyectado?: any;
+  NVtBonificacionProyectado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtAlimentacion?: any;
+  NVtAlimentacion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtEducacion?: any;
+  NVtEducacion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtVestimenta?: any;
+  NVtVestimenta?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtVivienda?: any;
+  NVtVivienda?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSalud?: any;
+  NVtSalud?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtProyeccion?: any;
+  NVtProyeccion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBaseImponibleBruta?: any;
+  NVtBaseImponibleBruta?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRebajaTerceraEdad?: any;
+  NVtRebajaTerceraEdad?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtRebajaDiscapacidad?: any;
+  NVtRebajaDiscapacidad?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtImptoRenta?: any;
+  NVtImptoRenta?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBonificacionActualNoProy?: any;
+  NVtBonificacionActualNoProy?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtImptoRentaAsumido?: any;
+  NVtImptoRentaAsumido?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBonificacionAcumuladoNoProy?: any;
+  NVtBonificacionAcumuladoNoProy?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBonifActualNoProyAcumulado?: any;
+  NVtBonifActualNoProyAcumulado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSobreSueldoActualNoProy?: any;
+  NVtSobreSueldoActualNoProy?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSobreSueldoAcumuladoNoProy?: any;
+  NVtSobreSueldoAcumuladoNoProy?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSobreSueldoActualNoProyAcumulado?: any;
+  NVtSobreSueldoActualNoProyAcumulado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtUtilidad?: any;
+  NVtUtilidad?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtImptoRentaRetenidoOtroEmpl?: any;
+  NVtImptoRentaRetenidoOtroEmpl?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtImptoRentaRetenido?: any;
+  NVtImptoRentaRetenido?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtImptoRentaSinAjuste?: any;
+  NVtImptoRentaSinAjuste?: number;
 }

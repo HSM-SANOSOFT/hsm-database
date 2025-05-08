@@ -3,16 +3,16 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetCtrlLiquidacion')
 export class TblNoDetCtrlLiquidacion {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoCtrlLiquidacion?: any;
+  NIdNoCtrlLiquidacion?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoLiquidacion?: any;
+  NIdNoLiquidacion?: number;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtConcepto?: any;
+  NVtConcepto?: number;
 
 }

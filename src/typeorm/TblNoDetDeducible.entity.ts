@@ -3,23 +3,23 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetDeducible')
 export class TblNoDetDeducible {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoDeducible?: any;
+  NIdNoDeducible?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtIngresos?: any;
+  NVtIngresos?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtAlimentacion?: any;
+  NVtAlimentacion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtEducacion?: any;
+  NVtEducacion?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtVestimenta?: any;
+  NVtVestimenta?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtVivienda?: any;
+  NVtVivienda?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSalud?: any;
+  NVtSalud?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtProyeccion?: any;
+  NVtProyeccion?: number;
 }

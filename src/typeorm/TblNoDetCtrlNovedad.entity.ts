@@ -3,36 +3,36 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetCtrlNovedad')
 export class TblNoDetCtrlNovedad {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoCtrlNovedad?: any;
+  NIdNoCtrlNovedad?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('int', { nullable: false })
-  NIdNoNovedadOrigen?: any;
+  NIdNoNovedadOrigen?: number;
   @Column('int', { nullable: false })
-  NNuSecuenciaOrigen?: any;
+  NNuSecuenciaOrigen?: number;
   @Column('int', { nullable: false })
-  NIdNoConceptoOrigen?: any;
+  NIdNoConceptoOrigen?: number;
   @Column('int', { nullable: false })
-  NIdNoDesgloseOrigen?: any;
+  NIdNoDesgloseOrigen?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuCantidadOrigen?: any;
+  NNuCantidadOrigen?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtConceptoOrigen?: any;
+  NVtConceptoOrigen?: number;
   @Column('int', { nullable: false })
-  NIdNoNovedadDestino?: any;
+  NIdNoNovedadDestino?: number;
   @Column('int', { nullable: false })
-  NNuSecuenciaDestino?: any;
+  NNuSecuenciaDestino?: number;
   @Column('int', { nullable: false })
-  NIdNoConceptoDestino?: any;
+  NIdNoConceptoDestino?: number;
   @Column('int', { nullable: false })
-  NIdNoDesgloseDestino?: any;
+  NIdNoDesgloseDestino?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuCantidadDestino?: any;
+  NNuCantidadDestino?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtConceptoDestino?: any;
+  NVtConceptoDestino?: number;
   @Column('int', { nullable: false })
-  NIdNoJefeInmediato?: any;
+  NIdNoJefeInmediato?: number;
 
 }

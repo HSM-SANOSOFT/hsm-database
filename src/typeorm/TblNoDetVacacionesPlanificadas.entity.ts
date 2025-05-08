@@ -3,13 +3,13 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetVacacionesPlanificadas')
 export class TblNoDetVacacionesPlanificadas {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoVacacion?: any;
+  NIdNoVacacion?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('datetime', { nullable: false })
-  DFxDesde?: any;
+  DFxDesde?: Date;
   @Column('datetime', { nullable: false })
-  DFxHasta?: any;
+  DFxHasta?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCeVacacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

@@ -3,16 +3,16 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetTablaContSolidaria')
 export class TblNoDetTablaContSolidaria {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoTablaContSolidaria?: any;
+  NIdNoTablaContSolidaria?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtValorDesde?: any;
+  NVtValorDesde?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtValorHasta?: any;
+  NVtValorHasta?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtTarifa?: any;
+  NVtTarifa?: number;
   @Column('int', { nullable: false })
-  NNuMesesContribucion?: any;
+  NNuMesesContribucion?: number;
 
 }

@@ -3,11 +3,11 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('WrkCriterioConsultaSobrePago')
 export class WrkCriterioConsultaSobrePago {
   @PrimaryColumn({ type: 'varchar' })
-  CCiEstacion?: any;
+  CCiEstacion?: string;
   @PrimaryColumn({ type: 'varchar' })
-  CCiTipoParam?: any;
+  CCiTipoParam?: string;
   @PrimaryColumn({ type: 'int' })
-  NNuRegistro?: any;
+  NNuRegistro?: number;
   @Column({ type: 'char' })
   CCiCia?: string;
   @Column({ type: 'char' })
@@ -25,32 +25,32 @@ export class WrkCriterioConsultaSobrePago {
   @Column({ type: 'varchar' })
   CCiCargo?: string;
   @Column('int', { nullable: true })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('int', { nullable: true })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column('int', { nullable: true })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: true })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @PrimaryColumn({ type: 'varchar' })
-  CCiReferencia1?: any;
+  CCiReferencia1?: string;
   @Column({ type: 'varchar' })
   CCiReferencia2?: string;
   @Column({ type: 'varchar' })
   CCiReferencia3?: string;
   @Column('int', { nullable: true })
-  NIdGeReferencia1?: any;
+  NIdGeReferencia1?: number;
   @Column('int', { nullable: true })
-  NIdGeReferencia2?: any;
+  NIdGeReferencia2?: number;
   @Column('int', { nullable: true })
-  NIdGeReferencia3?: any;
+  NIdGeReferencia3?: number;
   @Column('int', { nullable: true })
-  NIdGeReferencia4?: any;
+  NIdGeReferencia4?: number;
   @Column('datetime', { nullable: true })
-  DFxRegistro?: any;
+  DFxRegistro?: Date;
   @Column('numeric', { precision: 18, scale: 2 })
-  NVtValor1?: any;
+  NVtValor1?: number;
   @Column('numeric', { precision: 18, scale: 2 })
-  NNuCantidad?: any;
+  NNuCantidad?: number;
 
 }

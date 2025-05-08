@@ -3,23 +3,23 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetLiquidacionVacaciones')
 export class TblNoDetLiquidacionVacaciones {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoLiqVacaciones?: any;
+  NIdNoLiqVacaciones?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtDetalle?: string;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuConcepto?: any;
+  NNuConcepto?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NNuConceptoSistema?: any;
+  NNuConceptoSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtConcepto?: any;
+  NVtConcepto?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtConceptoSistema?: any;
+  NVtConceptoSistema?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxDetObservacion?: string;
   @Column({ type: 'char', length: 1, nullable: false })

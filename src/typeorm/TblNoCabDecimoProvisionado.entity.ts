@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabDecimoProvisionado')
 export class TblNoCabDecimoProvisionado {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoDecimoProvision?: any;
+  NIdNoDecimoProvision?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -15,17 +15,17 @@ export class TblNoCabDecimoProvisionado {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column('int', { nullable: false })
-  NidNoConcepto?: any;
+  NidNoConcepto?: number;
   @Column('int', { nullable: false })
-  NNuAnio?: any;
+  NNuAnio?: number;
   @Column('int', { nullable: false })
-  NNuPeriodo?: any;
+  NNuPeriodo?: number;
   @Column('datetime', { nullable: false })
-  DFxDecimoProvision?: any;
+  DFxDecimoProvision?: Date;
   @Column('datetime', { nullable: false })
-  DFxDecimoInicio?: any;
+  DFxDecimoInicio?: Date;
   @Column('datetime', { nullable: false })
-  DFxDecimoFin?: any;
+  DFxDecimoFin?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -35,13 +35,13 @@ export class TblNoCabDecimoProvisionado {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoRegion?: string;
 }

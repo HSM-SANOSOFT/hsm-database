@@ -3,54 +3,54 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblCADetMovimientoEmpl')
 export class TblCADetMovimientoEmpl {
   @PrimaryColumn('int', { nullable: false })
-  NIdCAMovimiento?: any;
+  NIdCAMovimiento?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('datetime', { nullable: false })
-  DFxLaborado?: any;
+  DFxLaborado?: Date;
   @Column('datetime', { nullable: false })
-  DFxAtraso?: any;
+  DFxAtraso?: Date;
   @Column('datetime', { nullable: false })
-  DFxRecuperacion?: any;
+  DFxRecuperacion?: Date;
   @Column('datetime', { nullable: false })
-  DFxPago?: any;
+  DFxPago?: Date;
   @Column('datetime', { nullable: false })
-  DFxRecargo25?: any;
+  DFxRecargo25?: Date;
   @Column('datetime', { nullable: false })
-  DFxRecargo50?: any;
+  DFxRecargo50?: Date;
   @Column('datetime', { nullable: false })
-  DFxRecargo100?: any;
+  DFxRecargo100?: Date;
   @Column('datetime', { nullable: false })
-  DFxHENormal?: any;
+  DFxHENormal?: Date;
   @Column('datetime', { nullable: false })
-  DFxHENocturna?: any;
+  DFxHENocturna?: Date;
   @Column('datetime', { nullable: false })
-  DFxHEAdicionalNocturna?: any;
+  DFxHEAdicionalNocturna?: Date;
   @Column('int', { nullable: false })
-  NIdCATurno?: any;
+  NIdCATurno?: number;
   @Column('datetime', { nullable: false })
-  DFxExtraFeriadoFinSemana?: any;
+  DFxExtraFeriadoFinSemana?: Date;
   @Column('datetime', { nullable: false })
-  DFxLaborado2?: any;
+  DFxLaborado2?: Date;
   @Column('datetime', { nullable: false })
-  DFxAtraso2?: any;
+  DFxAtraso2?: Date;
   @Column('datetime', { nullable: false })
-  DFxRecuperacion2?: any;
+  DFxRecuperacion2?: Date;
   @Column('datetime', { nullable: false })
-  DFxPago2?: any;
+  DFxPago2?: Date;
   @Column('datetime', { nullable: false })
-  DFxHENormal2?: any;
+  DFxHENormal2?: Date;
   @Column('datetime', { nullable: false })
-  DFxHENocturna2?: any;
+  DFxHENocturna2?: Date;
   @Column('datetime', { nullable: false })
-  DFxHEAdicionalNocturna2?: any;
+  DFxHEAdicionalNocturna2?: Date;
   @Column('datetime', { nullable: false })
-  DFxHEAfavor?: any;
+  DFxHEAfavor?: Date;
   @Column('datetime', { nullable: false })
-  DFxHEAntesEntrada1?: any;
+  DFxHEAntesEntrada1?: Date;
   @Column('datetime', { nullable: false })
-  DFxHEAntesEntrada2?: any;
+  DFxHEAntesEntrada2?: Date;
 
 }

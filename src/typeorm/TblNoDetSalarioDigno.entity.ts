@@ -3,57 +3,57 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetSalarioDigno')
 export class TblNoDetSalarioDigno {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoSalarioDigno?: any;
+  NIdNoSalarioDigno?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiTipoNomina?: string;
   @Column('int', { nullable: false })
-  NNuDiasContratoSistema?: any;
+  NNuDiasContratoSistema?: number;
   @Column('int', { nullable: false })
-  NNuDiasContrato?: any;
+  NNuDiasContrato?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CSnParcial?: string;
   @Column('int', { nullable: false })
-  NNuHorasParcial?: any;
+  NNuHorasParcial?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoSistema?: any;
+  NVtSueldoSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldo?: any;
+  NVtSueldo?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimoTerceroSistema?: any;
+  NVtDecimoTerceroSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimoTercero?: any;
+  NVtDecimoTercero?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimoCuartoSistema?: any;
+  NVtDecimoCuartoSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtDecimoCuarto?: any;
+  NVtDecimoCuarto?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtFondoReservaSistema?: any;
+  NVtFondoReservaSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtFondoReserva?: any;
+  NVtFondoReserva?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtUtilidadesSistema?: any;
+  NVtUtilidadesSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtUtilidades?: any;
+  NVtUtilidades?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtComisionesSistema?: any;
+  NVtComisionesSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtComisiones?: any;
+  NVtComisiones?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBeneficiosSistema?: any;
+  NVtBeneficiosSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtBeneficios?: any;
+  NVtBeneficios?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtProyectadoSistema?: any;
+  NVtProyectadoSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtProyectado?: any;
+  NVtProyectado?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSalarioDignoSistema?: any;
+  NVtSalarioDignoSistema?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSalarioDigno?: any;
+  NVtSalarioDigno?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtAcreditacion?: string;
 

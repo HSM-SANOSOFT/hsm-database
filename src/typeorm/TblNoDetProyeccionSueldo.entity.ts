@@ -3,17 +3,17 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetProyeccionSueldo')
 export class TblNoDetProyeccionSueldo {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoProyeccion?: any;
+  NIdNoProyeccion?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecProyeccion?: any;
+  NNuSecProyeccion?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldo?: any;
+  NVtSueldo?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtSueldoReal?: any;
+  NVtSueldoReal?: number;
   @Column('datetime', { nullable: false })
-  DFxVigencia?: any;
+  DFxVigencia?: Date;
   @Column({ type: 'char', length: 1, nullable: false })
   CCeProyeccion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

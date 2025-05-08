@@ -3,11 +3,11 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetComision')
 export class TblNoDetComision {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoComision?: any;
+  NIdNoComision?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: false })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiArea?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -15,25 +15,25 @@ export class TblNoDetComision {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiSubCentroCosto?: string;
   @Column('int', { nullable: false })
-  NIdNoConceptoPorc1?: any;
+  NIdNoConceptoPorc1?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglosePorc1?: any;
+  NIdNoDesglosePorc1?: number;
   @Column('int', { nullable: false })
-  NIdNoConceptoPorc2?: any;
+  NIdNoConceptoPorc2?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglosePorc2?: any;
+  NIdNoDesglosePorc2?: number;
   @Column('int', { nullable: false })
-  NIdNoConceptoPorc3?: any;
+  NIdNoConceptoPorc3?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglosePorc3?: any;
+  NIdNoDesglosePorc3?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtComision?: any;
+  NVtComision?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtComisionPorc1?: any;
+  NVtComisionPorc1?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtComisionPorc2?: any;
+  NVtComisionPorc2?: number;
   @Column('numeric', { precision: 18, scale: 2, nullable: false })
-  NVtComisionPorc3?: any;
+  NVtComisionPorc3?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CTxObservacion?: string;
 

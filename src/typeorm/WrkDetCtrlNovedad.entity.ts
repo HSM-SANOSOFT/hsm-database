@@ -1,27 +1,27 @@
-import { Column, Entity, PrimaryColumn } from 'typeorm';
+import { Entity, Column, PrimaryColumn } from 'typeorm';
 
 @Entity('WrkDetCtrlNovedad')
 export class WrkDetCtrlNovedad {
   @Column({ type: 'varchar' })
   CCiEstacion?: string;
   @Column('int', { nullable: true })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: true })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('int', { nullable: true })
-  NIdNoEmpleado?: any;
+  NIdNoEmpleado?: number;
   @Column('int', { nullable: true })
-  NIdNoNovedadOrigen?: any;
+  NIdNoNovedadOrigen?: number;
   @Column('int', { nullable: true })
-  NNuSecuenciaOrigen?: any;
+  NNuSecuenciaOrigen?: number;
   @Column('int', { nullable: true })
-  NIdNoConceptoOrigen?: any;
+  NIdNoConceptoOrigen?: number;
   @Column('int', { nullable: true })
-  NIdNoDesgloseOrigen?: any;
+  NIdNoDesgloseOrigen?: number;
   @Column('numeric', { precision: 18, scale: 2 })
-  NNuCantidadOrigen?: any;
+  NNuCantidadOrigen?: number;
   @Column('numeric', { precision: 18, scale: 2 })
-  NVtConceptoOrigen?: any;
+  NVtConceptoOrigen?: number;
   @Column('int', { nullable: true })
-  NidNoNovedadDestino?: any;
+  NidNoNovedadDestino?: number;
 }

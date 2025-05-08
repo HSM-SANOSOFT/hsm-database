@@ -3,23 +3,23 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('WrkCADetMovimiento')
 export class WrkCADetMovimiento {
   @Column('int', { nullable: true })
-  NIdCAMovimiento?: any;
+  NIdCAMovimiento?: number;
   @Column('int', { nullable: true })
-  NNuSecuencia?: any;
+  NNuSecuencia?: number;
   @Column('int', { nullable: true })
-  NIdNoContrato?: any;
+  NIdNoContrato?: number;
   @Column('datetime', { nullable: true })
-  DFxEntrada?: any;
+  DFxEntrada?: Date;
   @Column('datetime', { nullable: true })
-  DFxSalidaReceso?: any;
+  DFxSalidaReceso?: Date;
   @Column('datetime', { nullable: true })
-  DFxEntradaReceso?: any;
+  DFxEntradaReceso?: Date;
   @Column('datetime', { nullable: true })
-  DFxSalida?: any;
+  DFxSalida?: Date;
   @Column('datetime', { nullable: true })
-  DFxReceso?: any;
+  DFxReceso?: Date;
   @Column('datetime', { nullable: true })
-  DFxRecuperacion?: any;
+  DFxRecuperacion?: Date;
   @Column({ type: 'varchar' })
   CCtRegistro?: string;
   @Column({ type: 'varchar' })
@@ -43,31 +43,31 @@ export class WrkCADetMovimiento {
   @Column({ type: 'char' })
   CSnHorasExtra?: string;
   @Column('datetime', { nullable: true })
-  DFxEntrada2?: any;
+  DFxEntrada2?: Date;
   @Column('datetime', { nullable: true })
-  DFxSalida2?: any;
+  DFxSalida2?: Date;
   @Column('datetime', { nullable: true })
-  DFxEntrada1Audt?: any;
+  DFxEntrada1Audt?: Date;
   @Column('datetime', { nullable: true })
-  DFxSalidaReceso1Audt?: any;
+  DFxSalidaReceso1Audt?: Date;
   @Column('datetime', { nullable: true })
-  DFxEntradaReceso1Audt?: any;
+  DFxEntradaReceso1Audt?: Date;
   @Column('datetime', { nullable: true })
-  DFxSalida1Audt?: any;
+  DFxSalida1Audt?: Date;
   @Column('datetime', { nullable: true })
-  DFxEntrada2Audt?: any;
+  DFxEntrada2Audt?: Date;
   @Column('datetime', { nullable: true })
-  DFxSalida2Audt?: any;
+  DFxSalida2Audt?: Date;
   @Column('datetime', { nullable: true })
-  DFxMovimientoAudt?: any;
+  DFxMovimientoAudt?: Date;
   @Column({ type: 'varchar' })
   CDsError?: string;
   @Column('datetime', { nullable: true })
-  DFxHorasPermiso?: any;
+  DFxHorasPermiso?: Date;
   @Column({ type: 'char' })
   CSnGenerarAtraso?: string;
   @Column('datetime', { nullable: true })
-  DFxHorasAtraso?: any;
+  DFxHorasAtraso?: Date;
   @Column('numeric', { precision: 18, scale: 2 })
-  NVtValorAtraso?: any;
+  NVtValorAtraso?: number;
 }

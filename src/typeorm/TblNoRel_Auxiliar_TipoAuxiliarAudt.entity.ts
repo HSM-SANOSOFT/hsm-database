@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoRel_Auxiliar_TipoAuxiliarAudt')
 export class TblNoRel_Auxiliar_TipoAuxiliarAudt {
   @Column('int', { nullable: false })
-  NNuControl?: any;
+  NNuControl?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiTipoAuxiliar?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

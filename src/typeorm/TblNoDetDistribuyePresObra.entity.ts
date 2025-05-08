@@ -3,15 +3,15 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoDetDistribuyePresObra')
 export class TblNoDetDistribuyePresObra {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoDistribuye?: any;
+  NIdNoDistribuye?: number;
   @PrimaryColumn('int', { nullable: false })
-  NNuSecuenciaPresObra?: any;
+  NNuSecuenciaPresObra?: number;
   @PrimaryColumn({ type: 'char', length: 1, nullable: false })
-  CCtDistribucion?: any;
+  CCtDistribucion?: string;
   @Column('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column('int', { nullable: false })
-  NIdNoDesglose?: any;
+  NIdNoDesglose?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCiaCtble?: string;
   @Column({ type: 'char', length: 1, nullable: false })
@@ -19,5 +19,5 @@ export class TblNoDetDistribuyePresObra {
   @Column({ type: 'char', length: 1, nullable: false })
   CCiSucursalCtble?: string;
   @Column('int', { nullable: false })
-  NNuOrden?: any;
+  NNuOrden?: number;
 }

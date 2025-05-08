@@ -3,7 +3,7 @@ import { Entity, Column, PrimaryColumn } from 'typeorm';
 @Entity('TblNoCabConcepto')
 export class TblNoCabConcepto {
   @PrimaryColumn('int', { nullable: false })
-  NIdNoConcepto?: any;
+  NIdNoConcepto?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiConcepto?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -21,17 +21,17 @@ export class TblNoCabConcepto {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCtVencimiento?: string;
   @Column('datetime', { nullable: false })
-  DFxVencimiento?: any;
+  DFxVencimiento?: Date;
   @Column('int', { nullable: false })
-  NNuPrioridad?: any;
+  NNuPrioridad?: number;
   @Column('int', { nullable: false })
-  NNuPrioridadConcepto?: any;
+  NNuPrioridadConcepto?: number;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtEgresoIngreso?: string;
   @Column({ type: 'char', length: 1, nullable: false })
   CCtCargo?: string;
   @Column('int', { nullable: false })
-  NNuTransaccionMax?: any;
+  NNuTransaccionMax?: number;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsObservacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
@@ -69,13 +69,13 @@ export class TblNoCabConcepto {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionIngreso?: string;
   @Column('datetime', { nullable: false })
-  DFiIngreso?: any;
+  DFiIngreso?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CCiUsuarioModifica?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacionModifica?: string;
   @Column('datetime', { nullable: false })
-  DFmModifica?: any;
+  DFmModifica?: Date;
   @Column({ type: 'varchar', length: 255, nullable: false })
   NIdNoConceptoTransferir?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
