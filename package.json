@@ -7,13 +7,17 @@
       "import": "./dist/index.js",
       "require": "./dist/index.js"
     },
-    "./*": {
-      "import": "./dist/*.js",
-      "require": "./dist/*.js",
-      "types": "./dist/*.d.ts"
+    "./typeorm": {
+      "import": "./dist/typeorm/index.js",
+      "require": "./dist/typeorm/index.js",
+      "types": "./dist/typeorm/index.d.ts"
+    },
+    "./oracle": {
+      "import": "./dist/oracle/index.js",
+      "require": "./dist/oracle/index.js",
+      "types": "./dist/oracle/index.d.ts"
     }
   },
-  
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "prepack": "cp -R dist/* . && rm -rf dist"
@@ -23,7 +27,7 @@
     "registry": "https://registry.npmjs.org/"
   },
   "files": [
-    "dist"
+    "./dist/*"
   ],
   "dependencies": {
     "globals": "^16.1.0",
@@ -47,5 +51,5 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.32.0"
   },
-  "version": "0.0.8"
+  "version": "0.0.6"
 }
