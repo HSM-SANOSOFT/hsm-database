@@ -9,8 +9,22 @@
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
+  "exports": {
+    ".": {
+      "default": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "oracle": {
+      "default": "./dist/oracle/index.js",
+      "types": "./dist/oracle/index.d.ts"
+    },
+    "typeorm": {
+      "default": "./dist/typeorm/index.js",
+      "types": "./dist/typeorm/index.d.ts"
+    }
+  },
   "files": [
-    "dist/oracle"
+    "dist"
   ],
   "repository": {
     "type": "git",
