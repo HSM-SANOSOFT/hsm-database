@@ -12,10 +12,10 @@
     "outDir": "./dist",
     "baseUrl": "./",
     "paths": {
-      "@oracle/*": [
+      "@hsm-sanosoft/oracle/*": [
         "src/oracle/*"
       ],
-      "@typeorm/*": [
+      "@hsm-sanosoft/typeorm/*": [
         "src/typeorm/*"
       ]
     },
