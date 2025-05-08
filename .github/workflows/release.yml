@@ -15,16 +15,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js & pnpm
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 'lts/*'
+          node-version: 'latest'
           registry-url: 'https://registry.npmjs.org'
-      - uses: pnpm/action-setup@v2
+          scope: "@hsm-sanosoft"
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
 
       - name: Install dependencies
         run: pnpm install
@@ -32,22 +38,24 @@ jobs:
       - name: Build package
         run: pnpm build
 
-      - name: Bump version in package.json (no commit, no tag)
+      - name: Clean workspace for version bump
         run: |
-          # Esto actualizará package.json solo localmente
-          npm version patch --no-git-tag-version
+          # descarta cambios en tracked files
+          git reset --hard HEAD
+          # elimina archivos/carpetas no trackeados (dist/, node_modules/, etc.)
+          git clean -fd
 
-      - name: Read new version
-        id: ver
-        run: |
-          echo "VERSION=$(node -p \"require('./package.json').version\")" >> $GITHUB_OUTPUT
-
-      - name: Tag git with v${{ steps.ver.outputs.VERSION }}
+      - name: Bump version & tag
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git tag -a "v${{ steps.ver.outputs.VERSION }}" -m "chore(release): v${{ steps.ver.outputs.VERSION }}"
-          git push origin "v${{ steps.ver.outputs.VERSION }}"
+          VERSION=$(npm version patch --no-git-tag-version)
+          echo "New version: $VERSION"
+          TAG="v$VERSION"
+          git tag -a "$TAG" -m "chore(release): $TAG"
+          git push origin "$TAG"
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Publish to npm
         run: pnpm publish --access public --no-git-checks
