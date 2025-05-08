@@ -527,7 +527,7 @@ export * from './WrkCriterioConsulta.entity';
 export * from './WrkCriterioConsultaSobrePago.entity';
 export * from './WrkCriterioMYSQL.entity';
 export * from './WrkDetCtrlNovedad.entity';
-export * from './WrkDetNominaAreaBeneficio.entity';
+export * from './wrkDetNominaAreaBeneficio.entity';
 export * from './WrkNoDetContSolidaria.entity';
 export * from './WrkNoDetCtrlNovedad.entity';
 export * from './WrkNoDetImportaBatchIESS.entity';
