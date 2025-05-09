@@ -12,11 +12,11 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
+    "incremental": false,
     
     "declaration": true,
     "emitDecoratorMetadata": true,
     "allowSyntheticDefaultImports": true,
-    "incremental": true,
     "skipLibCheck": true,
     "strictNullChecks": true,
     "noImplicitAny": false,
