@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryColumn } from 'typeorm';
 
-@Entity('wrkCADetHorarioEmpl')
-export class wrkCADetHorarioEmpl {
+@Entity('WrkCADetHorarioEmpl')
+export class WrkCADetHorarioEmpl {
   @PrimaryColumn({ type: 'varchar' })
   CCiEstacion?: string;
   @PrimaryColumn({ type: 'varchar' })

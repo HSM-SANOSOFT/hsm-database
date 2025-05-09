@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryColumn } from 'typeorm';
 
-@Entity('wrk_ProvisionHistorica')
-export class wrk_ProvisionHistorica {
+@Entity('Wrk_ProvisionHistorica')
+export class Wrk_ProvisionHistorica {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CDsEstacion?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })

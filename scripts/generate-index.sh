@@ -1,0 +1,76 @@
+#!/usr/bin/env bash
+set -e
+
+# Función genérica para generar index.ts
+# $1 = carpeta (e.g. src/oracle)
+# $2 = extensión de archivo (model.ts o entity.ts)
+# $3 = nombre de la export (models o entities)
+# $4 = tipo de export (object o array)
+generate_index() {
+  DIR="$1"
+  EXT="$2"
+  EXPORT_NAME="$3"
+  EXPORT_TYPE="$4"  # "object" o "array"
+  OUT="$DIR/index.ts"
+
+  echo "// AUTO-GENERATED — no editar a mano" > "$OUT"
+  echo "" >> "$OUT"
+
+  # 1) Imports
+  for filepath in "$DIR"/*."$EXT"; do
+    [ -e "$filepath" ] || continue
+    filename=$(basename "$filepath")                # e.g. cgRefCode.model.ts
+    base=${filename%."$EXT"}                        # e.g. cgRefCode
+    # CamelCase para la clase
+    className="$(tr '[:lower:]' '[:upper:]' <<< "${base:0:1}")${base:1}"
+    if [ "$EXT" = "model.ts" ]; then
+      importName="${className}Model"
+      importPath="./${base}.model"
+    else
+      importName="${className}"
+      importPath="./${base}.entity"
+    fi
+    echo "import { ${importName} } from '${importPath}';" >> "$OUT"
+  done
+
+  echo "" >> "$OUT"
+
+  # 2) Export
+  if [ "$EXPORT_TYPE" = "object" ]; then
+    echo "export const $EXPORT_NAME = {" >> "$OUT"
+    for filepath in "$DIR"/*."$EXT"; do
+      [ -e "$filepath" ] || continue
+      filename=$(basename "$filepath")
+      base=${filename%."$EXT"}
+      className="$(tr '[:lower:]' '[:upper:]' <<< "${base:0:1}")${base:1}"
+      if [ "$EXT" = "model.ts" ]; then
+        echo "  ${className}Model," >> "$OUT"
+      else
+        echo "  ${className}," >> "$OUT"
+      fi
+    done
+    echo "};" >> "$OUT"
+  else
+    echo "export const $EXPORT_NAME = [" >> "$OUT"
+    for filepath in "$DIR"/*."$EXT"; do
+      [ -e "$filepath" ] || continue
+      filename=$(basename "$filepath")
+      base=${filename%."$EXT"}
+      className="$(tr '[:lower:]' '[:upper:]' <<< "${base:0:1}")${base:1}"
+      if [ "$EXT" = "model.ts" ]; then
+        echo "  ${className}Model," >> "$OUT"
+      else
+        echo "  ${className}," >> "$OUT"
+      fi
+    done
+    echo "];" >> "$OUT"
+  fi
+
+  echo "✅ $OUT generado"
+}
+
+# Genera src/oracle/index.ts con models (objeto)
+generate_index "src/oracle" "model.ts" "models" "object"
+
+# Genera src/typeorm/index.ts con entities (array)
+generate_index "src/typeorm" "entity.ts" "entities" "array"

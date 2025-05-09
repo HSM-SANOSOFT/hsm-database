@@ -20,15 +20,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Setup Node.js
+      - name: Setup Node.js & pnpm
         uses: actions/setup-node@v3
         with:
           node-version: 'latest'
           registry-url: 'https://registry.npmjs.org'
           scope: "@hsm-sanosoft"
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
+      - uses: pnpm/action-setup@v2
         with:
           version: latest
 
@@ -38,19 +36,24 @@ jobs:
       - name: Build package
         run: pnpm build
 
-      - name: Clean workspace for version bump
+      # --- NEW: Tag the current commit based on package.json ---
+      - name: Tag release from package.json
         run: |
-          git reset --hard HEAD
-          git clean -fd
-
-      - name: Bump version & tag
-        run: |
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          npm version patch -m "release: %s"
-          git push origin main --follow-tags
+          bash scripts/generate-index.sh
+          if ! git diff --quiet; then
+            git add .
+            git commit -m "ci: update generated files (models/entities/index.ts)"
+            COMMIT=$(git rev-parse HEAD)
+            VER=$(node -p "require('./package.json').version")
+            TAG="v$VER"
+            git tag "$TAG" "$COMMIT"
+            git push origin "$TAG"
+          fi
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      
 
       - name: Publish to npm
         run: pnpm publish --access public --no-git-checks

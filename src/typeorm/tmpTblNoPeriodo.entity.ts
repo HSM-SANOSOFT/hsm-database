@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryColumn } from 'typeorm';
 
-@Entity('tmpTblNoPeriodo')
-export class tmpTblNoPeriodo {
+@Entity('TmpTblNoPeriodo')
+export class TmpTblNoPeriodo {
   @Column({ type: 'char', length: 1, nullable: false })
   CCiCia?: string;
   @Column({ type: 'char', length: 1, nullable: false })
