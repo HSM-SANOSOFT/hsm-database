@@ -41,16 +41,11 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          bash scripts/generate-index.sh
-          if ! git diff --quiet; then
-            git add .
-            git commit -m "ci: update generated files (models/entities/index.ts)"
-            COMMIT=$(git rev-parse HEAD)
-            VER=$(node -p "require('./package.json').version")
-            TAG="v$VER"
-            git tag "$TAG" "$COMMIT"
-            git push origin "$TAG"
-          fi
+          NEW_VER=$(npm version patch --no-git-tag-version)
+          git add .
+          git commit -m "release: bump to $NEW_VER and update generated indexes"
+          git tag "v$NEW_VER"
+          git push origin main --follow-tags
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       
