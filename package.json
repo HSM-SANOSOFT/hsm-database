@@ -1,11 +1,12 @@
 {
   "name": "@hsm-sanosoft/hsm-database",
   "version": "0.0.21",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "prebuild": "bash scripts/generate-index.sh",
     "build": "rm -rf dist && tsc -p tsconfig.json",
+    "prepack": "cp package.json README.md dist/ && cp -R scripts dist/",
     "generate": "bash scripts/generate-index.sh"
   },
   "publishConfig": {
@@ -14,16 +15,16 @@
   },
   "exports": {
     ".": {
-      "default": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "default": "./index.js",
+      "types": "./index.d.ts"
     },
-    "oracle": {
-      "default": "./dist/oracle/index.js",
-      "types": "./dist/oracle/index.d.ts"
+    "./oracle": {
+      "default": "./oracle/index.js",
+      "types": "./oracle/index.d.ts"
     },
-    "typeorm": {
-      "default": "./dist/typeorm/index.js",
-      "types": "./dist/typeorm/index.d.ts"
+    "./typeorm": {
+      "default": "./typeorm/index.js",
+      "types": "./typeorm/index.d.ts"
     }
   },
   "files": [
