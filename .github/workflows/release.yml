@@ -32,11 +32,13 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+        
+      - name: Generate indexes
+        run: pnpm generateIndexes
 
       - name: Build package
         run: pnpm build
 
-      # --- NEW: Tag the current commit based on package.json ---
       - name: Tag release from package.json
         run: |
           git config user.name  "github-actions[bot]"
@@ -48,9 +50,11 @@ jobs:
           git push origin main --follow-tags
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      
+                  
+      - name: Prepackage
+        run: pnpm prePackage
 
       - name: Publish to npm
-        run: pnpm publish dist --access public --no-git-checks
+        run: npm publish dist --access public --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
