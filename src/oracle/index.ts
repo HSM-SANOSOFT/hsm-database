@@ -11,3 +11,11 @@ export const models = {
   SgiPilaresModel,
   VwServiciosChatModel,
 };
+
+// Named exports
+export {
+  CgRefCodeModel,
+  PdpLogSegundaVerificacionModel,
+  SgiPilaresModel,
+  VwServiciosChatModel,
+};
