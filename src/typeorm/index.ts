@@ -59,7 +59,6 @@ import { TblGeCiaComplementaria } from './TblGeCiaComplementaria.entity';
 import { TblGeCias } from './TblGeCias.entity';
 import { TblGeConfigCorreo } from './TblGeConfigCorreo.entity';
 import { TblGeDBName } from './TblGeDBName.entity';
-import { TblGeDetalle } from './TblGeDetalle.entity';
 import { TblGeDetDeducibleLimite } from './TblGeDetDeducibleLimite.entity';
 import { TblGeDetDeducibleRango } from './TblGeDetDeducibleRango.entity';
 import { TblGeDetDefinicion } from './TblGeDetDefinicion.entity';
@@ -72,6 +71,7 @@ import { TblGeDetSectorialMasivo } from './TblGeDetSectorialMasivo.entity';
 import { TblGeDetSistemaTransfBanco } from './TblGeDetSistemaTransfBanco.entity';
 import { TblGeDetTablaVirtual } from './TblGeDetTablaVirtual.entity';
 import { TblGeDetTablaVirtualDatos } from './TblGeDetTablaVirtualDatos.entity';
+import { TblGeDetalle } from './TblGeDetalle.entity';
 import { TblGeDivision } from './TblGeDivision.entity';
 import { TblGeFeriado } from './TblGeFeriado.entity';
 import { TblGeGrupo } from './TblGeGrupo.entity';
@@ -150,11 +150,11 @@ import { TblNoDetComision } from './TblNoDetComision.entity';
 import { TblNoDetConcepto } from './TblNoDetConcepto.entity';
 import { TblNoDetConceptoFormula } from './TblNoDetConceptoFormula.entity';
 import { TblNoDetConceptoTarifario } from './TblNoDetConceptoTarifario.entity';
+import { TblNoDetContSolidaria } from './TblNoDetContSolidaria.entity';
 import { TblNoDetContratoConcepto } from './TblNoDetContratoConcepto.entity';
 import { TblNoDetContratoCuenta } from './TblNoDetContratoCuenta.entity';
 import { TblNoDetContratoCuentaBco } from './TblNoDetContratoCuentaBco.entity';
 import { TblNoDetContratoHistoriaSueldo } from './TblNoDetContratoHistoriaSueldo.entity';
-import { TblNoDetContSolidaria } from './TblNoDetContSolidaria.entity';
 import { TblNoDetCtrlLiquidacion } from './TblNoDetCtrlLiquidacion.entity';
 import { TblNoDetCtrlNovedad } from './TblNoDetCtrlNovedad.entity';
 import { TblNoDetCuadrilla } from './TblNoDetCuadrilla.entity';
@@ -181,12 +181,12 @@ import { TblNoDetLiqHaberesPrestamo } from './TblNoDetLiqHaberesPrestamo.entity'
 import { TblNoDetLiqHaberesProvision } from './TblNoDetLiqHaberesProvision.entity';
 import { TblNoDetLiqHaberesProvisionCancelada } from './TblNoDetLiqHaberesProvisionCancelada.entity';
 import { TblNoDetLiqHaberesProvisionSistema } from './TblNoDetLiqHaberesProvisionSistema.entity';
+import { TblNoDetLiqVacacionProvisionAnio } from './TblNoDetLiqVacacionProvisionAnio.entity';
 import { TblNoDetLiquidacionHaberes } from './TblNoDetLiquidacionHaberes.entity';
 import { TblNoDetLiquidacionHaberesSistema } from './TblNoDetLiquidacionHaberesSistema.entity';
 import { TblNoDetLiquidacionPeriodo } from './TblNoDetLiquidacionPeriodo.entity';
 import { TblNoDetLiquidacionVacaciones } from './TblNoDetLiquidacionVacaciones.entity';
 import { TblNoDetLiquidacionVacacionesHistoria } from './TblNoDetLiquidacionVacacionesHistoria.entity';
-import { TblNoDetLiqVacacionProvisionAnio } from './TblNoDetLiqVacacionProvisionAnio.entity';
 import { TblNoDetLoteLiquidacion } from './TblNoDetLoteLiquidacion.entity';
 import { TblNoDetMigraInfoDecimos } from './TblNoDetMigraInfoDecimos.entity';
 import { TblNoDetNomina } from './TblNoDetNomina.entity';
@@ -229,12 +229,12 @@ import { TblNoOrigenConcepto } from './TblNoOrigenConcepto.entity';
 import { TblNoPeriodo } from './TblNoPeriodo.entity';
 import { TblNoPlanDeCuenta } from './TblNoPlanDeCuenta.entity';
 import { TblNoPorcDiscapacidad } from './TblNoPorcDiscapacidad.entity';
+import { TblNoRelTipoNominaConcepto } from './TblNoRelTipoNominaConcepto.entity';
+import { TblNoRelTotalHorasObrero } from './TblNoRelTotalHorasObrero.entity';
 import { TblNoRel_Auxiliar_TipoAuxiliar } from './TblNoRel_Auxiliar_TipoAuxiliar.entity';
 import { TblNoRel_Auxiliar_TipoAuxiliarAudt } from './TblNoRel_Auxiliar_TipoAuxiliarAudt.entity';
 import { TblNoRel_CtaMy_TipAux } from './TblNoRel_CtaMy_TipAux.entity';
 import { TblNoRelaTransfMvtoBancario } from './TblNoRelaTransfMvtoBancario.entity';
-import { TblNoRelTipoNominaConcepto } from './TblNoRelTipoNominaConcepto.entity';
-import { TblNoRelTotalHorasObrero } from './TblNoRelTotalHorasObrero.entity';
 import { TblNoResumenAnterior } from './TblNoResumenAnterior.entity';
 import { TblNoResumenNomina } from './TblNoResumenNomina.entity';
 import { TblNoSueldoBasico } from './TblNoSueldoBasico.entity';
@@ -247,13 +247,9 @@ import { TblNoTransferencia } from './TblNoTransferencia.entity';
 import { TblNoVariableConcepto } from './TblNoVariableConcepto.entity';
 import { TblSueldoAcumulado } from './TblSueldoAcumulado.entity';
 import { TblWrkNoLaborCuadrilla } from './TblWrkNoLaborCuadrilla.entity';
-import { TmpTblNoPeriodo } from './tmpTblNoPeriodo.entity';
 import { User } from './User.entity';
-import { Wrk_ProvisionHistorica } from './wrk_ProvisionHistorica.entity';
 import { WRK_TblImpotDetObreroDias } from './WRK_TblImpotDetObreroDias.entity';
 import { WRK_TblImpotDetProyectoDias } from './WRK_TblImpotDetProyectoDias.entity';
-import { WrkCADetHorarioDia } from './wrkCADetHorarioDia.entity';
-import { WrkCADetHorarioEmpl } from './wrkCADetHorarioEmpl.entity';
 import { WrkCADetMovimiento } from './WrkCADetMovimiento.entity';
 import { WrkCADetValidacion } from './WrkCADetValidacion.entity';
 import { WrkCAImportaMarcaciones } from './WrkCAImportaMarcaciones.entity';
@@ -261,7 +257,6 @@ import { WrkCriterioConsulta } from './WrkCriterioConsulta.entity';
 import { WrkCriterioConsultaSobrePago } from './WrkCriterioConsultaSobrePago.entity';
 import { WrkCriterioMYSQL } from './WrkCriterioMYSQL.entity';
 import { WrkDetCtrlNovedad } from './WrkDetCtrlNovedad.entity';
-import { WrkDetNominaAreaBeneficio } from './wrkDetNominaAreaBeneficio.entity';
 import { WrkNoDetContSolidaria } from './WrkNoDetContSolidaria.entity';
 import { WrkNoDetCtrlNovedad } from './WrkNoDetCtrlNovedad.entity';
 import { WrkNoDetImportaBatchIESS } from './WrkNoDetImportaBatchIESS.entity';
@@ -274,6 +269,11 @@ import { WrkNoDetRDEPImportacion } from './WrkNoDetRDEPImportacion.entity';
 import { WrkNoDetRecalculoImptoRenta } from './WrkNoDetRecalculoImptoRenta.entity';
 import { WrkNoDetSalarioDigno } from './WrkNoDetSalarioDigno.entity';
 import { WrkNoDetUtilidad } from './WrkNoDetUtilidad.entity';
+import { TmpTblNoPeriodo } from './tmpTblNoPeriodo.entity';
+import { WrkCADetHorarioDia } from './wrkCADetHorarioDia.entity';
+import { WrkCADetHorarioEmpl } from './wrkCADetHorarioEmpl.entity';
+import { WrkDetNominaAreaBeneficio } from './wrkDetNominaAreaBeneficio.entity';
+import { Wrk_ProvisionHistorica } from './wrk_ProvisionHistorica.entity';
 
 export const entities = [
   DetVacacionesPlanificadas,
@@ -335,7 +335,6 @@ export const entities = [
   TblGeCias,
   TblGeConfigCorreo,
   TblGeDBName,
-  TblGeDetalle,
   TblGeDetDeducibleLimite,
   TblGeDetDeducibleRango,
   TblGeDetDefinicion,
@@ -348,6 +347,7 @@ export const entities = [
   TblGeDetSistemaTransfBanco,
   TblGeDetTablaVirtual,
   TblGeDetTablaVirtualDatos,
+  TblGeDetalle,
   TblGeDivision,
   TblGeFeriado,
   TblGeGrupo,
@@ -426,11 +426,11 @@ export const entities = [
   TblNoDetConcepto,
   TblNoDetConceptoFormula,
   TblNoDetConceptoTarifario,
+  TblNoDetContSolidaria,
   TblNoDetContratoConcepto,
   TblNoDetContratoCuenta,
   TblNoDetContratoCuentaBco,
   TblNoDetContratoHistoriaSueldo,
-  TblNoDetContSolidaria,
   TblNoDetCtrlLiquidacion,
   TblNoDetCtrlNovedad,
   TblNoDetCuadrilla,
@@ -457,12 +457,12 @@ export const entities = [
   TblNoDetLiqHaberesProvision,
   TblNoDetLiqHaberesProvisionCancelada,
   TblNoDetLiqHaberesProvisionSistema,
+  TblNoDetLiqVacacionProvisionAnio,
   TblNoDetLiquidacionHaberes,
   TblNoDetLiquidacionHaberesSistema,
   TblNoDetLiquidacionPeriodo,
   TblNoDetLiquidacionVacaciones,
   TblNoDetLiquidacionVacacionesHistoria,
-  TblNoDetLiqVacacionProvisionAnio,
   TblNoDetLoteLiquidacion,
   TblNoDetMigraInfoDecimos,
   TblNoDetNomina,
@@ -505,12 +505,12 @@ export const entities = [
   TblNoPeriodo,
   TblNoPlanDeCuenta,
   TblNoPorcDiscapacidad,
+  TblNoRelTipoNominaConcepto,
+  TblNoRelTotalHorasObrero,
   TblNoRel_Auxiliar_TipoAuxiliar,
   TblNoRel_Auxiliar_TipoAuxiliarAudt,
   TblNoRel_CtaMy_TipAux,
   TblNoRelaTransfMvtoBancario,
-  TblNoRelTipoNominaConcepto,
-  TblNoRelTotalHorasObrero,
   TblNoResumenAnterior,
   TblNoResumenNomina,
   TblNoSueldoBasico,
@@ -523,13 +523,9 @@ export const entities = [
   TblNoVariableConcepto,
   TblSueldoAcumulado,
   TblWrkNoLaborCuadrilla,
-  TmpTblNoPeriodo,
   User,
-  Wrk_ProvisionHistorica,
   WRK_TblImpotDetObreroDias,
   WRK_TblImpotDetProyectoDias,
-  WrkCADetHorarioDia,
-  WrkCADetHorarioEmpl,
   WrkCADetMovimiento,
   WrkCADetValidacion,
   WrkCAImportaMarcaciones,
@@ -537,7 +533,6 @@ export const entities = [
   WrkCriterioConsultaSobrePago,
   WrkCriterioMYSQL,
   WrkDetCtrlNovedad,
-  WrkDetNominaAreaBeneficio,
   WrkNoDetContSolidaria,
   WrkNoDetCtrlNovedad,
   WrkNoDetImportaBatchIESS,
@@ -550,6 +545,11 @@ export const entities = [
   WrkNoDetRecalculoImptoRenta,
   WrkNoDetSalarioDigno,
   WrkNoDetUtilidad,
+  TmpTblNoPeriodo,
+  WrkCADetHorarioDia,
+  WrkCADetHorarioEmpl,
+  WrkDetNominaAreaBeneficio,
+  Wrk_ProvisionHistorica,
 ];
 
 export namespace entities {
@@ -612,7 +612,6 @@ export namespace entities {
   export type TblGeCias = InstanceType<typeof entities[number]>;
   export type TblGeConfigCorreo = InstanceType<typeof entities[number]>;
   export type TblGeDBName = InstanceType<typeof entities[number]>;
-  export type TblGeDetalle = InstanceType<typeof entities[number]>;
   export type TblGeDetDeducibleLimite = InstanceType<typeof entities[number]>;
   export type TblGeDetDeducibleRango = InstanceType<typeof entities[number]>;
   export type TblGeDetDefinicion = InstanceType<typeof entities[number]>;
@@ -625,6 +624,7 @@ export namespace entities {
   export type TblGeDetSistemaTransfBanco = InstanceType<typeof entities[number]>;
   export type TblGeDetTablaVirtual = InstanceType<typeof entities[number]>;
   export type TblGeDetTablaVirtualDatos = InstanceType<typeof entities[number]>;
+  export type TblGeDetalle = InstanceType<typeof entities[number]>;
   export type TblGeDivision = InstanceType<typeof entities[number]>;
   export type TblGeFeriado = InstanceType<typeof entities[number]>;
   export type TblGeGrupo = InstanceType<typeof entities[number]>;
@@ -703,11 +703,11 @@ export namespace entities {
   export type TblNoDetConcepto = InstanceType<typeof entities[number]>;
   export type TblNoDetConceptoFormula = InstanceType<typeof entities[number]>;
   export type TblNoDetConceptoTarifario = InstanceType<typeof entities[number]>;
+  export type TblNoDetContSolidaria = InstanceType<typeof entities[number]>;
   export type TblNoDetContratoConcepto = InstanceType<typeof entities[number]>;
   export type TblNoDetContratoCuenta = InstanceType<typeof entities[number]>;
   export type TblNoDetContratoCuentaBco = InstanceType<typeof entities[number]>;
   export type TblNoDetContratoHistoriaSueldo = InstanceType<typeof entities[number]>;
-  export type TblNoDetContSolidaria = InstanceType<typeof entities[number]>;
   export type TblNoDetCtrlLiquidacion = InstanceType<typeof entities[number]>;
   export type TblNoDetCtrlNovedad = InstanceType<typeof entities[number]>;
   export type TblNoDetCuadrilla = InstanceType<typeof entities[number]>;
@@ -734,12 +734,12 @@ export namespace entities {
   export type TblNoDetLiqHaberesProvision = InstanceType<typeof entities[number]>;
   export type TblNoDetLiqHaberesProvisionCancelada = InstanceType<typeof entities[number]>;
   export type TblNoDetLiqHaberesProvisionSistema = InstanceType<typeof entities[number]>;
+  export type TblNoDetLiqVacacionProvisionAnio = InstanceType<typeof entities[number]>;
   export type TblNoDetLiquidacionHaberes = InstanceType<typeof entities[number]>;
   export type TblNoDetLiquidacionHaberesSistema = InstanceType<typeof entities[number]>;
   export type TblNoDetLiquidacionPeriodo = InstanceType<typeof entities[number]>;
   export type TblNoDetLiquidacionVacaciones = InstanceType<typeof entities[number]>;
   export type TblNoDetLiquidacionVacacionesHistoria = InstanceType<typeof entities[number]>;
-  export type TblNoDetLiqVacacionProvisionAnio = InstanceType<typeof entities[number]>;
   export type TblNoDetLoteLiquidacion = InstanceType<typeof entities[number]>;
   export type TblNoDetMigraInfoDecimos = InstanceType<typeof entities[number]>;
   export type TblNoDetNomina = InstanceType<typeof entities[number]>;
@@ -782,12 +782,12 @@ export namespace entities {
   export type TblNoPeriodo = InstanceType<typeof entities[number]>;
   export type TblNoPlanDeCuenta = InstanceType<typeof entities[number]>;
   export type TblNoPorcDiscapacidad = InstanceType<typeof entities[number]>;
+  export type TblNoRelTipoNominaConcepto = InstanceType<typeof entities[number]>;
+  export type TblNoRelTotalHorasObrero = InstanceType<typeof entities[number]>;
   export type TblNoRel_Auxiliar_TipoAuxiliar = InstanceType<typeof entities[number]>;
   export type TblNoRel_Auxiliar_TipoAuxiliarAudt = InstanceType<typeof entities[number]>;
   export type TblNoRel_CtaMy_TipAux = InstanceType<typeof entities[number]>;
   export type TblNoRelaTransfMvtoBancario = InstanceType<typeof entities[number]>;
-  export type TblNoRelTipoNominaConcepto = InstanceType<typeof entities[number]>;
-  export type TblNoRelTotalHorasObrero = InstanceType<typeof entities[number]>;
   export type TblNoResumenAnterior = InstanceType<typeof entities[number]>;
   export type TblNoResumenNomina = InstanceType<typeof entities[number]>;
   export type TblNoSueldoBasico = InstanceType<typeof entities[number]>;
@@ -800,13 +800,9 @@ export namespace entities {
   export type TblNoVariableConcepto = InstanceType<typeof entities[number]>;
   export type TblSueldoAcumulado = InstanceType<typeof entities[number]>;
   export type TblWrkNoLaborCuadrilla = InstanceType<typeof entities[number]>;
-  export type TmpTblNoPeriodo = InstanceType<typeof entities[number]>;
   export type User = InstanceType<typeof entities[number]>;
-  export type Wrk_ProvisionHistorica = InstanceType<typeof entities[number]>;
   export type WRK_TblImpotDetObreroDias = InstanceType<typeof entities[number]>;
   export type WRK_TblImpotDetProyectoDias = InstanceType<typeof entities[number]>;
-  export type WrkCADetHorarioDia = InstanceType<typeof entities[number]>;
-  export type WrkCADetHorarioEmpl = InstanceType<typeof entities[number]>;
   export type WrkCADetMovimiento = InstanceType<typeof entities[number]>;
   export type WrkCADetValidacion = InstanceType<typeof entities[number]>;
   export type WrkCAImportaMarcaciones = InstanceType<typeof entities[number]>;
@@ -814,7 +810,6 @@ export namespace entities {
   export type WrkCriterioConsultaSobrePago = InstanceType<typeof entities[number]>;
   export type WrkCriterioMYSQL = InstanceType<typeof entities[number]>;
   export type WrkDetCtrlNovedad = InstanceType<typeof entities[number]>;
-  export type WrkDetNominaAreaBeneficio = InstanceType<typeof entities[number]>;
   export type WrkNoDetContSolidaria = InstanceType<typeof entities[number]>;
   export type WrkNoDetCtrlNovedad = InstanceType<typeof entities[number]>;
   export type WrkNoDetImportaBatchIESS = InstanceType<typeof entities[number]>;
@@ -827,5 +822,10 @@ export namespace entities {
   export type WrkNoDetRecalculoImptoRenta = InstanceType<typeof entities[number]>;
   export type WrkNoDetSalarioDigno = InstanceType<typeof entities[number]>;
   export type WrkNoDetUtilidad = InstanceType<typeof entities[number]>;
+  export type TmpTblNoPeriodo = InstanceType<typeof entities[number]>;
+  export type WrkCADetHorarioDia = InstanceType<typeof entities[number]>;
+  export type WrkCADetHorarioEmpl = InstanceType<typeof entities[number]>;
+  export type WrkDetNominaAreaBeneficio = InstanceType<typeof entities[number]>;
+  export type Wrk_ProvisionHistorica = InstanceType<typeof entities[number]>;
 }
 
