@@ -80,7 +80,8 @@ generate_index() {
 generate_index "src/oracle"   "model.ts"  "models"   "object"
 generate_index "src/typeorm" "entity.ts" "entities" "array"
 
-# Barrel principal dinámico\ nROOT_OUT="src/index.ts"
+# Barrel principal dinámico
+ROOT_OUT="src/index.ts"
 
 echo "// AUTO-GENERATED — barrel principal" > "$ROOT_OUT"
 echo "" >> "$ROOT_OUT"
