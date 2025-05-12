@@ -89,8 +89,19 @@ generate_index() {
   echo "✅ $OUT generado"
 }
 
+# ------------- Ejecución -------------
 # Genera src/oracle/index.ts con default export models y namespace de tipos
 generate_index "src/oracle" "model.ts" "models" "object"
 
 # Genera src/typeorm/index.ts con default export entities y namespace de tipos
 generate_index "src/typeorm" "entity.ts" "entities" "array"
+
+# ------------- Root barrel -------------
+ROOT_OUT="src/index.ts"
+
+echo "// AUTO-GENERATED — barrel principal" > "$ROOT_OUT"
+echo "" >> "$ROOT_OUT"
+echo "export { default as models }   from './oracle';" >> "$ROOT_OUT"
+echo "export { default as entities } from './typeorm';" >> "$ROOT_OUT"
+echo "" >> "$ROOT_OUT"
+echo "✅ $ROOT_OUT generado"
