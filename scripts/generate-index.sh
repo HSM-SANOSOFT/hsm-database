@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-# Función genérica para generar index.ts con default export
+# Función genérica para generar index.ts con default export y namespace de tipos
 # $1 = carpeta (e.g. src/oracle)
 # $2 = extensión de archivo (model.ts o entity.ts)
 # $3 = nombre de la export principal (models o entities)
@@ -16,12 +16,11 @@ generate_index() {
   echo "// AUTO-GENERATED — no editar a mano" > "$OUT"
   echo "" >> "$OUT"
 
-  # 1) Imports
+  # 1) Imports de clases
   for filepath in "$DIR"/*."$EXT"; do
     [ -e "$filepath" ] || continue
-    filename=$(basename "$filepath")                # e.g. cgRefCode.model.ts
-    base=${filename%."$EXT"}                        # e.g. cgRefCode
-    # CamelCase para la clase
+    filename=$(basename "$filepath")                # ej. cgRefCode.model.ts
+    base=${filename%."$EXT"}                        # ej. cgRefCode
     className="$(tr '[:lower:]' '[:upper:]' <<< "${base:0:1}")${base:1}"
     if [ "$EXT" = "model.ts" ]; then
       importName="${className}Model"
@@ -35,7 +34,7 @@ generate_index() {
 
   echo "" >> "$OUT"
 
-  # 2) Definir const y export default
+  # 2) Construir objeto/array y export default
   if [ "$EXPORT_TYPE" = "object" ]; then
     echo "const $EXPORT_NAME = {" >> "$OUT"
     for filepath in "$DIR"/*."$EXT"; do
@@ -66,14 +65,32 @@ generate_index() {
     echo "];" >> "$OUT"
   fi
 
+  # 3) Export default del objeto/array
   echo "export default $EXPORT_NAME;" >> "$OUT"
+  echo "" >> "$OUT"
+
+  # 4) Namespace de tipos para que models.xxx funcione en genéricos
+  echo "// Namespace de tipos correspondiente al default export" >> "$OUT"
+  echo "export namespace $EXPORT_NAME {" >> "$OUT"
+  for filepath in "$DIR"/*."$EXT"; do
+    [ -e "$filepath" ] || continue
+    filename=$(basename "$filepath")
+    base=${filename%."$EXT"}
+    className="$(tr '[:lower:]' '[:upper:]' <<< "${base:0:1}")${base:1}"
+    if [ "$EXT" = "model.ts" ]; then
+      echo "  export type ${className}Model = import('./${base}.model').${className}Model;" >> "$OUT"
+    else
+      echo "  export type ${className} = import('./${base}.entity').${className};" >> "$OUT"
+    fi
+  done
+  echo "}" >> "$OUT"
   echo "" >> "$OUT"
 
   echo "✅ $OUT generado"
 }
 
-# Genera src/oracle/index.ts con default export models (objeto)
+# Genera src/oracle/index.ts con default export models y namespace de tipos
 generate_index "src/oracle" "model.ts" "models" "object"
 
-# Genera src/typeorm/index.ts con default export entities (array)
+# Genera src/typeorm/index.ts con default export entities y namespace de tipos
 generate_index "src/typeorm" "entity.ts" "entities" "array"
