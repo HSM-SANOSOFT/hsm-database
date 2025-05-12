@@ -12,11 +12,10 @@ export const models = {
   VwServiciosChatModel,
 };
 
-// Namespace de tipos correspondiente al export
 export namespace models {
-  export type CgRefCodeModel = typeof CgRefCodeModel;
-  export type PdpLogSegundaVerificacionModel = typeof PdpLogSegundaVerificacionModel;
-  export type SgiPilaresModel = typeof SgiPilaresModel;
-  export type VwServiciosChatModel = typeof VwServiciosChatModel;
+  export type CgRefCodeModel = InstanceType<typeof models.CgRefCodeModel>;
+  export type PdpLogSegundaVerificacionModel = InstanceType<typeof models.PdpLogSegundaVerificacionModel>;
+  export type SgiPilaresModel = InstanceType<typeof models.SgiPilaresModel>;
+  export type VwServiciosChatModel = InstanceType<typeof models.VwServiciosChatModel>;
 }
 

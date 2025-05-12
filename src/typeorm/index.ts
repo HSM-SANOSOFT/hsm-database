@@ -59,6 +59,7 @@ import { TblGeCiaComplementaria } from './TblGeCiaComplementaria.entity';
 import { TblGeCias } from './TblGeCias.entity';
 import { TblGeConfigCorreo } from './TblGeConfigCorreo.entity';
 import { TblGeDBName } from './TblGeDBName.entity';
+import { TblGeDetalle } from './TblGeDetalle.entity';
 import { TblGeDetDeducibleLimite } from './TblGeDetDeducibleLimite.entity';
 import { TblGeDetDeducibleRango } from './TblGeDetDeducibleRango.entity';
 import { TblGeDetDefinicion } from './TblGeDetDefinicion.entity';
@@ -71,7 +72,6 @@ import { TblGeDetSectorialMasivo } from './TblGeDetSectorialMasivo.entity';
 import { TblGeDetSistemaTransfBanco } from './TblGeDetSistemaTransfBanco.entity';
 import { TblGeDetTablaVirtual } from './TblGeDetTablaVirtual.entity';
 import { TblGeDetTablaVirtualDatos } from './TblGeDetTablaVirtualDatos.entity';
-import { TblGeDetalle } from './TblGeDetalle.entity';
 import { TblGeDivision } from './TblGeDivision.entity';
 import { TblGeFeriado } from './TblGeFeriado.entity';
 import { TblGeGrupo } from './TblGeGrupo.entity';
@@ -150,11 +150,11 @@ import { TblNoDetComision } from './TblNoDetComision.entity';
 import { TblNoDetConcepto } from './TblNoDetConcepto.entity';
 import { TblNoDetConceptoFormula } from './TblNoDetConceptoFormula.entity';
 import { TblNoDetConceptoTarifario } from './TblNoDetConceptoTarifario.entity';
-import { TblNoDetContSolidaria } from './TblNoDetContSolidaria.entity';
 import { TblNoDetContratoConcepto } from './TblNoDetContratoConcepto.entity';
 import { TblNoDetContratoCuenta } from './TblNoDetContratoCuenta.entity';
 import { TblNoDetContratoCuentaBco } from './TblNoDetContratoCuentaBco.entity';
 import { TblNoDetContratoHistoriaSueldo } from './TblNoDetContratoHistoriaSueldo.entity';
+import { TblNoDetContSolidaria } from './TblNoDetContSolidaria.entity';
 import { TblNoDetCtrlLiquidacion } from './TblNoDetCtrlLiquidacion.entity';
 import { TblNoDetCtrlNovedad } from './TblNoDetCtrlNovedad.entity';
 import { TblNoDetCuadrilla } from './TblNoDetCuadrilla.entity';
@@ -181,12 +181,12 @@ import { TblNoDetLiqHaberesPrestamo } from './TblNoDetLiqHaberesPrestamo.entity'
 import { TblNoDetLiqHaberesProvision } from './TblNoDetLiqHaberesProvision.entity';
 import { TblNoDetLiqHaberesProvisionCancelada } from './TblNoDetLiqHaberesProvisionCancelada.entity';
 import { TblNoDetLiqHaberesProvisionSistema } from './TblNoDetLiqHaberesProvisionSistema.entity';
-import { TblNoDetLiqVacacionProvisionAnio } from './TblNoDetLiqVacacionProvisionAnio.entity';
 import { TblNoDetLiquidacionHaberes } from './TblNoDetLiquidacionHaberes.entity';
 import { TblNoDetLiquidacionHaberesSistema } from './TblNoDetLiquidacionHaberesSistema.entity';
 import { TblNoDetLiquidacionPeriodo } from './TblNoDetLiquidacionPeriodo.entity';
 import { TblNoDetLiquidacionVacaciones } from './TblNoDetLiquidacionVacaciones.entity';
 import { TblNoDetLiquidacionVacacionesHistoria } from './TblNoDetLiquidacionVacacionesHistoria.entity';
+import { TblNoDetLiqVacacionProvisionAnio } from './TblNoDetLiqVacacionProvisionAnio.entity';
 import { TblNoDetLoteLiquidacion } from './TblNoDetLoteLiquidacion.entity';
 import { TblNoDetMigraInfoDecimos } from './TblNoDetMigraInfoDecimos.entity';
 import { TblNoDetNomina } from './TblNoDetNomina.entity';
@@ -229,12 +229,12 @@ import { TblNoOrigenConcepto } from './TblNoOrigenConcepto.entity';
 import { TblNoPeriodo } from './TblNoPeriodo.entity';
 import { TblNoPlanDeCuenta } from './TblNoPlanDeCuenta.entity';
 import { TblNoPorcDiscapacidad } from './TblNoPorcDiscapacidad.entity';
-import { TblNoRelTipoNominaConcepto } from './TblNoRelTipoNominaConcepto.entity';
-import { TblNoRelTotalHorasObrero } from './TblNoRelTotalHorasObrero.entity';
 import { TblNoRel_Auxiliar_TipoAuxiliar } from './TblNoRel_Auxiliar_TipoAuxiliar.entity';
 import { TblNoRel_Auxiliar_TipoAuxiliarAudt } from './TblNoRel_Auxiliar_TipoAuxiliarAudt.entity';
 import { TblNoRel_CtaMy_TipAux } from './TblNoRel_CtaMy_TipAux.entity';
 import { TblNoRelaTransfMvtoBancario } from './TblNoRelaTransfMvtoBancario.entity';
+import { TblNoRelTipoNominaConcepto } from './TblNoRelTipoNominaConcepto.entity';
+import { TblNoRelTotalHorasObrero } from './TblNoRelTotalHorasObrero.entity';
 import { TblNoResumenAnterior } from './TblNoResumenAnterior.entity';
 import { TblNoResumenNomina } from './TblNoResumenNomina.entity';
 import { TblNoSueldoBasico } from './TblNoSueldoBasico.entity';
@@ -247,9 +247,13 @@ import { TblNoTransferencia } from './TblNoTransferencia.entity';
 import { TblNoVariableConcepto } from './TblNoVariableConcepto.entity';
 import { TblSueldoAcumulado } from './TblSueldoAcumulado.entity';
 import { TblWrkNoLaborCuadrilla } from './TblWrkNoLaborCuadrilla.entity';
+import { TmpTblNoPeriodo } from './tmpTblNoPeriodo.entity';
 import { User } from './User.entity';
+import { Wrk_ProvisionHistorica } from './wrk_ProvisionHistorica.entity';
 import { WRK_TblImpotDetObreroDias } from './WRK_TblImpotDetObreroDias.entity';
 import { WRK_TblImpotDetProyectoDias } from './WRK_TblImpotDetProyectoDias.entity';
+import { WrkCADetHorarioDia } from './wrkCADetHorarioDia.entity';
+import { WrkCADetHorarioEmpl } from './wrkCADetHorarioEmpl.entity';
 import { WrkCADetMovimiento } from './WrkCADetMovimiento.entity';
 import { WrkCADetValidacion } from './WrkCADetValidacion.entity';
 import { WrkCAImportaMarcaciones } from './WrkCAImportaMarcaciones.entity';
@@ -257,6 +261,7 @@ import { WrkCriterioConsulta } from './WrkCriterioConsulta.entity';
 import { WrkCriterioConsultaSobrePago } from './WrkCriterioConsultaSobrePago.entity';
 import { WrkCriterioMYSQL } from './WrkCriterioMYSQL.entity';
 import { WrkDetCtrlNovedad } from './WrkDetCtrlNovedad.entity';
+import { WrkDetNominaAreaBeneficio } from './wrkDetNominaAreaBeneficio.entity';
 import { WrkNoDetContSolidaria } from './WrkNoDetContSolidaria.entity';
 import { WrkNoDetCtrlNovedad } from './WrkNoDetCtrlNovedad.entity';
 import { WrkNoDetImportaBatchIESS } from './WrkNoDetImportaBatchIESS.entity';
@@ -269,11 +274,6 @@ import { WrkNoDetRDEPImportacion } from './WrkNoDetRDEPImportacion.entity';
 import { WrkNoDetRecalculoImptoRenta } from './WrkNoDetRecalculoImptoRenta.entity';
 import { WrkNoDetSalarioDigno } from './WrkNoDetSalarioDigno.entity';
 import { WrkNoDetUtilidad } from './WrkNoDetUtilidad.entity';
-import { TmpTblNoPeriodo } from './tmpTblNoPeriodo.entity';
-import { WrkCADetHorarioDia } from './wrkCADetHorarioDia.entity';
-import { WrkCADetHorarioEmpl } from './wrkCADetHorarioEmpl.entity';
-import { WrkDetNominaAreaBeneficio } from './wrkDetNominaAreaBeneficio.entity';
-import { Wrk_ProvisionHistorica } from './wrk_ProvisionHistorica.entity';
 
 export const entities = [
   DetVacacionesPlanificadas,
@@ -335,6 +335,7 @@ export const entities = [
   TblGeCias,
   TblGeConfigCorreo,
   TblGeDBName,
+  TblGeDetalle,
   TblGeDetDeducibleLimite,
   TblGeDetDeducibleRango,
   TblGeDetDefinicion,
@@ -347,7 +348,6 @@ export const entities = [
   TblGeDetSistemaTransfBanco,
   TblGeDetTablaVirtual,
   TblGeDetTablaVirtualDatos,
-  TblGeDetalle,
   TblGeDivision,
   TblGeFeriado,
   TblGeGrupo,
@@ -426,11 +426,11 @@ export const entities = [
   TblNoDetConcepto,
   TblNoDetConceptoFormula,
   TblNoDetConceptoTarifario,
-  TblNoDetContSolidaria,
   TblNoDetContratoConcepto,
   TblNoDetContratoCuenta,
   TblNoDetContratoCuentaBco,
   TblNoDetContratoHistoriaSueldo,
+  TblNoDetContSolidaria,
   TblNoDetCtrlLiquidacion,
   TblNoDetCtrlNovedad,
   TblNoDetCuadrilla,
@@ -457,12 +457,12 @@ export const entities = [
   TblNoDetLiqHaberesProvision,
   TblNoDetLiqHaberesProvisionCancelada,
   TblNoDetLiqHaberesProvisionSistema,
-  TblNoDetLiqVacacionProvisionAnio,
   TblNoDetLiquidacionHaberes,
   TblNoDetLiquidacionHaberesSistema,
   TblNoDetLiquidacionPeriodo,
   TblNoDetLiquidacionVacaciones,
   TblNoDetLiquidacionVacacionesHistoria,
+  TblNoDetLiqVacacionProvisionAnio,
   TblNoDetLoteLiquidacion,
   TblNoDetMigraInfoDecimos,
   TblNoDetNomina,
@@ -505,12 +505,12 @@ export const entities = [
   TblNoPeriodo,
   TblNoPlanDeCuenta,
   TblNoPorcDiscapacidad,
-  TblNoRelTipoNominaConcepto,
-  TblNoRelTotalHorasObrero,
   TblNoRel_Auxiliar_TipoAuxiliar,
   TblNoRel_Auxiliar_TipoAuxiliarAudt,
   TblNoRel_CtaMy_TipAux,
   TblNoRelaTransfMvtoBancario,
+  TblNoRelTipoNominaConcepto,
+  TblNoRelTotalHorasObrero,
   TblNoResumenAnterior,
   TblNoResumenNomina,
   TblNoSueldoBasico,
@@ -523,9 +523,13 @@ export const entities = [
   TblNoVariableConcepto,
   TblSueldoAcumulado,
   TblWrkNoLaborCuadrilla,
+  TmpTblNoPeriodo,
   User,
+  Wrk_ProvisionHistorica,
   WRK_TblImpotDetObreroDias,
   WRK_TblImpotDetProyectoDias,
+  WrkCADetHorarioDia,
+  WrkCADetHorarioEmpl,
   WrkCADetMovimiento,
   WrkCADetValidacion,
   WrkCAImportaMarcaciones,
@@ -533,6 +537,7 @@ export const entities = [
   WrkCriterioConsultaSobrePago,
   WrkCriterioMYSQL,
   WrkDetCtrlNovedad,
+  WrkDetNominaAreaBeneficio,
   WrkNoDetContSolidaria,
   WrkNoDetCtrlNovedad,
   WrkNoDetImportaBatchIESS,
@@ -545,288 +550,282 @@ export const entities = [
   WrkNoDetRecalculoImptoRenta,
   WrkNoDetSalarioDigno,
   WrkNoDetUtilidad,
-  TmpTblNoPeriodo,
-  WrkCADetHorarioDia,
-  WrkCADetHorarioEmpl,
-  WrkDetNominaAreaBeneficio,
-  Wrk_ProvisionHistorica,
 ];
 
-// Namespace de tipos correspondiente al export
 export namespace entities {
-  export type DetVacacionesPlanificadas = typeof DetVacacionesPlanificadas;
-  export type GeDBName = typeof GeDBName;
-  export type TblCACabConfigMarcaciones = typeof TblCACabConfigMarcaciones;
-  export type TblCACabControlDia = typeof TblCACabControlDia;
-  export type TblCACabHorario = typeof TblCACabHorario;
-  export type TblCACabImportacion = typeof TblCACabImportacion;
-  export type TblCACabLoteMvto = typeof TblCACabLoteMvto;
-  export type TblCACabMovimiento = typeof TblCACabMovimiento;
-  export type TblCACabTurno = typeof TblCACabTurno;
-  export type TblCACabUbicacion = typeof TblCACabUbicacion;
-  export type TblCACabValidacion = typeof TblCACabValidacion;
-  export type TblCADetConfigMarcaciones = typeof TblCADetConfigMarcaciones;
-  export type TblCADetControlDia = typeof TblCADetControlDia;
-  export type TblCADetHorarioDia = typeof TblCADetHorarioDia;
-  export type TblCADetHorarioEmpl = typeof TblCADetHorarioEmpl;
-  export type TblCADetImportacion = typeof TblCADetImportacion;
-  export type TblCADetLoteMvto = typeof TblCADetLoteMvto;
-  export type TblCADetLoteMvtoNovedad = typeof TblCADetLoteMvtoNovedad;
-  export type TblCADetMovimiento = typeof TblCADetMovimiento;
-  export type TblCADetMovimientoEmpl = typeof TblCADetMovimientoEmpl;
-  export type TblCADetTurno = typeof TblCADetTurno;
-  export type TblCADetTurnoTipoNomina = typeof TblCADetTurnoTipoNomina;
-  export type TblCADetUbicacion = typeof TblCADetUbicacion;
-  export type TblCADetValidacion = typeof TblCADetValidacion;
-  export type TblCADispositivo = typeof TblCADispositivo;
-  export type TblCAPermiso = typeof TblCAPermiso;
-  export type TblCiCabCierre = typeof TblCiCabCierre;
-  export type TblCiCabCierreDistribucion = typeof TblCiCabCierreDistribucion;
-  export type TblCiCabPlantilla = typeof TblCiCabPlantilla;
-  export type TblCiCabPlantillaDistribuyePres = typeof TblCiCabPlantillaDistribuyePres;
-  export type TblCiCabPlantillaEmpl = typeof TblCiCabPlantillaEmpl;
-  export type TblCiDetCierre = typeof TblCiDetCierre;
-  export type TblCiDetCierreDistribucion = typeof TblCiDetCierreDistribucion;
-  export type TblCiDetPlantilla = typeof TblCiDetPlantilla;
-  export type TblCiDetPlantillaDistribucion = typeof TblCiDetPlantillaDistribucion;
-  export type TblCiDetPlantillaDistribuyePres = typeof TblCiDetPlantillaDistribuyePres;
-  export type TblCiDetPlantillaEmpl = typeof TblCiDetPlantillaEmpl;
-  export type TblCiMensajes = typeof TblCiMensajes;
-  export type TblCiTipoComprobante = typeof TblCiTipoComprobante;
-  export type TblDetNominaProyectoDias = typeof TblDetNominaProyectoDias;
-  export type TblGeArchivo = typeof TblGeArchivo;
-  export type TblGeArea = typeof TblGeArea;
-  export type TblGeAreaBeneficios = typeof TblGeAreaBeneficios;
-  export type TblGeBanco = typeof TblGeBanco;
-  export type TblGeCabDeducible = typeof TblGeCabDeducible;
-  export type TblGeCabDefinicion = typeof TblGeCabDefinicion;
-  export type TblGeCabDocumento = typeof TblGeCabDocumento;
-  export type TblGeCabHorasLaboradas = typeof TblGeCabHorasLaboradas;
-  export type TblGeCabParametro = typeof TblGeCabParametro;
-  export type TblGeCabSectorial = typeof TblGeCabSectorial;
-  export type TblGeCabSectorialMasivo = typeof TblGeCabSectorialMasivo;
-  export type TblGeCabSistemaTransfBanco = typeof TblGeCabSistemaTransfBanco;
-  export type TblGeCabTablaVirtual = typeof TblGeCabTablaVirtual;
-  export type TblGeCanton = typeof TblGeCanton;
-  export type TblGeCentroCosto = typeof TblGeCentroCosto;
-  export type TblGeCiaComplementaria = typeof TblGeCiaComplementaria;
-  export type TblGeCias = typeof TblGeCias;
-  export type TblGeConfigCorreo = typeof TblGeConfigCorreo;
-  export type TblGeDBName = typeof TblGeDBName;
-  export type TblGeDetDeducibleLimite = typeof TblGeDetDeducibleLimite;
-  export type TblGeDetDeducibleRango = typeof TblGeDetDeducibleRango;
-  export type TblGeDetDefinicion = typeof TblGeDetDefinicion;
-  export type TblGeDetDocumento = typeof TblGeDetDocumento;
-  export type TblGeDetHorasLaboradas = typeof TblGeDetHorasLaboradas;
-  export type TblGeDetHorasLaboradasCCosto = typeof TblGeDetHorasLaboradasCCosto;
-  export type TblGeDetParametro = typeof TblGeDetParametro;
-  export type TblGeDetSectorial = typeof TblGeDetSectorial;
-  export type TblGeDetSectorialMasivo = typeof TblGeDetSectorialMasivo;
-  export type TblGeDetSistemaTransfBanco = typeof TblGeDetSistemaTransfBanco;
-  export type TblGeDetTablaVirtual = typeof TblGeDetTablaVirtual;
-  export type TblGeDetTablaVirtualDatos = typeof TblGeDetTablaVirtualDatos;
-  export type TblGeDetalle = typeof TblGeDetalle;
-  export type TblGeDivision = typeof TblGeDivision;
-  export type TblGeFeriado = typeof TblGeFeriado;
-  export type TblGeGrupo = typeof TblGeGrupo;
-  export type TblGeImagen = typeof TblGeImagen;
-  export type TblGeLogProceso = typeof TblGeLogProceso;
-  export type TblGeMaquinaria = typeof TblGeMaquinaria;
-  export type TblGeNoIdoneo = typeof TblGeNoIdoneo;
-  export type TblGeParroquia = typeof TblGeParroquia;
-  export type TblGeProvincia = typeof TblGeProvincia;
-  export type TblGeReporteCia = typeof TblGeReporteCia;
-  export type TblGeSecuencia = typeof TblGeSecuencia;
-  export type TblGeSubCentroCosto = typeof TblGeSubCentroCosto;
-  export type TblGeSucursal = typeof TblGeSucursal;
-  export type TblGeSucursalCuenta = typeof TblGeSucursalCuenta;
-  export type TblGeSucursalRelCiaCI = typeof TblGeSucursalRelCiaCI;
-  export type TblGeTipoServicioTransfBanco = typeof TblGeTipoServicioTransfBanco;
-  export type TblGeUnidadMedida = typeof TblGeUnidadMedida;
-  export type TblIvCabImplemento = typeof TblIvCabImplemento;
-  export type TblIvDetImplemento = typeof TblIvDetImplemento;
-  export type TblNoAcumulados = typeof TblNoAcumulados;
-  export type TblNoAspirante = typeof TblNoAspirante;
-  export type TblNoAuxiliar = typeof TblNoAuxiliar;
-  export type TblNoCabAnticipo = typeof TblNoCabAnticipo;
-  export type TblNoCabAsignaBancoContrato = typeof TblNoCabAsignaBancoContrato;
-  export type TblNoCabBatchIESS = typeof TblNoCabBatchIESS;
-  export type TblNoCabBeneficioPagado = typeof TblNoCabBeneficioPagado;
-  export type TblNoCabComision = typeof TblNoCabComision;
-  export type TblNoCabConcepto = typeof TblNoCabConcepto;
-  export type TblNoCabConceptoTarifario = typeof TblNoCabConceptoTarifario;
-  export type TblNoCabContSolidaria = typeof TblNoCabContSolidaria;
-  export type TblNoCabCtrlLiquidacion = typeof TblNoCabCtrlLiquidacion;
-  export type TblNoCabCtrlNovedad = typeof TblNoCabCtrlNovedad;
-  export type TblNoCabCuadrilla = typeof TblNoCabCuadrilla;
-  export type TblNoCabDecimoProvisionado = typeof TblNoCabDecimoProvisionado;
-  export type TblNoCabDeducible = typeof TblNoCabDeducible;
-  export type TblNoCabDistribuye = typeof TblNoCabDistribuye;
-  export type TblNoCabFalta = typeof TblNoCabFalta;
-  export type TblNoCabImpuestoRenta = typeof TblNoCabImpuestoRenta;
-  export type TblNoCabInformacionMRL = typeof TblNoCabInformacionMRL;
-  export type TblNoCabJornal = typeof TblNoCabJornal;
-  export type TblNoCabLaborCuadrilla = typeof TblNoCabLaborCuadrilla;
-  export type TblNoCabLiquidacionHaberes = typeof TblNoCabLiquidacionHaberes;
-  export type TblNoCabLiquidacionVacaciones = typeof TblNoCabLiquidacionVacaciones;
-  export type TblNoCabLoteLiquidacion = typeof TblNoCabLoteLiquidacion;
-  export type TblNoCabMigraInfoDecimos = typeof TblNoCabMigraInfoDecimos;
-  export type TblNoCabNomina = typeof TblNoCabNomina;
-  export type TblNoCabNominaIndividual = typeof TblNoCabNominaIndividual;
-  export type TblNoCabNovedad = typeof TblNoCabNovedad;
-  export type TblNoCabObreroDias = typeof TblNoCabObreroDias;
-  export type TblNoCabOrdenPago = typeof TblNoCabOrdenPago;
-  export type TblNoCabPagoPrestamo = typeof TblNoCabPagoPrestamo;
-  export type TblNoCabPrestamo = typeof TblNoCabPrestamo;
-  export type TblNoCabProvisionHistorica = typeof TblNoCabProvisionHistorica;
-  export type TblNoCabProyeccionSueldo = typeof TblNoCabProyeccionSueldo;
-  export type TblNoCabProyectoDia = typeof TblNoCabProyectoDia;
-  export type TblNoCabRDEP = typeof TblNoCabRDEP;
-  export type TblNoCabRDEPMensual = typeof TblNoCabRDEPMensual;
-  export type TblNoCabRecalculoImptoRenta = typeof TblNoCabRecalculoImptoRenta;
-  export type TblNoCabSalarioDigno = typeof TblNoCabSalarioDigno;
-  export type TblNoCabServicio = typeof TblNoCabServicio;
-  export type TblNoCabTablaContSolidaria = typeof TblNoCabTablaContSolidaria;
-  export type TblNoCabUtilidad = typeof TblNoCabUtilidad;
-  export type TblNoCabVacaciones = typeof TblNoCabVacaciones;
-  export type TblNoCabValoresAvance = typeof TblNoCabValoresAvance;
-  export type TblNoCargo = typeof TblNoCargo;
-  export type TblNoConfigDistribucionBase = typeof TblNoConfigDistribucionBase;
-  export type TblNoConfigDistribucionIngresos = typeof TblNoConfigDistribucionIngresos;
-  export type TblNoContrato = typeof TblNoContrato;
-  export type TblNoCuenta = typeof TblNoCuenta;
-  export type TblNoDetAgrupacionBatchIESS = typeof TblNoDetAgrupacionBatchIESS;
-  export type TblNoDetAnticipo = typeof TblNoDetAnticipo;
-  export type TblNoDetAsignaBancoContrato = typeof TblNoDetAsignaBancoContrato;
-  export type TblNoDetBatchIESS = typeof TblNoDetBatchIESS;
-  export type TblNoDetBeneficioPagado = typeof TblNoDetBeneficioPagado;
-  export type TblNoDetComision = typeof TblNoDetComision;
-  export type TblNoDetConcepto = typeof TblNoDetConcepto;
-  export type TblNoDetConceptoFormula = typeof TblNoDetConceptoFormula;
-  export type TblNoDetConceptoTarifario = typeof TblNoDetConceptoTarifario;
-  export type TblNoDetContSolidaria = typeof TblNoDetContSolidaria;
-  export type TblNoDetContratoConcepto = typeof TblNoDetContratoConcepto;
-  export type TblNoDetContratoCuenta = typeof TblNoDetContratoCuenta;
-  export type TblNoDetContratoCuentaBco = typeof TblNoDetContratoCuentaBco;
-  export type TblNoDetContratoHistoriaSueldo = typeof TblNoDetContratoHistoriaSueldo;
-  export type TblNoDetCtrlLiquidacion = typeof TblNoDetCtrlLiquidacion;
-  export type TblNoDetCtrlNovedad = typeof TblNoDetCtrlNovedad;
-  export type TblNoDetCuadrilla = typeof TblNoDetCuadrilla;
-  export type TblNoDetDatosCCosto = typeof TblNoDetDatosCCosto;
-  export type TblNoDetDatosPresupuesto = typeof TblNoDetDatosPresupuesto;
-  export type TblNoDetDecimoProvisionado = typeof TblNoDetDecimoProvisionado;
-  export type TblNoDetDeducible = typeof TblNoDetDeducible;
-  export type TblNoDetDistribuyeCCosto = typeof TblNoDetDistribuyeCCosto;
-  export type TblNoDetDistribuyeEmpleado = typeof TblNoDetDistribuyeEmpleado;
-  export type TblNoDetDistribuyePresObra = typeof TblNoDetDistribuyePresObra;
-  export type TblNoDetEmpleadoCarga = typeof TblNoDetEmpleadoCarga;
-  export type TblNoDetEmpleadoDocumentoReq = typeof TblNoDetEmpleadoDocumentoReq;
-  export type TblNoDetEmpleadoHistoria = typeof TblNoDetEmpleadoHistoria;
-  export type TblNoDetFalta = typeof TblNoDetFalta;
-  export type TblNoDetImpuestoRenta = typeof TblNoDetImpuestoRenta;
-  export type TblNoDetImpuestoRentaReal = typeof TblNoDetImpuestoRentaReal;
-  export type TblNoDetInformacionMRL = typeof TblNoDetInformacionMRL;
-  export type TblNoDetJornal = typeof TblNoDetJornal;
-  export type TblNoDetLaborCuadrilla = typeof TblNoDetLaborCuadrilla;
-  export type TblNoDetLaborCuadrillaEmpl = typeof TblNoDetLaborCuadrillaEmpl;
-  export type TblNoDetLiqHaberesAporte = typeof TblNoDetLiqHaberesAporte;
-  export type TblNoDetLiqHaberesCtrlVacaciones = typeof TblNoDetLiqHaberesCtrlVacaciones;
-  export type TblNoDetLiqHaberesPrestamo = typeof TblNoDetLiqHaberesPrestamo;
-  export type TblNoDetLiqHaberesProvision = typeof TblNoDetLiqHaberesProvision;
-  export type TblNoDetLiqHaberesProvisionCancelada = typeof TblNoDetLiqHaberesProvisionCancelada;
-  export type TblNoDetLiqHaberesProvisionSistema = typeof TblNoDetLiqHaberesProvisionSistema;
-  export type TblNoDetLiqVacacionProvisionAnio = typeof TblNoDetLiqVacacionProvisionAnio;
-  export type TblNoDetLiquidacionHaberes = typeof TblNoDetLiquidacionHaberes;
-  export type TblNoDetLiquidacionHaberesSistema = typeof TblNoDetLiquidacionHaberesSistema;
-  export type TblNoDetLiquidacionPeriodo = typeof TblNoDetLiquidacionPeriodo;
-  export type TblNoDetLiquidacionVacaciones = typeof TblNoDetLiquidacionVacaciones;
-  export type TblNoDetLiquidacionVacacionesHistoria = typeof TblNoDetLiquidacionVacacionesHistoria;
-  export type TblNoDetLoteLiquidacion = typeof TblNoDetLoteLiquidacion;
-  export type TblNoDetMigraInfoDecimos = typeof TblNoDetMigraInfoDecimos;
-  export type TblNoDetNomina = typeof TblNoDetNomina;
-  export type TblNoDetNominaAreaBeneficio = typeof TblNoDetNominaAreaBeneficio;
-  export type TblNoDetNominaContrato = typeof TblNoDetNominaContrato;
-  export type TblNoDetNominaIndividual = typeof TblNoDetNominaIndividual;
-  export type TblNoDetNominaObrero = typeof TblNoDetNominaObrero;
-  export type TblNoDetNovedad = typeof TblNoDetNovedad;
-  export type TblNoDetObreroDias = typeof TblNoDetObreroDias;
-  export type TblNoDetOrdenPago = typeof TblNoDetOrdenPago;
-  export type TblNoDetOrdenPagoObrero = typeof TblNoDetOrdenPagoObrero;
-  export type TblNoDetPagoPrestamo = typeof TblNoDetPagoPrestamo;
-  export type TblNoDetPeriodoBeneficio = typeof TblNoDetPeriodoBeneficio;
-  export type TblNoDetPrestamo = typeof TblNoDetPrestamo;
-  export type TblNoDetProvisionHistorica = typeof TblNoDetProvisionHistorica;
-  export type TblNoDetProyeccionSueldo = typeof TblNoDetProyeccionSueldo;
-  export type TblNoDetProyectoDia = typeof TblNoDetProyectoDia;
-  export type TblNoDetRDEP = typeof TblNoDetRDEP;
-  export type TblNoDetRDEPContribucion = typeof TblNoDetRDEPContribucion;
-  export type TblNoDetRDEPMensual = typeof TblNoDetRDEPMensual;
-  export type TblNoDetRecalculoImptoRenta = typeof TblNoDetRecalculoImptoRenta;
-  export type TblNoDetSalarioDigno = typeof TblNoDetSalarioDigno;
-  export type TblNoDetServicio = typeof TblNoDetServicio;
-  export type TblNoDetSubsidio = typeof TblNoDetSubsidio;
-  export type TblNoDetTablaContSolidaria = typeof TblNoDetTablaContSolidaria;
-  export type TblNoDetTransferenciaBco = typeof TblNoDetTransferenciaBco;
-  export type TblNoDetTransferenciaObrero = typeof TblNoDetTransferenciaObrero;
-  export type TblNoDetUtilidad = typeof TblNoDetUtilidad;
-  export type TblNoDetUtilidadDctos = typeof TblNoDetUtilidadDctos;
-  export type TblNoDetVacaciones = typeof TblNoDetVacaciones;
-  export type TblNoDetVacacionesPlanificadas = typeof TblNoDetVacacionesPlanificadas;
-  export type TblNoDetValoresAvance = typeof TblNoDetValoresAvance;
-  export type TblNoEmpleado = typeof TblNoEmpleado;
-  export type TblNoGeSector = typeof TblNoGeSector;
-  export type TblNoGeSectorialIESS = typeof TblNoGeSectorialIESS;
-  export type TblNoGrupoConcepto = typeof TblNoGrupoConcepto;
-  export type TblNoModulo = typeof TblNoModulo;
-  export type TblNoMotivo = typeof TblNoMotivo;
-  export type TblNoOrigenConcepto = typeof TblNoOrigenConcepto;
-  export type TblNoPeriodo = typeof TblNoPeriodo;
-  export type TblNoPlanDeCuenta = typeof TblNoPlanDeCuenta;
-  export type TblNoPorcDiscapacidad = typeof TblNoPorcDiscapacidad;
-  export type TblNoRelTipoNominaConcepto = typeof TblNoRelTipoNominaConcepto;
-  export type TblNoRelTotalHorasObrero = typeof TblNoRelTotalHorasObrero;
-  export type TblNoRel_Auxiliar_TipoAuxiliar = typeof TblNoRel_Auxiliar_TipoAuxiliar;
-  export type TblNoRel_Auxiliar_TipoAuxiliarAudt = typeof TblNoRel_Auxiliar_TipoAuxiliarAudt;
-  export type TblNoRel_CtaMy_TipAux = typeof TblNoRel_CtaMy_TipAux;
-  export type TblNoRelaTransfMvtoBancario = typeof TblNoRelaTransfMvtoBancario;
-  export type TblNoResumenAnterior = typeof TblNoResumenAnterior;
-  export type TblNoResumenNomina = typeof TblNoResumenNomina;
-  export type TblNoSueldoBasico = typeof TblNoSueldoBasico;
-  export type TblNoTipoAuxiliar = typeof TblNoTipoAuxiliar;
-  export type TblNoTipoContrato = typeof TblNoTipoContrato;
-  export type TblNoTipoCta = typeof TblNoTipoCta;
-  export type TblNoTipoNomina = typeof TblNoTipoNomina;
-  export type TblNoTransfContabilizacion = typeof TblNoTransfContabilizacion;
-  export type TblNoTransferencia = typeof TblNoTransferencia;
-  export type TblNoVariableConcepto = typeof TblNoVariableConcepto;
-  export type TblSueldoAcumulado = typeof TblSueldoAcumulado;
-  export type TblWrkNoLaborCuadrilla = typeof TblWrkNoLaborCuadrilla;
-  export type User = typeof User;
-  export type WRK_TblImpotDetObreroDias = typeof WRK_TblImpotDetObreroDias;
-  export type WRK_TblImpotDetProyectoDias = typeof WRK_TblImpotDetProyectoDias;
-  export type WrkCADetMovimiento = typeof WrkCADetMovimiento;
-  export type WrkCADetValidacion = typeof WrkCADetValidacion;
-  export type WrkCAImportaMarcaciones = typeof WrkCAImportaMarcaciones;
-  export type WrkCriterioConsulta = typeof WrkCriterioConsulta;
-  export type WrkCriterioConsultaSobrePago = typeof WrkCriterioConsultaSobrePago;
-  export type WrkCriterioMYSQL = typeof WrkCriterioMYSQL;
-  export type WrkDetCtrlNovedad = typeof WrkDetCtrlNovedad;
-  export type WrkNoDetContSolidaria = typeof WrkNoDetContSolidaria;
-  export type WrkNoDetCtrlNovedad = typeof WrkNoDetCtrlNovedad;
-  export type WrkNoDetImportaBatchIESS = typeof WrkNoDetImportaBatchIESS;
-  export type WrkNoDetInfoDecimos = typeof WrkNoDetInfoDecimos;
-  export type WrkNoDetJornal = typeof WrkNoDetJornal;
-  export type WrkNoDetLiquidacion = typeof WrkNoDetLiquidacion;
-  export type WrkNoDetNovedad = typeof WrkNoDetNovedad;
-  export type WrkNoDetRDEPContribucion = typeof WrkNoDetRDEPContribucion;
-  export type WrkNoDetRDEPImportacion = typeof WrkNoDetRDEPImportacion;
-  export type WrkNoDetRecalculoImptoRenta = typeof WrkNoDetRecalculoImptoRenta;
-  export type WrkNoDetSalarioDigno = typeof WrkNoDetSalarioDigno;
-  export type WrkNoDetUtilidad = typeof WrkNoDetUtilidad;
-  export type TmpTblNoPeriodo = typeof TmpTblNoPeriodo;
-  export type WrkCADetHorarioDia = typeof WrkCADetHorarioDia;
-  export type WrkCADetHorarioEmpl = typeof WrkCADetHorarioEmpl;
-  export type WrkDetNominaAreaBeneficio = typeof WrkDetNominaAreaBeneficio;
-  export type Wrk_ProvisionHistorica = typeof Wrk_ProvisionHistorica;
+  export type DetVacacionesPlanificadas = InstanceType<typeof entities[number]>;
+  export type GeDBName = InstanceType<typeof entities[number]>;
+  export type TblCACabConfigMarcaciones = InstanceType<typeof entities[number]>;
+  export type TblCACabControlDia = InstanceType<typeof entities[number]>;
+  export type TblCACabHorario = InstanceType<typeof entities[number]>;
+  export type TblCACabImportacion = InstanceType<typeof entities[number]>;
+  export type TblCACabLoteMvto = InstanceType<typeof entities[number]>;
+  export type TblCACabMovimiento = InstanceType<typeof entities[number]>;
+  export type TblCACabTurno = InstanceType<typeof entities[number]>;
+  export type TblCACabUbicacion = InstanceType<typeof entities[number]>;
+  export type TblCACabValidacion = InstanceType<typeof entities[number]>;
+  export type TblCADetConfigMarcaciones = InstanceType<typeof entities[number]>;
+  export type TblCADetControlDia = InstanceType<typeof entities[number]>;
+  export type TblCADetHorarioDia = InstanceType<typeof entities[number]>;
+  export type TblCADetHorarioEmpl = InstanceType<typeof entities[number]>;
+  export type TblCADetImportacion = InstanceType<typeof entities[number]>;
+  export type TblCADetLoteMvto = InstanceType<typeof entities[number]>;
+  export type TblCADetLoteMvtoNovedad = InstanceType<typeof entities[number]>;
+  export type TblCADetMovimiento = InstanceType<typeof entities[number]>;
+  export type TblCADetMovimientoEmpl = InstanceType<typeof entities[number]>;
+  export type TblCADetTurno = InstanceType<typeof entities[number]>;
+  export type TblCADetTurnoTipoNomina = InstanceType<typeof entities[number]>;
+  export type TblCADetUbicacion = InstanceType<typeof entities[number]>;
+  export type TblCADetValidacion = InstanceType<typeof entities[number]>;
+  export type TblCADispositivo = InstanceType<typeof entities[number]>;
+  export type TblCAPermiso = InstanceType<typeof entities[number]>;
+  export type TblCiCabCierre = InstanceType<typeof entities[number]>;
+  export type TblCiCabCierreDistribucion = InstanceType<typeof entities[number]>;
+  export type TblCiCabPlantilla = InstanceType<typeof entities[number]>;
+  export type TblCiCabPlantillaDistribuyePres = InstanceType<typeof entities[number]>;
+  export type TblCiCabPlantillaEmpl = InstanceType<typeof entities[number]>;
+  export type TblCiDetCierre = InstanceType<typeof entities[number]>;
+  export type TblCiDetCierreDistribucion = InstanceType<typeof entities[number]>;
+  export type TblCiDetPlantilla = InstanceType<typeof entities[number]>;
+  export type TblCiDetPlantillaDistribucion = InstanceType<typeof entities[number]>;
+  export type TblCiDetPlantillaDistribuyePres = InstanceType<typeof entities[number]>;
+  export type TblCiDetPlantillaEmpl = InstanceType<typeof entities[number]>;
+  export type TblCiMensajes = InstanceType<typeof entities[number]>;
+  export type TblCiTipoComprobante = InstanceType<typeof entities[number]>;
+  export type TblDetNominaProyectoDias = InstanceType<typeof entities[number]>;
+  export type TblGeArchivo = InstanceType<typeof entities[number]>;
+  export type TblGeArea = InstanceType<typeof entities[number]>;
+  export type TblGeAreaBeneficios = InstanceType<typeof entities[number]>;
+  export type TblGeBanco = InstanceType<typeof entities[number]>;
+  export type TblGeCabDeducible = InstanceType<typeof entities[number]>;
+  export type TblGeCabDefinicion = InstanceType<typeof entities[number]>;
+  export type TblGeCabDocumento = InstanceType<typeof entities[number]>;
+  export type TblGeCabHorasLaboradas = InstanceType<typeof entities[number]>;
+  export type TblGeCabParametro = InstanceType<typeof entities[number]>;
+  export type TblGeCabSectorial = InstanceType<typeof entities[number]>;
+  export type TblGeCabSectorialMasivo = InstanceType<typeof entities[number]>;
+  export type TblGeCabSistemaTransfBanco = InstanceType<typeof entities[number]>;
+  export type TblGeCabTablaVirtual = InstanceType<typeof entities[number]>;
+  export type TblGeCanton = InstanceType<typeof entities[number]>;
+  export type TblGeCentroCosto = InstanceType<typeof entities[number]>;
+  export type TblGeCiaComplementaria = InstanceType<typeof entities[number]>;
+  export type TblGeCias = InstanceType<typeof entities[number]>;
+  export type TblGeConfigCorreo = InstanceType<typeof entities[number]>;
+  export type TblGeDBName = InstanceType<typeof entities[number]>;
+  export type TblGeDetalle = InstanceType<typeof entities[number]>;
+  export type TblGeDetDeducibleLimite = InstanceType<typeof entities[number]>;
+  export type TblGeDetDeducibleRango = InstanceType<typeof entities[number]>;
+  export type TblGeDetDefinicion = InstanceType<typeof entities[number]>;
+  export type TblGeDetDocumento = InstanceType<typeof entities[number]>;
+  export type TblGeDetHorasLaboradas = InstanceType<typeof entities[number]>;
+  export type TblGeDetHorasLaboradasCCosto = InstanceType<typeof entities[number]>;
+  export type TblGeDetParametro = InstanceType<typeof entities[number]>;
+  export type TblGeDetSectorial = InstanceType<typeof entities[number]>;
+  export type TblGeDetSectorialMasivo = InstanceType<typeof entities[number]>;
+  export type TblGeDetSistemaTransfBanco = InstanceType<typeof entities[number]>;
+  export type TblGeDetTablaVirtual = InstanceType<typeof entities[number]>;
+  export type TblGeDetTablaVirtualDatos = InstanceType<typeof entities[number]>;
+  export type TblGeDivision = InstanceType<typeof entities[number]>;
+  export type TblGeFeriado = InstanceType<typeof entities[number]>;
+  export type TblGeGrupo = InstanceType<typeof entities[number]>;
+  export type TblGeImagen = InstanceType<typeof entities[number]>;
+  export type TblGeLogProceso = InstanceType<typeof entities[number]>;
+  export type TblGeMaquinaria = InstanceType<typeof entities[number]>;
+  export type TblGeNoIdoneo = InstanceType<typeof entities[number]>;
+  export type TblGeParroquia = InstanceType<typeof entities[number]>;
+  export type TblGeProvincia = InstanceType<typeof entities[number]>;
+  export type TblGeReporteCia = InstanceType<typeof entities[number]>;
+  export type TblGeSecuencia = InstanceType<typeof entities[number]>;
+  export type TblGeSubCentroCosto = InstanceType<typeof entities[number]>;
+  export type TblGeSucursal = InstanceType<typeof entities[number]>;
+  export type TblGeSucursalCuenta = InstanceType<typeof entities[number]>;
+  export type TblGeSucursalRelCiaCI = InstanceType<typeof entities[number]>;
+  export type TblGeTipoServicioTransfBanco = InstanceType<typeof entities[number]>;
+  export type TblGeUnidadMedida = InstanceType<typeof entities[number]>;
+  export type TblIvCabImplemento = InstanceType<typeof entities[number]>;
+  export type TblIvDetImplemento = InstanceType<typeof entities[number]>;
+  export type TblNoAcumulados = InstanceType<typeof entities[number]>;
+  export type TblNoAspirante = InstanceType<typeof entities[number]>;
+  export type TblNoAuxiliar = InstanceType<typeof entities[number]>;
+  export type TblNoCabAnticipo = InstanceType<typeof entities[number]>;
+  export type TblNoCabAsignaBancoContrato = InstanceType<typeof entities[number]>;
+  export type TblNoCabBatchIESS = InstanceType<typeof entities[number]>;
+  export type TblNoCabBeneficioPagado = InstanceType<typeof entities[number]>;
+  export type TblNoCabComision = InstanceType<typeof entities[number]>;
+  export type TblNoCabConcepto = InstanceType<typeof entities[number]>;
+  export type TblNoCabConceptoTarifario = InstanceType<typeof entities[number]>;
+  export type TblNoCabContSolidaria = InstanceType<typeof entities[number]>;
+  export type TblNoCabCtrlLiquidacion = InstanceType<typeof entities[number]>;
+  export type TblNoCabCtrlNovedad = InstanceType<typeof entities[number]>;
+  export type TblNoCabCuadrilla = InstanceType<typeof entities[number]>;
+  export type TblNoCabDecimoProvisionado = InstanceType<typeof entities[number]>;
+  export type TblNoCabDeducible = InstanceType<typeof entities[number]>;
+  export type TblNoCabDistribuye = InstanceType<typeof entities[number]>;
+  export type TblNoCabFalta = InstanceType<typeof entities[number]>;
+  export type TblNoCabImpuestoRenta = InstanceType<typeof entities[number]>;
+  export type TblNoCabInformacionMRL = InstanceType<typeof entities[number]>;
+  export type TblNoCabJornal = InstanceType<typeof entities[number]>;
+  export type TblNoCabLaborCuadrilla = InstanceType<typeof entities[number]>;
+  export type TblNoCabLiquidacionHaberes = InstanceType<typeof entities[number]>;
+  export type TblNoCabLiquidacionVacaciones = InstanceType<typeof entities[number]>;
+  export type TblNoCabLoteLiquidacion = InstanceType<typeof entities[number]>;
+  export type TblNoCabMigraInfoDecimos = InstanceType<typeof entities[number]>;
+  export type TblNoCabNomina = InstanceType<typeof entities[number]>;
+  export type TblNoCabNominaIndividual = InstanceType<typeof entities[number]>;
+  export type TblNoCabNovedad = InstanceType<typeof entities[number]>;
+  export type TblNoCabObreroDias = InstanceType<typeof entities[number]>;
+  export type TblNoCabOrdenPago = InstanceType<typeof entities[number]>;
+  export type TblNoCabPagoPrestamo = InstanceType<typeof entities[number]>;
+  export type TblNoCabPrestamo = InstanceType<typeof entities[number]>;
+  export type TblNoCabProvisionHistorica = InstanceType<typeof entities[number]>;
+  export type TblNoCabProyeccionSueldo = InstanceType<typeof entities[number]>;
+  export type TblNoCabProyectoDia = InstanceType<typeof entities[number]>;
+  export type TblNoCabRDEP = InstanceType<typeof entities[number]>;
+  export type TblNoCabRDEPMensual = InstanceType<typeof entities[number]>;
+  export type TblNoCabRecalculoImptoRenta = InstanceType<typeof entities[number]>;
+  export type TblNoCabSalarioDigno = InstanceType<typeof entities[number]>;
+  export type TblNoCabServicio = InstanceType<typeof entities[number]>;
+  export type TblNoCabTablaContSolidaria = InstanceType<typeof entities[number]>;
+  export type TblNoCabUtilidad = InstanceType<typeof entities[number]>;
+  export type TblNoCabVacaciones = InstanceType<typeof entities[number]>;
+  export type TblNoCabValoresAvance = InstanceType<typeof entities[number]>;
+  export type TblNoCargo = InstanceType<typeof entities[number]>;
+  export type TblNoConfigDistribucionBase = InstanceType<typeof entities[number]>;
+  export type TblNoConfigDistribucionIngresos = InstanceType<typeof entities[number]>;
+  export type TblNoContrato = InstanceType<typeof entities[number]>;
+  export type TblNoCuenta = InstanceType<typeof entities[number]>;
+  export type TblNoDetAgrupacionBatchIESS = InstanceType<typeof entities[number]>;
+  export type TblNoDetAnticipo = InstanceType<typeof entities[number]>;
+  export type TblNoDetAsignaBancoContrato = InstanceType<typeof entities[number]>;
+  export type TblNoDetBatchIESS = InstanceType<typeof entities[number]>;
+  export type TblNoDetBeneficioPagado = InstanceType<typeof entities[number]>;
+  export type TblNoDetComision = InstanceType<typeof entities[number]>;
+  export type TblNoDetConcepto = InstanceType<typeof entities[number]>;
+  export type TblNoDetConceptoFormula = InstanceType<typeof entities[number]>;
+  export type TblNoDetConceptoTarifario = InstanceType<typeof entities[number]>;
+  export type TblNoDetContratoConcepto = InstanceType<typeof entities[number]>;
+  export type TblNoDetContratoCuenta = InstanceType<typeof entities[number]>;
+  export type TblNoDetContratoCuentaBco = InstanceType<typeof entities[number]>;
+  export type TblNoDetContratoHistoriaSueldo = InstanceType<typeof entities[number]>;
+  export type TblNoDetContSolidaria = InstanceType<typeof entities[number]>;
+  export type TblNoDetCtrlLiquidacion = InstanceType<typeof entities[number]>;
+  export type TblNoDetCtrlNovedad = InstanceType<typeof entities[number]>;
+  export type TblNoDetCuadrilla = InstanceType<typeof entities[number]>;
+  export type TblNoDetDatosCCosto = InstanceType<typeof entities[number]>;
+  export type TblNoDetDatosPresupuesto = InstanceType<typeof entities[number]>;
+  export type TblNoDetDecimoProvisionado = InstanceType<typeof entities[number]>;
+  export type TblNoDetDeducible = InstanceType<typeof entities[number]>;
+  export type TblNoDetDistribuyeCCosto = InstanceType<typeof entities[number]>;
+  export type TblNoDetDistribuyeEmpleado = InstanceType<typeof entities[number]>;
+  export type TblNoDetDistribuyePresObra = InstanceType<typeof entities[number]>;
+  export type TblNoDetEmpleadoCarga = InstanceType<typeof entities[number]>;
+  export type TblNoDetEmpleadoDocumentoReq = InstanceType<typeof entities[number]>;
+  export type TblNoDetEmpleadoHistoria = InstanceType<typeof entities[number]>;
+  export type TblNoDetFalta = InstanceType<typeof entities[number]>;
+  export type TblNoDetImpuestoRenta = InstanceType<typeof entities[number]>;
+  export type TblNoDetImpuestoRentaReal = InstanceType<typeof entities[number]>;
+  export type TblNoDetInformacionMRL = InstanceType<typeof entities[number]>;
+  export type TblNoDetJornal = InstanceType<typeof entities[number]>;
+  export type TblNoDetLaborCuadrilla = InstanceType<typeof entities[number]>;
+  export type TblNoDetLaborCuadrillaEmpl = InstanceType<typeof entities[number]>;
+  export type TblNoDetLiqHaberesAporte = InstanceType<typeof entities[number]>;
+  export type TblNoDetLiqHaberesCtrlVacaciones = InstanceType<typeof entities[number]>;
+  export type TblNoDetLiqHaberesPrestamo = InstanceType<typeof entities[number]>;
+  export type TblNoDetLiqHaberesProvision = InstanceType<typeof entities[number]>;
+  export type TblNoDetLiqHaberesProvisionCancelada = InstanceType<typeof entities[number]>;
+  export type TblNoDetLiqHaberesProvisionSistema = InstanceType<typeof entities[number]>;
+  export type TblNoDetLiquidacionHaberes = InstanceType<typeof entities[number]>;
+  export type TblNoDetLiquidacionHaberesSistema = InstanceType<typeof entities[number]>;
+  export type TblNoDetLiquidacionPeriodo = InstanceType<typeof entities[number]>;
+  export type TblNoDetLiquidacionVacaciones = InstanceType<typeof entities[number]>;
+  export type TblNoDetLiquidacionVacacionesHistoria = InstanceType<typeof entities[number]>;
+  export type TblNoDetLiqVacacionProvisionAnio = InstanceType<typeof entities[number]>;
+  export type TblNoDetLoteLiquidacion = InstanceType<typeof entities[number]>;
+  export type TblNoDetMigraInfoDecimos = InstanceType<typeof entities[number]>;
+  export type TblNoDetNomina = InstanceType<typeof entities[number]>;
+  export type TblNoDetNominaAreaBeneficio = InstanceType<typeof entities[number]>;
+  export type TblNoDetNominaContrato = InstanceType<typeof entities[number]>;
+  export type TblNoDetNominaIndividual = InstanceType<typeof entities[number]>;
+  export type TblNoDetNominaObrero = InstanceType<typeof entities[number]>;
+  export type TblNoDetNovedad = InstanceType<typeof entities[number]>;
+  export type TblNoDetObreroDias = InstanceType<typeof entities[number]>;
+  export type TblNoDetOrdenPago = InstanceType<typeof entities[number]>;
+  export type TblNoDetOrdenPagoObrero = InstanceType<typeof entities[number]>;
+  export type TblNoDetPagoPrestamo = InstanceType<typeof entities[number]>;
+  export type TblNoDetPeriodoBeneficio = InstanceType<typeof entities[number]>;
+  export type TblNoDetPrestamo = InstanceType<typeof entities[number]>;
+  export type TblNoDetProvisionHistorica = InstanceType<typeof entities[number]>;
+  export type TblNoDetProyeccionSueldo = InstanceType<typeof entities[number]>;
+  export type TblNoDetProyectoDia = InstanceType<typeof entities[number]>;
+  export type TblNoDetRDEP = InstanceType<typeof entities[number]>;
+  export type TblNoDetRDEPContribucion = InstanceType<typeof entities[number]>;
+  export type TblNoDetRDEPMensual = InstanceType<typeof entities[number]>;
+  export type TblNoDetRecalculoImptoRenta = InstanceType<typeof entities[number]>;
+  export type TblNoDetSalarioDigno = InstanceType<typeof entities[number]>;
+  export type TblNoDetServicio = InstanceType<typeof entities[number]>;
+  export type TblNoDetSubsidio = InstanceType<typeof entities[number]>;
+  export type TblNoDetTablaContSolidaria = InstanceType<typeof entities[number]>;
+  export type TblNoDetTransferenciaBco = InstanceType<typeof entities[number]>;
+  export type TblNoDetTransferenciaObrero = InstanceType<typeof entities[number]>;
+  export type TblNoDetUtilidad = InstanceType<typeof entities[number]>;
+  export type TblNoDetUtilidadDctos = InstanceType<typeof entities[number]>;
+  export type TblNoDetVacaciones = InstanceType<typeof entities[number]>;
+  export type TblNoDetVacacionesPlanificadas = InstanceType<typeof entities[number]>;
+  export type TblNoDetValoresAvance = InstanceType<typeof entities[number]>;
+  export type TblNoEmpleado = InstanceType<typeof entities[number]>;
+  export type TblNoGeSector = InstanceType<typeof entities[number]>;
+  export type TblNoGeSectorialIESS = InstanceType<typeof entities[number]>;
+  export type TblNoGrupoConcepto = InstanceType<typeof entities[number]>;
+  export type TblNoModulo = InstanceType<typeof entities[number]>;
+  export type TblNoMotivo = InstanceType<typeof entities[number]>;
+  export type TblNoOrigenConcepto = InstanceType<typeof entities[number]>;
+  export type TblNoPeriodo = InstanceType<typeof entities[number]>;
+  export type TblNoPlanDeCuenta = InstanceType<typeof entities[number]>;
+  export type TblNoPorcDiscapacidad = InstanceType<typeof entities[number]>;
+  export type TblNoRel_Auxiliar_TipoAuxiliar = InstanceType<typeof entities[number]>;
+  export type TblNoRel_Auxiliar_TipoAuxiliarAudt = InstanceType<typeof entities[number]>;
+  export type TblNoRel_CtaMy_TipAux = InstanceType<typeof entities[number]>;
+  export type TblNoRelaTransfMvtoBancario = InstanceType<typeof entities[number]>;
+  export type TblNoRelTipoNominaConcepto = InstanceType<typeof entities[number]>;
+  export type TblNoRelTotalHorasObrero = InstanceType<typeof entities[number]>;
+  export type TblNoResumenAnterior = InstanceType<typeof entities[number]>;
+  export type TblNoResumenNomina = InstanceType<typeof entities[number]>;
+  export type TblNoSueldoBasico = InstanceType<typeof entities[number]>;
+  export type TblNoTipoAuxiliar = InstanceType<typeof entities[number]>;
+  export type TblNoTipoContrato = InstanceType<typeof entities[number]>;
+  export type TblNoTipoCta = InstanceType<typeof entities[number]>;
+  export type TblNoTipoNomina = InstanceType<typeof entities[number]>;
+  export type TblNoTransfContabilizacion = InstanceType<typeof entities[number]>;
+  export type TblNoTransferencia = InstanceType<typeof entities[number]>;
+  export type TblNoVariableConcepto = InstanceType<typeof entities[number]>;
+  export type TblSueldoAcumulado = InstanceType<typeof entities[number]>;
+  export type TblWrkNoLaborCuadrilla = InstanceType<typeof entities[number]>;
+  export type TmpTblNoPeriodo = InstanceType<typeof entities[number]>;
+  export type User = InstanceType<typeof entities[number]>;
+  export type Wrk_ProvisionHistorica = InstanceType<typeof entities[number]>;
+  export type WRK_TblImpotDetObreroDias = InstanceType<typeof entities[number]>;
+  export type WRK_TblImpotDetProyectoDias = InstanceType<typeof entities[number]>;
+  export type WrkCADetHorarioDia = InstanceType<typeof entities[number]>;
+  export type WrkCADetHorarioEmpl = InstanceType<typeof entities[number]>;
+  export type WrkCADetMovimiento = InstanceType<typeof entities[number]>;
+  export type WrkCADetValidacion = InstanceType<typeof entities[number]>;
+  export type WrkCAImportaMarcaciones = InstanceType<typeof entities[number]>;
+  export type WrkCriterioConsulta = InstanceType<typeof entities[number]>;
+  export type WrkCriterioConsultaSobrePago = InstanceType<typeof entities[number]>;
+  export type WrkCriterioMYSQL = InstanceType<typeof entities[number]>;
+  export type WrkDetCtrlNovedad = InstanceType<typeof entities[number]>;
+  export type WrkDetNominaAreaBeneficio = InstanceType<typeof entities[number]>;
+  export type WrkNoDetContSolidaria = InstanceType<typeof entities[number]>;
+  export type WrkNoDetCtrlNovedad = InstanceType<typeof entities[number]>;
+  export type WrkNoDetImportaBatchIESS = InstanceType<typeof entities[number]>;
+  export type WrkNoDetInfoDecimos = InstanceType<typeof entities[number]>;
+  export type WrkNoDetJornal = InstanceType<typeof entities[number]>;
+  export type WrkNoDetLiquidacion = InstanceType<typeof entities[number]>;
+  export type WrkNoDetNovedad = InstanceType<typeof entities[number]>;
+  export type WrkNoDetRDEPContribucion = InstanceType<typeof entities[number]>;
+  export type WrkNoDetRDEPImportacion = InstanceType<typeof entities[number]>;
+  export type WrkNoDetRecalculoImptoRenta = InstanceType<typeof entities[number]>;
+  export type WrkNoDetSalarioDigno = InstanceType<typeof entities[number]>;
+  export type WrkNoDetUtilidad = InstanceType<typeof entities[number]>;
 }
 
