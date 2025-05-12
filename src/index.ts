@@ -1,2 +1,2 @@
-export * as oracle from './oracle';
-export * as typeorm from './typeorm';
+export {default as models} from './oracle';
+export {default as entities} from './typeorm';
