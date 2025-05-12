@@ -1,5 +1,8 @@
 // AUTO-GENERATED — barrel principal
 
-export { default as models }   from './oracle';
-export { default as entities } from './typeorm';
+import { models }   from './oracle';
 
+export const model = models
+export namespace model {
+  export type models = typeof models
+}

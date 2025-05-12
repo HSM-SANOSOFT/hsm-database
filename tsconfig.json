@@ -13,8 +13,8 @@
     "experimentalDecorators": true,
     "forceConsistentCasingInFileNames": true,
     "incremental": false,
-    
     "declaration": true,
+    
     "emitDecoratorMetadata": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
