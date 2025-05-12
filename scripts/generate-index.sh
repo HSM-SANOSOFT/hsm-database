@@ -37,7 +37,7 @@ generate_index() {
 
   # 2) Export principal
   if [ "$EXPORT_TYPE" = "object" ]; then
-    echo "export const $EXPORT_NAME = {" >> "$OUT"
+    echo "export default $EXPORT_NAME = {" >> "$OUT"
     for filepath in "$DIR"/*."$EXT"; do
       [ -e "$filepath" ] || continue
       filename=$(basename "$filepath")
@@ -51,7 +51,7 @@ generate_index() {
     done
     echo "};" >> "$OUT"
   else
-    echo "export const $EXPORT_NAME = [" >> "$OUT"
+    echo "export default $EXPORT_NAME = [" >> "$OUT"
     for filepath in "$DIR"/*."$EXT"; do
       [ -e "$filepath" ] || continue
       filename=$(basename "$filepath")
