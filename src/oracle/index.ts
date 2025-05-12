@@ -12,7 +12,7 @@ export const models = {
   VwServiciosChatModel,
 };
 
-// Namespace de tipos correspondiente al default export
+// Namespace de tipos correspondiente al export
 export namespace models {
   export type CgRefCodeModel = typeof CgRefCodeModel;
   export type PdpLogSegundaVerificacionModel = typeof PdpLogSegundaVerificacionModel;

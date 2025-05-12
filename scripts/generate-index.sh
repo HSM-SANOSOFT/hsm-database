@@ -3,7 +3,7 @@ set -e
 
 # Función genérica para generar index.ts con named export y namespace de tipos
 # $1 = carpeta (ej. src/oracle)
-# $2 = extensión de archivo (model.ts o entity.ts)
+# $2 = extensión de archivo (sin el punto, ej. model.ts o entity.ts)
 # $3 = nombre de la export principal (models o entities)
 # $4 = tipo de export principal (object o array)
 generate_index() {
@@ -16,11 +16,12 @@ generate_index() {
   echo "// AUTO-GENERATED — no editar a mano" > "$OUT"
   echo "" >> "$OUT"
 
-  # Imports
+  # 1) Imports de clases
   for filepath in "$DIR"/*."$EXT"; do
     [ -e "$filepath" ] || continue
-    filename=$(basename "$filepath")
-    base=${filename%."$EXT"}
+    filename=$(basename "$filepath")            # ej. cgRefCode.model.ts
+    base="${filename%.$EXT}"                    # ej. cgRefCode
+    # CamelCase para la clase
     className="$(tr '[:lower:]' '[:upper:]' <<< "${base:0:1}")${base:1}"
     if [ "$EXT" = "model.ts" ]; then
       importName="${className}Model"
@@ -34,7 +35,7 @@ generate_index() {
 
   echo "" >> "$OUT"
 
-  # Export principal
+  # 2) Export principal como named const
   if [ "$EXPORT_TYPE" = "object" ]; then
     echo "export const $EXPORT_NAME = {" >> "$OUT"
   else
@@ -43,9 +44,13 @@ generate_index() {
   for filepath in "$DIR"/*."$EXT"; do
     [ -e "$filepath" ] || continue
     filename=$(basename "$filepath")
-    base=${filename%."$EXT"}
+    base="${filename%.$EXT}"
     className="$(tr '[:lower:]' '[:upper:]' <<< "${base:0:1}")${base:1}"
-    entryName=$(("$EXT" == "model.ts") && echo "${className}Model" || echo "${className}")
+    if [ "$EXT" = "model.ts" ]; then
+      entryName="${className}Model"
+    else
+      entryName="${className}"
+    fi
     echo "  ${entryName}," >> "$OUT"
   done
   if [ "$EXPORT_TYPE" = "object" ]; then
@@ -56,13 +61,13 @@ generate_index() {
 
   echo "" >> "$OUT"
 
-  # Namespace de tipos
-  echo "// Namespace de tipos correspondiente a la export" >> "$OUT"
+  # 3) Namespace de tipos para genéricos
+  echo "// Namespace de tipos correspondiente al export" >> "$OUT"
   echo "export namespace $EXPORT_NAME {" >> "$OUT"
   for filepath in "$DIR"/*."$EXT"; do
     [ -e "$filepath" ] || continue
     filename=$(basename "$filepath")
-    base=${filename%."$EXT"}
+    base="${filename%.$EXT}"
     className="$(tr '[:lower:]' '[:upper:]' <<< "${base:0:1}")${base:1}"
     if [ "$EXT" = "model.ts" ]; then
       echo "  export type ${className}Model = typeof ${className}Model;" >> "$OUT"
@@ -76,22 +81,29 @@ generate_index() {
   echo "✅ $OUT generado"
 }
 
-# Genera índice para models y entities
+# ---------- Generar índices en subcarpetas ----------
 generate_index "src/oracle"   "model.ts"  "models"   "object"
-generate_index "src/typeorm" "entity.ts" "entities" "array"
+generate_index "src/typeorm"  "entity.ts" "entities" "array"
 
-# Barrel principal dinámico
+# ---------- Barrel principal personalizado ----------
 ROOT_OUT="src/index.ts"
 
 echo "// AUTO-GENERATED — barrel principal" > "$ROOT_OUT"
 echo "" >> "$ROOT_OUT"
-# Importamos named export 'models' de oracle
+# Import named exports de oracle y typeorm
 echo "import { models } from './oracle';" >> "$ROOT_OUT"
+echo "import { entities } from './typeorm';" >> "$ROOT_OUT"
 echo "" >> "$ROOT_OUT"
-# Creamos const y namespace según tu petición
+# Crear const y namespace 'model'
 echo "export const model = models" >> "$ROOT_OUT"
 echo "export namespace model {" >> "$ROOT_OUT"
 echo "  export type models = typeof models" >> "$ROOT_OUT"
+echo "}" >> "$ROOT_OUT"
+echo "" >> "$ROOT_OUT"
+# Crear const y namespace 'entity'
+echo "export const entity = entities" >> "$ROOT_OUT"
+echo "export namespace entity {" >> "$ROOT_OUT"
+echo "  export type entities = typeof entities" >> "$ROOT_OUT"
 echo "}" >> "$ROOT_OUT"
 echo "" >> "$ROOT_OUT"
 echo "✅ $ROOT_OUT generado"
