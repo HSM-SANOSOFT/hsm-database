@@ -275,7 +275,7 @@ import { WrkCADetHorarioEmpl } from './wrkCADetHorarioEmpl.entity';
 import { WrkDetNominaAreaBeneficio } from './wrkDetNominaAreaBeneficio.entity';
 import { Wrk_ProvisionHistorica } from './wrk_ProvisionHistorica.entity';
 
-export const entities = [
+const entities = [
   DetVacacionesPlanificadas,
   GeDBName,
   TblCACabConfigMarcaciones,
@@ -551,6 +551,7 @@ export const entities = [
   WrkDetNominaAreaBeneficio,
   Wrk_ProvisionHistorica,
 ];
+export default entities;
 
 // Named exports
 export {
