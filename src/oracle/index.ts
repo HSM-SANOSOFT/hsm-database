@@ -13,10 +13,3 @@ const models = {
 };
 export default models;
 
-// Named exports
-export {
-  CgRefCodeModel,
-  PdpLogSegundaVerificacionModel,
-  SgiPilaresModel,
-  VwServiciosChatModel,
-};
