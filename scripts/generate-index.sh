@@ -90,20 +90,9 @@ ROOT_OUT="src/index.ts"
 
 echo "// AUTO-GENERATED — barrel principal" > "$ROOT_OUT"
 echo "" >> "$ROOT_OUT"
-# Import named exports de oracle y typeorm
-echo "import { models } from './oracle';" >> "$ROOT_OUT"
-echo "import { entities } from './typeorm';" >> "$ROOT_OUT"
-echo "" >> "$ROOT_OUT"
-# Crear const y namespace 'model'
-echo "export const model = models" >> "$ROOT_OUT"
-echo "export namespace model {" >> "$ROOT_OUT"
-echo "  export type models = typeof models" >> "$ROOT_OUT"
-echo "}" >> "$ROOT_OUT"
-echo "" >> "$ROOT_OUT"
-# Crear const y namespace 'entity'
-echo "export const entity = entities" >> "$ROOT_OUT"
-echo "export namespace entity {" >> "$ROOT_OUT"
-echo "  export type entities = typeof entities" >> "$ROOT_OUT"
-echo "}" >> "$ROOT_OUT"
+# Re-export named exports directamente
+echo "export { models }   from './oracle';" >> "$ROOT_OUT"
+echo "export { entities } from './typeorm';" >> "$ROOT_OUT"
 echo "" >> "$ROOT_OUT"
 echo "✅ $ROOT_OUT generado"
+
