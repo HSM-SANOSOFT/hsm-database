@@ -69,22 +69,6 @@ generate_index() {
   echo "export default $EXPORT_NAME;" >> "$OUT"
   echo "" >> "$OUT"
 
-  # 3) Named exports individuales
-  echo "// Named exports" >> "$OUT"
-  echo "export {" >> "$OUT"
-  for filepath in "$DIR"/*."$EXT"; do
-    [ -e "$filepath" ] || continue
-    filename=$(basename "$filepath")
-    base=${filename%."$EXT"}
-    className="$(tr '[:lower:]' '[:upper:]' <<< "${base:0:1}")${base:1}"
-    if [ "$EXT" = "model.ts" ]; then
-      echo "  ${className}Model," >> "$OUT"
-    else
-      echo "  ${className}," >> "$OUT"
-    fi
-  done
-  echo "};" >> "$OUT"
-
   echo "✅ $OUT generado"
 }
 
