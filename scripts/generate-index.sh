@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-# Función genérica para generar index.ts
+# Función genérica para generar index.ts con default export
 # $1 = carpeta (e.g. src/oracle)
 # $2 = extensión de archivo (model.ts o entity.ts)
 # $3 = nombre de la export principal (models o entities)
@@ -19,8 +19,8 @@ generate_index() {
   # 1) Imports
   for filepath in "$DIR"/*."$EXT"; do
     [ -e "$filepath" ] || continue
-    filename=$(basename "$filepath")      # e.g. cgRefCode.model.ts
-    base=${filename%."$EXT"}              # e.g. cgRefCode
+    filename=$(basename "$filepath")                # e.g. cgRefCode.model.ts
+    base=${filename%."$EXT"}                        # e.g. cgRefCode
     # CamelCase para la clase
     className="$(tr '[:lower:]' '[:upper:]' <<< "${base:0:1}")${base:1}"
     if [ "$EXT" = "model.ts" ]; then
@@ -35,9 +35,9 @@ generate_index() {
 
   echo "" >> "$OUT"
 
-  # 2) Export principal
+  # 2) Definir const y export default
   if [ "$EXPORT_TYPE" = "object" ]; then
-    echo "export default $EXPORT_NAME = {" >> "$OUT"
+    echo "const $EXPORT_NAME = {" >> "$OUT"
     for filepath in "$DIR"/*."$EXT"; do
       [ -e "$filepath" ] || continue
       filename=$(basename "$filepath")
@@ -51,7 +51,7 @@ generate_index() {
     done
     echo "};" >> "$OUT"
   else
-    echo "export default $EXPORT_NAME = [" >> "$OUT"
+    echo "const $EXPORT_NAME = [" >> "$OUT"
     for filepath in "$DIR"/*."$EXT"; do
       [ -e "$filepath" ] || continue
       filename=$(basename "$filepath")
@@ -66,8 +66,10 @@ generate_index() {
     echo "];" >> "$OUT"
   fi
 
+  echo "export default $EXPORT_NAME;" >> "$OUT"
   echo "" >> "$OUT"
-  # 3) Named exports de cada clase
+
+  # 3) Named exports individuales
   echo "// Named exports" >> "$OUT"
   echo "export {" >> "$OUT"
   for filepath in "$DIR"/*."$EXT"; do
@@ -86,8 +88,8 @@ generate_index() {
   echo "✅ $OUT generado"
 }
 
-# Genera src/oracle/index.ts con models (objeto)
+# Genera src/oracle/index.ts con default export models (objeto)
 generate_index "src/oracle" "model.ts" "models" "object"
 
-# Genera src/typeorm/index.ts con entities (array)
+# Genera src/typeorm/index.ts con default export entities (array)
 generate_index "src/typeorm" "entity.ts" "entities" "array"
