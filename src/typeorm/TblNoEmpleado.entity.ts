@@ -89,12 +89,12 @@ export class TblNoEmpleado {
   @Column({ type: 'varchar', length: 255, nullable: false })
   CSnCertificadoSalud?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CCiCertificadoSalud?: string;
+	CCiCertificadoSalud?: string;
   @Column({ type: 'varchar', length: 255, nullable: false })
-  CTxCertificadoSalud?: string;
+	CTxCertificadoSalud?: string;
   @Column('datetime', { nullable: false })
-  DFxCertificadoSalud?: Date;
-  @Column({ type: 'varchar', length: 255, nullable: false })
+	DFxCertificadoSalud?: Date;
+  @Column({ type: 'char', length: 1, nullable: false })
   CSnDiscapacitado?: string;
   @Column('int', { nullable: false })
   NQnDiscapacidad?: number;
