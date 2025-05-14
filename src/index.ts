@@ -1,2 +1,5 @@
-export * as oracle from './oracle';
-export * as typeorm from './typeorm';
+// AUTO-GENERATED — barrel principal
+
+export { models }   from './oracle';
+export { entities } from './typeorm';
+
